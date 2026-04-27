@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<title>墨迹圈 · 每日市场报告</title>
+<style>
+  body { font-family: sans-serif; max-width: 700px; margin: 60px auto; color: #333; }
+  h1 { color: #1a1a2e; }
+  a { color: #4a6cf7; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  li { margin: 8px 0; font-size: 16px; }
+</style>
+</head>
+<body>
+<h1>📈 墨迹圈 · 每日市场报告</h1>
+<ul id="list"><li>加载中...</li></ul>
+<script>
+fetch('reports/manifest.json?t=' + Date.now())
+  .then(r => r.json())
+  .then(data => {
+    const ul = document.getElementById('list');
+    ul.innerHTML = '';
+    data.forEach(item => {
+      const li = document.createElement('li');
+      const a = document.createElement('a');
+      a.href = 'reports/' + item.file;
+      a.textContent = item.date;
+      a.target = '_blank';
+      li.appendChild(a);
+      ul.appendChild(li);
+    });
+  });
+</script>
+</body>
+</html>
