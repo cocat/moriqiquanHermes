@@ -1,0 +1,3670 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>市场资讯摘要 - 2026年04月27日</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+/* Fonts — Mentat Design System */
+@font-face {
+  font-family: 'NotoSerifCJKsc-Bold';
+  src: url('https://assets-persist.lovart.ai/agent-static-assets/NotoSerifCJKsc-Bold.otf');
+}
+@font-face {
+  font-family: 'NotoSerifCJKsc-Regular';
+  src: url('https://assets-persist.lovart.ai/agent-static-assets/NotoSerifCJKsc-Regular.otf');
+}
+@font-face {
+  font-family: 'MiSans-Regular';
+  src: url('https://assets-persist.lovart.ai/agent-static-assets/MiSans-Regular.ttf');
+}
+@font-face {
+  font-family: 'MiSans-Medium';
+  src: url('https://assets-persist.lovart.ai/agent-static-assets/MiSans-Medium.ttf');
+}
+
+/* ══ Design Tokens — Mentat Intelligence 设计规范 ═══════════════════ */
+:root {
+  --bg:       #1A1A1B;
+  --bg-card:  #1E1E1F;
+  --bg-hover: #222222;
+  --surface:  #1E1E1F;
+  --border:   #3A3A3A;
+  --border2:  #2A2A2A;
+  --text:     #E5E5E5;
+  --text2:    #E5E5E5;
+  --muted:    #999999;
+  --faint:    #888888;
+  --ghost:    rgba(255,255,255,.03);
+
+  --gold:     #C19A6B;
+  --gold-dim: rgba(193, 154, 107, 0.1);
+  --gold-active: rgba(193, 154, 107, 0.2);
+  --burgundy: #4E1010;
+  --burgundy-dim: rgba(78, 16, 16, 0.15);
+  --burgundy-light: #8B2E2E;
+
+  --red:     #FF4444;   --red-light: rgba(78, 16, 16, 0.2);   --red-mid: rgba(255,68,68,.15);   --red-border: #8B2E2E;
+  --orange:  #D4A55A;   --orange-light: rgba(212,165,90,.1);   --orange-mid: rgba(212,165,90,.2);  --orange-border: #C19A6B;
+  --green:   #4CAF50;    --green-light: rgba(76,175,80,.1);    --green-mid: rgba(76,175,80,.2);   --green-border: #388E3C;
+  --blue:    #5A9FD4;    --blue-light: rgba(90,159,212,.1);   --blue-mid: rgba(90,159,212,.15);  --blue-border: #5A9FD4;
+  --purple:  #9B8DC4;    --purple-light: rgba(155,141,196,.1); --purple-mid: rgba(155,141,196,.2);
+  --teal:    #5A9FD4;
+
+  --shadow-xs: 0 1px 2px rgba(0,0,0,.2);
+  --shadow-sm: 0 1px 4px rgba(0,0,0,.25), 0 1px 2px rgba(0,0,0,.15);
+  --shadow:    0 3px 8px rgba(0,0,0,.3), 0 1px 3px rgba(0,0,0,.2);
+  --shadow-md: 0 6px 16px rgba(0,0,0,.35), 0 2px 6px rgba(0,0,0,.2);
+
+  --r-sm: 2px;
+  --r:    4px;
+  --r-lg: 4px;
+  --r-btn: 2px;
+  --ease-hover: cubic-bezier(0.4, 0, 0.2, 1);
+  --transition: 0.2s var(--ease-hover);
+  --section-gap: 12px;
+
+  --font-serif: 'NotoSerifCJKsc-Regular', serif;
+  --font-serif-bold: 'NotoSerifCJKsc-Bold', serif;
+  --font-sans: 'MiSans-Regular', -apple-system, BlinkMacSystemFont, 'PingFang SC', sans-serif;
+  --mono: 'Courier New', Courier, monospace;
+}
+
+/* ══ Reset & Base ════════════════════════════════════ */
+*, *::before, *::after { margin:0; padding:0; box-sizing:border-box; -webkit-font-smoothing: antialiased; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--font-sans);
+  font-size: 14px; line-height: 1.6; color: var(--text);
+  background: var(--bg);
+  background-image: linear-gradient(var(--border) 1px, transparent 1px), linear-gradient(90deg, var(--border) 1px, transparent 1px);
+  background-size: 40px 40px; background-position: center top;
+  padding: 12px 16px 36px; max-width: 1720px; margin: 0 auto;
+}
+body::before {
+  content: ''; position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+  background: var(--bg); opacity: 0.97; z-index: -1; pointer-events: none;
+}
+a { color: var(--gold); text-decoration: none; transition: color var(--transition); }
+a:hover { color: #d4af7a; }
+
+/* ══ Sticky Nav — 设计规范: 深色 + 金强调 ══════════════ */
+.sticky-nav {
+  position: sticky; top: 0; z-index: 100;
+  background: rgba(26, 26, 27, 0.95);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border);
+  margin-bottom: var(--section-gap);
+  padding: 0 10px; height: 48px;
+  display: flex; align-items: center; gap: 0;
+  overflow-x: auto; scrollbar-width: none;
+}
+.sticky-nav::-webkit-scrollbar { display: none; }
+.nav-item {
+  flex-shrink: 0; padding: 0 20px; font-size: 12px; font-weight: 500;
+  color: var(--muted); cursor: pointer; border-radius: 0;
+  transition: all 0.2s var(--ease-hover); white-space: nowrap; user-select: none;
+  border: none; background: transparent; letter-spacing: 1px;
+  text-transform: uppercase; height: 48px; display: flex; align-items: center;
+  border-bottom: 2px solid transparent; margin-bottom: -1px;
+  font-family: var(--font-sans);
+}
+.nav-item:hover { color: var(--text); background: var(--gold-dim); }
+.nav-item.active { color: var(--gold); border-bottom-color: var(--gold); background: var(--gold-dim); }
+.nav-sep { width: 1px; height: 14px; background: var(--border); flex-shrink: 0; }
+
+/* ══ Card System — 设计规范 02: 卡片状态 (hover lift + 左侧金条) ══ */
+.card {
+  background: var(--bg-card); border: 1px solid var(--border);
+  border-radius: var(--r);
+  margin-bottom: var(--section-gap); overflow: hidden;
+  transition: transform 0.15s var(--ease-hover), border-color var(--transition), box-shadow var(--transition);
+}
+.card:hover {
+  border-color: var(--border); transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,.3);
+}
+.card-header {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 12px 20px;
+  background: var(--ghost);
+  border-bottom: 1px solid var(--border);
+  border-left: 3px solid var(--gold);
+  color: var(--text); font-weight: 600; font-size: 12px;
+  font-family: var(--font-sans); user-select: none;
+  letter-spacing: 1px; text-transform: uppercase;
+}
+.card-header.blue   { border-left-color: var(--blue);   background: var(--blue-light); color: var(--blue); }
+.card-header.purple { border-left-color: var(--purple); background: var(--purple-light); color: var(--purple); }
+.card-header.green  { border-left-color: var(--green);  background: var(--green-light); color: var(--green); }
+.card-header.gold   { border-left-color: var(--gold);    background: var(--gold-dim); color: var(--gold); }
+.card-header.red    { border-left-color: var(--red);    background: var(--red-light); color: #ff6b6b; }
+.card-header.teal   { border-left-color: var(--teal);   background: var(--blue-light); color: var(--blue); }
+.card-header[onclick] { cursor: pointer; }
+.card-header[onclick]:hover { background: var(--bg-hover); }
+
+.toggle-btn {
+  flex-shrink: 0; font-size: 11px; font-weight: 600;
+  padding: 6px 14px; border-radius: var(--r-btn);
+  background: transparent; color: var(--muted);
+  border: 1px solid var(--border);
+  transition: all 0.2s var(--ease-hover); user-select: none; white-space: nowrap;
+  letter-spacing: 0.5px; text-transform: uppercase;
+  font-family: var(--font-sans);
+}
+.toggle-btn:hover { background: var(--gold-dim); border-color: var(--gold); color: var(--gold); box-shadow: 0 0 15px rgba(193,154,107,0.15); }
+
+.collapsible { }
+.collapsible.hidden { display: none; }
+.brief-collapsible { }
+.brief-collapsible.hidden { display: none; }
+
+/* ══ Page Header — 设计规范: 深色 + 金强调 ══════════ */
+.page-header {
+  background: var(--bg-card);
+  color: var(--text); border-radius: var(--r-lg); padding: 24px 28px 16px;
+  margin-bottom: var(--section-gap);
+  border: 1px solid var(--border); border-left: 4px solid var(--gold);
+  position: relative; overflow: hidden;
+  box-shadow: var(--shadow-sm);
+}
+.page-header::before {
+  content: ''; position: absolute; inset: 0; pointer-events: none;
+  background: radial-gradient(ellipse at 90% 50%, var(--gold-dim) 0%, transparent 60%);
+}
+.page-header h1 {
+  font-family: var(--font-serif-bold);
+  font-size: 24px; font-weight: 700; margin-bottom: 8px;
+  letter-spacing: 1px; position: relative;
+}
+.page-header .meta {
+  font-family: var(--mono);
+  font-size: 12px; color: var(--muted); position: relative;
+  display: flex; align-items: center; gap: 14px; flex-wrap: wrap;
+  letter-spacing: 0.5px;
+}
+.meta-tag {
+  display: inline-flex; align-items: center; gap: 4px;
+  background: var(--ghost); border: 1px solid var(--border);
+  border-radius: var(--r-sm); padding: 4px 10px; font-size: 10px; font-weight: 600;
+  text-transform: uppercase; letter-spacing: 0.5px;
+  font-family: var(--font-sans);
+}
+
+/* ══ Sentiment Dashboard — 设计规范: 进度条 4px + 金/红 ═════════ */
+.sentiment-dashboard {
+  background: var(--bg-card); border: 1px solid var(--border);
+  border-radius: var(--r); padding: 20px 24px; margin-bottom: var(--section-gap);
+  border-left: 4px solid var(--gold);
+  box-shadow: var(--shadow-sm);
+}
+.sentiment-top {
+  display: flex; align-items: flex-start; justify-content: space-between;
+  margin-bottom: 12px; flex-wrap: wrap; gap: 8px;
+}
+.sentiment-left { flex: 1; min-width: 200px; }
+.sentiment-title {
+  font-family: var(--font-serif);
+  font-weight: 600; font-size: 12px; color: var(--muted); margin-bottom: 6px;
+  letter-spacing: 1px; text-transform: uppercase;
+}
+.sentiment-desc { font-size: 14px; color: var(--text2); line-height: 1.6; font-family: var(--font-sans); }
+.sentiment-right { text-align: right; }
+.sentiment-score {
+  font-size: 42px; font-weight: 400; line-height: 1; letter-spacing: -2px;
+  font-variant-numeric: tabular-nums;
+  font-family: var(--mono);
+}
+.sentiment-label {
+  display: inline-block; margin-top: 6px;
+  font-size: 10px; font-weight: 700; padding: 4px 10px;
+  border-radius: var(--r-sm); text-transform: uppercase; letter-spacing: 0.5px;
+  font-family: var(--font-sans);
+}
+.s-calm   { color: var(--green); background: var(--green-mid); border: 1px solid var(--green-border); }
+.s-watch  { color: var(--orange); background: var(--orange-mid); border: 1px solid var(--orange-border); }
+.s-alert  { color: var(--orange); background: var(--orange-mid); border: 1px solid var(--orange-border); }
+.s-danger { color: #ff6b6b; background: var(--burgundy-dim); border: 1px solid var(--burgundy-light); }
+.score-calm   { color: var(--green); }
+.score-watch  { color: var(--gold); }
+.score-alert  { color: var(--orange); }
+.score-danger { color: #ff6b6b; }
+
+.gauge-wrap { margin-bottom: 8px; }
+.gauge-track {
+  height: 4px; border-radius: 0; overflow: hidden; position: relative;
+  background: #2A2A2A;
+  background: linear-gradient(to right,
+    var(--green) 0%, var(--green) 30%,
+    var(--gold) 30%, var(--gold) 55%,
+    var(--orange) 55%, var(--orange) 75%,
+    #ff6b6b 75%, #ff6b6b 100%);
+}
+.gauge-needle {
+  position: absolute; top: -4px; width: 2px; height: 12px;
+  background: var(--gold); border-radius: 0; transform: translateX(-50%);
+  box-shadow: 0 0 0 1px var(--bg);
+  transition: left 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+.gauge-ticks {
+  display: flex; justify-content: space-between;
+  font-size: 10px; color: var(--faint); margin-top: 6px;
+  font-family: var(--mono);
+}
+
+.stats-pills {
+  display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 10px; align-items: center;
+}
+.stat-pill {
+  display: inline-flex; align-items: center; gap: 4px;
+  background: var(--ghost); border: 1px solid var(--border);
+  border-radius: var(--r-sm); padding: 5px 12px;
+  font-size: 12px; color: var(--muted); font-weight: 500;
+  font-family: var(--font-sans);
+}
+.stat-pill:hover { border-color: var(--gold); background: var(--gold-dim); }
+.stat-pill strong {
+  color: var(--text); font-weight: 700;
+  font-family: var(--mono);
+}
+.stat-pill.red-pill    { background: var(--burgundy-dim); border-color: var(--burgundy-light); }
+.stat-pill.red-pill strong    { color: #ff6b6b; }
+.stat-pill.orange-pill { background: var(--orange-light); border-color: var(--orange-border); }
+.stat-pill.orange-pill strong { color: var(--gold); }
+
+.briefs-ctrl { margin-left: auto; display: flex; gap: 6px; align-items: center; }
+.ctrl-btn {
+  font-size: 11px; color: var(--muted); cursor: pointer;
+  padding: 6px 14px; border-radius: var(--r-btn); border: 1px solid var(--border);
+  background: transparent; transition: all 0.2s var(--ease-hover);
+  user-select: none; white-space: nowrap; font-weight: 600; letter-spacing: 0.5px;
+  text-transform: uppercase; font-family: var(--font-sans);
+}
+.ctrl-btn:hover { background: var(--gold-dim); border-color: var(--gold); color: var(--gold); }
+
+/* ══ Market Snapshot — 设计规范: 卡片 hover lift + 左侧色条 ═════ */
+.snap-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+  gap: 8px; padding: 14px 16px 10px;
+}
+.snap-group-label {
+  grid-column: 1 / -1;
+  font-size: 10px; font-weight: 700; color: var(--muted);
+  text-transform: uppercase; letter-spacing: 1px;
+  padding: 8px 0 4px; margin-top: 6px;
+  border-bottom: 1px solid var(--border);
+  display: flex; align-items: center; gap: 6px;
+  font-family: var(--font-sans);
+}
+.snap-group-label:first-child { margin-top: 0; }
+.snap-card {
+  min-width: 170px; /* 防止窄屏下涨跌幅、价格等溢出边框 */
+  border-radius: var(--r-sm); padding: 12px 14px;
+  border: 1px solid var(--border); background: var(--bg-card);
+  transition: transform 0.15s var(--ease-hover), border-color var(--transition), box-shadow var(--transition);
+  text-decoration: none; display: block; color: inherit; position: relative;
+  overflow: hidden;
+}
+.snap-card:hover {
+  border-color: var(--gold); transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0,0,0,.3);
+  text-decoration: none;
+}
+.snap-card:hover::before {
+  content: ''; position: absolute; left: 0; top: 12px; bottom: 12px; width: 3px; background: var(--gold);
+}
+.snap-card.up   { border-left: 3px solid var(--green); }
+.snap-card.down { border-left: 3px solid #ff6b6b; }
+.snap-card.flat { border-left: 3px solid var(--border); }
+.snap-top { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 4px; }
+.snap-sym  { font-size: 9px; color: var(--faint); font-family: var(--mono); letter-spacing: 0.5px; font-weight: 600; }
+.snap-name { font-size: 12px; font-weight: 600; margin: 2px 0 6px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: var(--text); font-family: var(--font-sans); }
+.snap-price-row { display: flex; align-items: baseline; justify-content: space-between; gap: 6px; min-width: 0; }
+.snap-price { font-size: 18px; font-weight: 400; letter-spacing: -0.5px; font-variant-numeric: tabular-nums; font-family: var(--mono); color: var(--text); min-width: 0; overflow: hidden; text-overflow: ellipsis; }
+.snap-pct   { font-size: 14px; font-weight: 600; font-variant-numeric: tabular-nums; font-family: var(--mono); flex-shrink: 0; }
+.snap-change { font-size: 11px; color: var(--muted); margin-top: 4px; font-family: var(--mono); }
+.snap-range  { font-size: 9px; color: var(--faint); margin-top: 2px; }
+.snap-vol-row {
+  display: flex; align-items: center; gap: 4px;
+  margin-top: 8px; padding-top: 8px;
+  border-top: 1px solid var(--border);
+  font-size: 10px; color: var(--muted);
+}
+.vol-badge { font-size: 8.5px; font-weight: 700; padding: 2px 5px; border-radius: 1px; }
+.vol-surge { background: var(--orange-mid); color: var(--gold); }
+.vol-up    { background: var(--green-mid);  color: var(--green); }
+.vol-down  { background: var(--ghost); color: var(--muted); }
+.alert-badge { font-size: 9px; font-weight: 600; padding: 2px 6px; border-radius: 1px; color: var(--text); }
+.snap-footer {
+  font-size: 11px; color: var(--faint); text-align: right;
+  padding: 8px 20px 12px; border-top: 1px solid var(--border);
+  font-family: var(--mono);
+}
+
+/* ══ AI 市场综述 — 标题与正文层级 + 正式阅读字体 ═══════════════ */
+#sec-overview .card-header span:first-child {
+  font-family: var(--font-serif-bold);
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+.overview-body {
+  padding: 20px 24px; white-space: pre-wrap; line-height: 1.85;
+  font-size: 15px; font-weight: 400; color: var(--text2);
+  background: var(--bg-card);
+  border-left: 4px solid var(--gold);
+  word-wrap: break-word; overflow-wrap: break-word;
+  font-family: 'Noto Sans SC', -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+}
+
+/* ══ Options Strategy ════════════════════════════════ */
+.option-body {
+  padding: 12px 18px; white-space: pre-wrap; line-height: 1.75;
+  font-size: 13.5px; word-wrap: break-word; overflow-wrap: break-word;
+}
+.option-body.verified    { border-left: 4px solid var(--green); background: var(--green-light); }
+.option-body.not-viable  { background: var(--ghost); border-left: 4px solid var(--faint); color: var(--muted); }
+.option-body.unavailable { background: var(--orange-light); border-left: 4px solid var(--orange); }
+
+.option-candidates { padding: 10px 14px; background: var(--ghost); border-top: 1px solid var(--border); }
+.option-candidates-title {
+  font-size: 10.5px; color: var(--muted); font-weight: 800;
+  text-transform: uppercase; letter-spacing: .08em; margin-bottom: 12px;
+  display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
+}
+.option-dir-badge {
+  font-size: 10px; font-weight: 800; padding: 2px 8px; border-radius: 2px;
+  text-transform: uppercase; letter-spacing: .06em;
+}
+.option-dir-put  { background: var(--red-mid);   color: var(--red); }
+.option-dir-call { background: var(--green-mid); color: var(--green); }
+
+.option-table { width: 100%; border-collapse: collapse; font-size: 12px; }
+.option-table th {
+  text-align: left; padding: 8px 12px; background: var(--bg);
+  font-size: 10px; color: var(--muted); font-weight: 600;
+  text-transform: uppercase; letter-spacing: 0.5px;
+  border-bottom: 1px solid var(--border); white-space: nowrap;
+  font-family: var(--font-sans);
+}
+.option-table td { padding: 8px 12px; border-bottom: 1px solid var(--border); vertical-align: middle; color: var(--text); }
+.option-table tr:last-child td { border-bottom: none; }
+.option-table tbody tr:hover td { background: var(--ghost); }
+.otm-badge { display: inline-block; padding: 2px 6px; border-radius: 2px; font-size: 10px; font-weight: 600; color: var(--blue); background: var(--blue-light); }
+.lev-high { color: var(--green); font-weight: 700; }
+.lev-mid  { color: var(--gold); font-weight: 600; }
+.option-note {
+  font-size: 11px; color: var(--faint); margin-top: 10px;
+  padding: 10px 14px; background: var(--ghost); border-radius: 0;
+  border: 1px solid var(--border); border-left: 3px solid var(--gold);
+}
+.candidate-reason-row td { padding: 0 !important; border-top: none !important; }
+.candidate-reason-row:hover td { background: transparent !important; }
+.candidate-reason {
+  font-size: 12px; color: var(--muted); line-height: 1.5;
+  padding: 8px 12px 12px 12px !important; background: var(--ghost);
+  border-bottom: 1px solid var(--border) !important;
+}
+
+/* ══ News Briefs — 设计规范: 金强调 + 卡片 hover ═════════════════ */
+.briefs-list { padding: 14px 16px 10px; display: flex; flex-direction: column; gap: 10px; }
+.brief-card {
+  border-radius: var(--r); border: 1px solid var(--border);
+  overflow: hidden; background: var(--bg-card);
+  transition: transform 0.15s var(--ease-hover), border-color var(--transition), box-shadow var(--transition);
+}
+.brief-card:hover {
+  border-color: var(--gold); transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(193,154,107,0.15);
+}
+.brief-header {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 12px 18px;
+  background: var(--gold-dim);
+  border-bottom: 1px solid var(--border);
+  border-left: 4px solid var(--gold);
+  cursor: pointer; user-select: none;
+  transition: background 0.2s var(--ease-hover);
+}
+.brief-header:hover { background: var(--gold-active); }
+.brief-header-left { display: flex; align-items: center; gap: 10px; }
+.brief-topic-dot { display: none; }
+.brief-topic { font-weight: 600; color: var(--text); font-size: 14px; letter-spacing: 0.5px; font-family: var(--font-sans); }
+.brief-count {
+  font-size: 10px; color: var(--gold);
+  background: var(--gold-active); border: 1px solid var(--gold);
+  border-radius: 10px; padding: 3px 10px; font-weight: 600; letter-spacing: 0.5px;
+  font-family: var(--mono);
+}
+.brief-toggle {
+  font-size: 10px; width: 24px; height: 24px;
+  display: flex; align-items: center; justify-content: center;
+  border-radius: 50%; background: transparent; border: 1px solid var(--border);
+  color: var(--muted); transition: all 0.2s var(--ease-hover); flex-shrink: 0;
+}
+.brief-toggle:hover { border-color: var(--gold); color: var(--gold); }
+.brief-toggle.open { transform: rotate(0deg); }
+.brief-toggle.closed { transform: rotate(-90deg); }
+.brief-body {
+  padding: 14px 18px; font-size: 14px; line-height: 1.85;
+  color: var(--text2); background: var(--bg-card);
+  font-family: var(--font-sans);
+}
+.brief-sources {
+  padding: 8px 18px 10px; background: var(--ghost);
+  border-top: 1px solid var(--border); font-size: 12px; color: var(--muted);
+}
+.brief-sources.hidden { display: none; }
+.brief-sources-label {
+  margin-bottom: 6px; font-weight: 700; font-size: 10px;
+  text-transform: uppercase; letter-spacing: 0.5px;
+  font-family: var(--font-sans);
+}
+.brief-src-toggle {
+  padding: 8px 18px; background: var(--ghost);
+  border-top: 1px solid var(--border);
+  font-size: 11px; color: var(--muted); cursor: pointer;
+  user-select: none; transition: background 0.2s var(--ease-hover);
+  display: flex; align-items: center; gap: 4px;
+}
+.brief-src-toggle:hover { background: var(--gold-dim); color: var(--gold); }
+.brief-src-more {
+  display: inline-block; margin: 4px 0 2px;
+  font-size: 11px; color: var(--gold); cursor: pointer;
+  font-weight: 600; user-select: none;
+}
+.brief-src-more:hover { color: #d4af7a; }
+.brief-src-link {
+  display: inline-block; margin: 2px 4px 2px 0;
+  padding: 4px 12px; background: var(--bg-card); border: 1px solid var(--border);
+  border-radius: 2px; font-size: 11px; color: var(--muted);
+  max-width: 260px; overflow: hidden; text-overflow: ellipsis;
+  white-space: nowrap; vertical-align: middle; transition: all 0.2s var(--ease-hover);
+}
+.brief-src-link:hover { border-color: var(--gold); color: var(--gold); background: var(--gold-dim); text-decoration: none; }
+
+/* ══ Alert Items — 设计规范 05: Info / Warning / Critical ═════════ */
+.alerts-section-header {
+  display: flex; align-items: center; gap: 8px;
+  padding: 10px 20px; font-size: 11px; font-weight: 700;
+  letter-spacing: 1px; text-transform: uppercase;
+  border-bottom: 1px solid var(--border);
+  position: sticky; top: 48px; z-index: 10;
+  font-family: var(--font-sans);
+}
+.alerts-section-header.red-hdr {
+  background: var(--burgundy-dim);
+  color: #ff6b6b;
+  border-left: 4px solid var(--burgundy);
+  border-top: 1px solid var(--burgundy-light);
+}
+.alerts-section-header.yellow-hdr {
+  background: var(--orange-light);
+  color: var(--gold);
+  border-left: 4px solid var(--gold);
+  border-top: 1px solid var(--orange-border);
+}
+.alerts-section-header .section-count { margin-left: auto; font-size: 11px; font-weight: 600; opacity: .8; }
+.alerts-body-inner { padding: 10px 14px; }
+.empty-alerts { text-align: center; padding: 32px 20px; color: var(--faint); font-size: 14px; }
+
+.alert-item {
+  border-radius: var(--r-sm); margin-bottom: 8px; overflow: hidden;
+  border: 1px solid var(--border); background: var(--bg-card);
+  transition: border-color 0.2s var(--ease-hover), box-shadow var(--transition);
+}
+.alert-item:hover { border-color: var(--border); box-shadow: 0 2px 8px rgba(0,0,0,.25); }
+.alert-item:last-child { margin-bottom: 0; }
+.alert-item.level-red {
+  border-left: 4px solid var(--burgundy); background: var(--burgundy-dim);
+  animation: pulse-border 2s infinite;
+}
+@keyframes pulse-border {
+  0% { box-shadow: 0 0 0 0 rgba(78, 16, 16, 0.4); }
+  70% { box-shadow: 0 0 0 10px rgba(78, 16, 16, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(78, 16, 16, 0); }
+}
+.alert-item.level-yellow {
+  border-left: 4px solid var(--gold); background: var(--orange-light);
+}
+
+.alert-top { padding: 12px 16px 8px; display: flex; align-items: flex-start; gap: 12px; }
+.score-badge {
+  flex-shrink: 0; border-radius: var(--r-sm);
+  display: flex; flex-direction: row; align-items: baseline;
+  justify-content: center; padding: 6px 10px; gap: 2px;
+  border: 1px solid; white-space: nowrap;
+}
+.score-badge.level-red {
+  background: var(--burgundy-dim); border-color: var(--burgundy-light); color: #ff6b6b;
+}
+.score-badge.level-yellow {
+  background: var(--orange-mid); border-color: var(--orange-border); color: var(--gold);
+}
+.score-num {
+  font-size: 18px; font-weight: 700; line-height: 1; letter-spacing: -1px;
+  font-variant-numeric: tabular-nums; font-family: var(--mono);
+}
+.score-sub { font-size: 10px; font-weight: 600; letter-spacing: 0.5px; opacity: .8; }
+
+.alert-main { flex: 1; min-width: 0; }
+.alert-title { font-size: 14px; font-weight: 600; line-height: 1.45; color: var(--text); word-break: break-word; font-family: var(--font-sans); }
+.alert-topic-tag {
+  display: inline-block; font-size: 10px; color: var(--muted);
+  background: var(--ghost); border: 1px solid var(--border);
+  border-radius: 2px; padding: 3px 8px; margin-right: 6px;
+  vertical-align: middle; font-weight: 600;
+  text-transform: uppercase; letter-spacing: 0.5px;
+  font-family: var(--font-sans);
+}
+.alert-badges { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 6px; }
+.badge {
+  display: inline-flex; align-items: center; gap: 3px;
+  padding: 3px 8px; border-radius: var(--r-sm); font-size: 10px; font-weight: 700;
+  text-transform: uppercase; letter-spacing: 0.5px;
+}
+.badge-emg { background: var(--burgundy-dim); color: #ff6b6b; border: 1px solid var(--burgundy-light); }
+.badge-ms  { background: var(--green-light); color: var(--green); border: 1px solid var(--green-border); }
+
+.alert-meta {
+  padding: 0 16px 8px; display: flex; flex-wrap: wrap;
+  gap: 12px; font-size: 12px; color: var(--muted); align-items: center;
+  font-family: var(--mono);
+}
+.alert-meta-item { display: flex; align-items: center; gap: 4px; }
+
+.zh-trans {
+  margin: 0 16px 8px; padding: 8px 14px; border-radius: 0;
+  background: var(--blue-light); border-left: 4px solid var(--blue);
+  font-size: 13px; color: var(--blue); line-height: 1.5;
+  font-family: var(--font-sans);
+}
+
+.ai-box {
+  margin: 0 16px 8px; padding: 12px 16px; border-radius: 0;
+  background: var(--ghost); border: 1px solid var(--border);
+  border-left: 4px solid var(--purple);
+}
+.ai-box-label {
+  font-size: 10px; color: var(--purple); font-weight: 700;
+  margin-bottom: 6px; display: flex; align-items: center; gap: 5px;
+  text-transform: uppercase; letter-spacing: 0.5px;
+  font-family: var(--font-sans);
+}
+.summary-text { font-size: 14px; line-height: 1.7; color: var(--text2); font-family: var(--font-sans); }
+.en-text {
+  font-size: 12px; color: var(--muted); font-style: italic;
+  margin-top: 8px; padding: 8px 12px;
+  background: var(--ghost); border-left: 3px solid var(--border);
+  line-height: 1.55; border-radius: 0;
+  font-family: var(--font-sans);
+}
+.assets-row { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; align-items: center; }
+.assets-lbl { font-size: 12px; color: var(--muted); font-weight: 600; font-family: var(--font-sans); }
+.asset-chip {
+  display: inline-block; padding: 3px 8px; border-radius: 2px;
+  font-size: 11px; font-weight: 600; background: var(--blue-light); color: var(--blue);
+  font-family: var(--mono); border: 1px solid var(--blue);
+}
+.dir-bar {
+  display: flex; align-items: center; gap: 8px; margin-top: 8px;
+  padding: 8px 12px; border-radius: 0; font-size: 13px;
+  font-family: var(--font-sans);
+}
+.dir-bar.bullish { background: var(--green-light); color: var(--green); border: 1px solid var(--green-border); border-left: 3px solid var(--green); }
+.dir-bar.bearish { background: var(--burgundy-dim); color: #ff6b6b; border: 1px solid var(--burgundy-light); border-left: 3px solid var(--burgundy); }
+.dir-bar.neutral { background: var(--ghost); color: var(--muted); border: 1px solid var(--border); border-left: 3px solid var(--border); }
+.dir-chip { padding: 3px 8px; border-radius: 2px; font-size: 10px; font-weight: 700; flex-shrink: 0; text-transform: uppercase; letter-spacing: 0.5px; }
+.dir-chip.bullish { background: var(--green); color: var(--text); }
+.dir-chip.bearish { background: var(--burgundy); color: #ffcccc; }
+.dir-chip.neutral { background: var(--border); color: var(--text); }
+
+.raw-toggle {
+  display: inline-flex; align-items: center; gap: 4px;
+  font-size: 11px; color: var(--faint); cursor: pointer; margin-top: 8px;
+  padding: 4px 10px; border-radius: 2px; border: 1px solid var(--border);
+  background: transparent; transition: all 0.2s var(--ease-hover);
+  font-family: var(--font-sans);
+}
+.raw-toggle:hover { color: var(--gold); border-color: var(--gold); background: var(--gold-dim); }
+.raw-content {
+  font-size: 12px; color: var(--faint); font-style: italic;
+  margin-top: 8px; padding: 10px 14px; background: var(--ghost);
+  border-radius: 0; border: 1px solid var(--border); line-height: 1.55;
+  font-family: var(--font-sans);
+}
+.raw-content.hidden { display: none; }
+
+.summary-plain {
+  padding: 8px 14px 10px; font-size: 13px; color: var(--muted);
+  line-height: 1.6; border-left: 3px solid var(--gold);
+  margin: 0 16px 8px; background: var(--ghost);
+  font-family: var(--font-sans);
+}
+
+.alert-footer {
+  padding: 8px 16px 10px; display: flex; flex-wrap: wrap;
+  gap: 8px; font-size: 12px; align-items: center;
+  border-top: 1px solid var(--border); background: var(--ghost);
+  font-family: var(--font-sans);
+}
+.alert-link {
+  display: inline-flex; align-items: center; gap: 4px;
+  padding: 6px 14px; border-radius: var(--r-btn);
+  background: transparent; border: 1px solid var(--border);
+  font-size: 12px; color: var(--muted); transition: all 0.2s var(--ease-hover);
+  font-family: var(--font-sans);
+}
+.alert-link:hover { border-color: var(--gold); color: var(--gold); background: var(--gold-dim); text-decoration: none; }
+.alert-link.primary { color: var(--gold); border-color: var(--gold); background: var(--gold-dim); font-weight: 600; }
+
+.reason-tags { padding: 2px 12px 7px; font-size: 10px; color: var(--faint); }
+.reason-tag {
+  display: inline-block; margin-right: 4px; margin-bottom: 2px;
+  padding: 1px 6px; background: var(--ghost); border-radius: 2px;
+  border: 1px solid var(--border); font-family: var(--mono);
+}
+
+/* ══ Topic Groups — 设计规范: 深色 + 金/蓝强调 ═══════════════════ */
+.topic-list { padding: 14px 16px 10px; display: flex; flex-direction: column; gap: 10px; }
+.topic-group { border: 1px solid var(--border); border-radius: var(--r); overflow: hidden; background: var(--bg-card); }
+.topic-group-header {
+  display: flex; align-items: center; gap: 10px;
+  padding: 12px 18px; border-radius: 0;
+  cursor: pointer; transition: background 0.2s var(--ease-hover); user-select: none;
+  background: var(--blue-light);
+  border-left: 4px solid var(--blue);
+}
+.topic-group-header:hover { background: var(--bg-hover); }
+.topic-group-chevron { font-size: 10px; color: var(--blue); margin-left: auto; transition: transform 0.2s var(--ease-hover); opacity: .85; }
+.topic-group-chevron.open { transform: rotate(0deg); }
+.topic-group-chevron.closed { transform: rotate(-90deg); }
+.topic-group-name { font-weight: 600; font-size: 14px; color: var(--text); letter-spacing: 0.5px; font-family: var(--font-sans); }
+.topic-count {
+  font-size: 10px; color: var(--blue); font-weight: 600;
+  background: var(--blue-light); padding: 3px 10px; border-radius: 10px;
+  border: 1px solid var(--blue); font-family: var(--mono);
+}
+.topic-items-wrap { padding: 8px 16px 10px 24px; background: var(--bg-card); }
+.topic-item {
+  padding: 8px 0 8px 12px; border-left: 2px solid var(--border);
+  margin-bottom: 4px; transition: border-color 0.2s var(--ease-hover), background 0.2s var(--ease-hover);
+}
+.topic-item:hover { border-left-color: var(--gold); background: var(--ghost); }
+.topic-item-title { font-size: 13px; color: var(--text2); line-height: 1.4; font-family: var(--font-sans); }
+.topic-item-title a:hover { color: var(--gold); }
+.topic-item-meta  { font-size: 11px; color: var(--faint); margin-top: 3px; font-family: var(--mono); }
+
+/* ══ Topic Heatmap (legacy, kept for compat) ════════ */
+.hmx-change-badge {
+  display: inline-flex; align-items: center; gap: 2px;
+  font-size: 10px; font-weight: 800; padding: 2px 6px; border-radius: 2px;
+  white-space: nowrap; font-family: var(--mono);
+}
+.hmx-change-badge.up   { background: var(--green-light); color: var(--green); border: 1px solid var(--green-border); }
+.hmx-change-badge.down { background: var(--red-light);   color: var(--red); border: 1px solid var(--red-border); }
+.hmx-change-badge.flat { background: var(--ghost);        color: var(--faint); border: 1px solid var(--border); }
+.hmx-change-badge.new  { background: var(--blue-mid);     color: var(--blue); border: 1px solid var(--blue-border); }
+
+/* ══ Topic Compact Cards ════════════════════════════ */
+.tpc-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+  gap: 8px; padding: 14px 16px 14px;
+  background: var(--bg-card);
+}
+.tpc-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--r);
+  padding: 10px 12px 8px;
+  display: flex; flex-direction: column; gap: 6px;
+  transition: transform 0.15s var(--ease-hover), border-color 0.2s var(--ease-hover), box-shadow 0.2s var(--ease-hover);
+  cursor: default;
+  position: relative;
+}
+.tpc-card:hover {
+  border-color: var(--gold);
+  border-left: 3px solid var(--gold);
+  box-shadow: 0 4px 12px rgba(0,0,0,.3);
+  transform: translateY(-4px);
+}
+/* 顶部色条标识评分等级 */
+.tpc-card::before {
+  content: ''; position: absolute; top: 0; left: 0; right: 0;
+  height: 2px; border-radius: 4px 4px 0 0;
+}
+.tpc-card.score-high::before { background: linear-gradient(90deg, var(--burgundy), #ff6b6b); }
+.tpc-card.score-mid::before  { background: linear-gradient(90deg, var(--gold), var(--orange)); }
+.tpc-card.score-low::before  { background: linear-gradient(90deg, var(--blue), #7eb8e8); }
+
+/* 主题名称：固定两行高度，与评分区对齐 */
+.tpc-name {
+  font-size: 10px; font-weight: 700; color: var(--text);
+  line-height: 1.35;
+  min-height: 2.7em;
+  overflow: hidden; text-overflow: ellipsis;
+  display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;
+  margin-bottom: 4px;
+}
+
+/* 中部：评分框与「今日/昨日」上边界对齐 */
+.tpc-main {
+  display: flex; align-items: flex-start; justify-content: space-between; gap: 8px;
+  padding: 0;
+}
+
+/* 左侧：仅分数框（评分数字写在框内），与今日条数行顶对齐 */
+.tpc-score-box {
+  display: flex; flex-direction: column; align-items: center; justify-content: flex-start;
+  flex-shrink: 0;
+}
+.tpc-score-label {
+  display: none;
+}
+.tpc-score {
+  font-size: 14px; font-weight: 700; font-family: var(--mono);
+  padding: 4px 10px; border-radius: 3px;
+  min-width: 32px; text-align: center;
+  color: var(--text);
+  line-height: 1.2;
+}
+.tpc-score::after {
+  content: '分';
+  font-size: 0.5em;
+  font-weight: 500;
+  margin-left: 1px;
+  opacity: 0.9;
+}
+/* 覆盖内联样式，使评分徽章符合深色主题 */
+.tpc-card .tpc-score[style] {
+  background: var(--orange-mid) !important;
+  color: var(--gold) !important;
+  border: 1px solid var(--orange-border) !important;
+}
+.tpc-card.score-high .tpc-score[style] {
+  background: var(--burgundy-dim) !important;
+  color: #ff6b6b !important;
+  border: 1px solid var(--burgundy-light) !important;
+}
+.tpc-card.score-low .tpc-score[style] {
+  background: var(--blue-light) !important;
+  color: var(--blue) !important;
+  border: 1px solid var(--blue) !important;
+}
+
+/* 右侧：今日/昨日条数对比 */
+.tpc-counts {
+  display: flex; flex-direction: column; gap: 1px;
+  flex: 1; min-width: 0;
+}
+.tpc-count-row {
+  display: flex; align-items: baseline; justify-content: flex-end; gap: 3px;
+}
+.tpc-count-label {
+  font-size: 7.5px; color: var(--faint); font-weight: 600;
+  letter-spacing: .02em;
+}
+.tpc-count {
+  font-size: 16px; font-weight: 900; color: var(--text);
+  font-family: var(--mono); letter-spacing: -.5px; line-height: 1;
+}
+.tpc-count.today {
+  font-size: 18px;
+  color: var(--text);
+}
+.tpc-count.yesterday {
+  font-size: 13px;
+  color: var(--muted);
+}
+.tpc-unit {
+  font-size: 8px; color: var(--muted); font-weight: 600;
+}
+
+/* 底部：变化量 */
+.tpc-bottom {
+  display: flex; align-items: center; justify-content: flex-end;
+  padding-top: 3px; border-top: 1px solid var(--border);
+  font-size: 9px;
+}
+.tpc-delta {
+  font-weight: 900; font-family: var(--mono);
+  padding: 1px 5px; border-radius: 2px; font-size: 8px;
+}
+.tpc-delta.up   { color: var(--green); background: var(--green-light); }
+.tpc-delta.down { color: var(--red);   background: var(--red-light); }
+.tpc-delta.flat { color: var(--faint); background: var(--ghost); }
+.tpc-delta.new  { color: var(--blue);  background: var(--blue-light); }
+
+@media (max-width: 768px) {
+  .tpc-grid { grid-template-columns: repeat(auto-fill, minmax(105px, 1fr)); gap: 5px; }
+  .tpc-card { padding: 6px 7px 5px; gap: 3px; }
+  .tpc-count.today { font-size: 16px; }
+  .tpc-count.yesterday { font-size: 12px; }
+}
+@media (max-width: 480px) {
+  .tpc-grid { grid-template-columns: repeat(3, 1fr); gap: 5px; padding: 8px 10px 10px; }
+  .tpc-card { padding: 6px 7px; }
+  .tpc-count.today { font-size: 15px; }
+  .tpc-count.yesterday { font-size: 11px; }
+  .tpc-name { font-size: 9px; }
+}
+
+/* ══ Brief Market Impact — 设计规范 Critical 红 ═══════════════════ */
+.brief-impact {
+  margin: 0; padding: 10px 18px;
+  background: var(--burgundy-dim); border-left: 4px solid var(--burgundy);
+  font-size: 13px; font-weight: 600; color: #ff6b6b;
+  line-height: 1.5; font-family: var(--font-sans);
+}
+
+/* ══ Grok 核查标记 ══════════════════════════════════════════════════ */
+.grok-badge {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 2px 7px;
+  font-size: 10px; font-weight: 700;
+  color: var(--gold); background: var(--gold-dim);
+  border: 1px solid var(--gold); border-radius: 2px;
+  letter-spacing: 0.4px; font-family: var(--mono);
+  vertical-align: middle; cursor: default;
+  white-space: nowrap;
+}
+
+/* ══ Collapsible Long Content ════════════════════════ */
+.content-fold {
+  max-height: 4.5em; overflow: hidden; position: relative;
+  transition: max-height 0.3s var(--ease-hover);
+}
+.content-fold.expanded { max-height: none; }
+.content-fold:not(.expanded)::after {
+  content: ''; position: absolute; bottom: 0; left: 0; right: 0;
+  height: 2em;
+  background: linear-gradient(transparent, var(--bg-card));
+  pointer-events: none;
+}
+.fold-toggle {
+  display: inline-block; font-size: 11px; color: var(--gold);
+  cursor: pointer; padding: 3px 0; font-weight: 600;
+  margin-top: 4px; user-select: none;
+  transition: color 0.2s var(--ease-hover);
+  font-family: var(--font-sans);
+}
+.fold-toggle:hover { color: #d4af7a; }
+.alert-extra-links { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 4px; }
+.alert-extra-links.hidden { display: none; }
+
+/* ══ Heatmap Card Grid (legacy, replaced by ttr) ═══ */
+
+/* ══ Footer — 设计规范 ══════════════════════════════════════════ */
+.page-footer {
+  margin-top: 10px; padding: 16px 24px; border: 1px solid var(--border);
+  font-size: 11px; color: var(--faint); text-align: center;
+  background: var(--bg-card); border-radius: var(--r);
+  font-family: var(--mono); letter-spacing: 0.5px;
+}
+
+/* ══ Back to Top — 设计规范 01 按钮 Hover ═════════════════════════ */
+#back-to-top {
+  position: fixed; bottom: 24px; right: 24px; z-index: 200;
+  width: 40px; height: 40px; border-radius: var(--r-btn);
+  background: transparent; color: var(--text);
+  border: 1px solid var(--border);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 16px; cursor: pointer;
+  opacity: 0; transform: translateY(8px);
+  transition: all 0.2s var(--ease-hover);
+}
+#back-to-top.visible { opacity: 1; transform: translateY(0); }
+#back-to-top:hover { background: var(--gold-dim); border-color: var(--gold); color: var(--gold); box-shadow: 0 0 15px rgba(193,154,107,0.15); }
+
+/* ══ Responsive — 设计规范 移动端 ══════════════════════════════════ */
+@media (max-width: 640px) {
+  body { padding: 10px 12px 32px; background-size: 20px 20px; }
+  .sticky-nav { height: 44px; }
+  .nav-item { padding: 0 14px; font-size: 11px; }
+  .snap-grid { grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); padding: 12px; }
+  .page-header { padding: 20px 18px 16px; }
+  .page-header h1 { font-size: 18px; }
+  .hmx-table { font-size: 11.5px; }
+  .hmx-name-cell { max-width: 110px; font-size: 11px; }
+}
+</style>
+
+<script>
+function toggleCard(id) {
+  const el = document.getElementById(id);
+  const btn = document.getElementById(id + '-btn');
+  if (!el) return;
+  const hidden = el.classList.toggle('hidden');
+  if (btn) btn.textContent = hidden ? '▶ 展开' : '▼ 收起';
+}
+function toggleRaw(id) {
+  const el = document.getElementById('raw-' + id);
+  if (el) el.classList.toggle('hidden');
+}
+function expandAllBriefs() {
+  const briefsCard = document.getElementById('briefs');
+  const briefsBtn  = document.getElementById('briefs-btn');
+  if (briefsCard && briefsCard.classList.contains('hidden')) {
+    briefsCard.classList.remove('hidden');
+    if (briefsBtn) briefsBtn.textContent = '▼ 收起';
+  }
+  document.querySelectorAll('.brief-collapsible').forEach(e => e.classList.remove('hidden'));
+  document.querySelectorAll('[id^="brief-btn-"]').forEach(b => { b.textContent = '▼'; b.classList.remove('closed'); b.classList.add('open'); });
+}
+function collapseAllBriefs() {
+  document.querySelectorAll('.brief-collapsible').forEach(e => e.classList.add('hidden'));
+  document.querySelectorAll('[id^="brief-btn-"]').forEach(b => { b.textContent = '▶'; b.classList.remove('open'); b.classList.add('closed'); });
+}
+function toggleBrief(idx) {
+  const el = document.getElementById('brief-' + idx);
+  const btn = document.getElementById('brief-btn-' + idx);
+  if (!el || !btn) return;
+  const hidden = el.classList.toggle('hidden');
+  btn.textContent = hidden ? '▶' : '▼';
+  btn.classList.toggle('closed', hidden);
+  btn.classList.toggle('open', !hidden);
+}
+function toggleAlerts() {
+  const el = document.getElementById('alerts-body');
+  const btn = document.getElementById('alerts-toggle-btn');
+  if (!el) return;
+  const hidden = el.classList.toggle('hidden');
+  if (btn) btn.textContent = hidden ? '▶ 展开' : '▼ 收起';
+}
+function toggleTopicGroup(idx) {
+  const el = document.getElementById('tg-' + idx);
+  const chevron = document.getElementById('tg-chev-' + idx);
+  if (!el) return;
+  const hidden = el.classList.toggle('hidden');
+  if (chevron) {
+    chevron.textContent = hidden ? '▶' : '▼';
+    chevron.classList.toggle('closed', hidden);
+    chevron.classList.toggle('open', !hidden);
+  }
+}
+function initNav() {
+  const sections = document.querySelectorAll('[data-section]');
+  const navItems = document.querySelectorAll('.nav-item[data-target]');
+  if (!sections.length || !navItems.length) return;
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const id = entry.target.getAttribute('data-section');
+        navItems.forEach(n => {
+          n.classList.toggle('active', n.getAttribute('data-target') === id);
+        });
+      }
+    });
+  }, { threshold: 0.15, rootMargin: '-50px 0px -50% 0px' });
+  sections.forEach(s => observer.observe(s));
+}
+function initBackToTop() {
+  const btn = document.getElementById('back-to-top');
+  if (!btn) return;
+  window.addEventListener('scroll', () => {
+    btn.classList.toggle('visible', window.scrollY > 400);
+  }, { passive: true });
+  btn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+}
+function toggleBriefSrc(idx) {
+  const el = document.getElementById('brief-src-' + idx);
+  const btn = document.getElementById('brief-src-btn-' + idx);
+  if (!el) return;
+  const hidden = el.classList.toggle('hidden');
+  const total = el.querySelectorAll('a').length;
+  if (btn) btn.textContent = hidden
+    ? '▶ 原始来源（' + total + ' 条）'
+    : '▼ 收起来源';
+}
+function toggleBriefSrcMore(idx, total) {
+  const container = document.getElementById('brief-src-' + idx);
+  const moreBtn = document.getElementById('brief-src-more-' + idx);
+  if (!container || !moreBtn) return;
+  const extras = container.querySelectorAll('.brief-src-extra');
+  const isHidden = extras.length > 0 && extras[0].style.display === 'none';
+  extras.forEach(a => a.style.display = isHidden ? 'inline-block' : 'none');
+  moreBtn.textContent = isHidden
+    ? '▲ 收起'
+    : '▶ 还有 ' + (total - 3) + ' 条';
+}
+function toggleFold(id) {
+  const el = document.getElementById(id);
+  if (!el) return;
+  if (el.classList.contains('content-fold')) {
+    el.classList.toggle('expanded');
+    const btn = document.getElementById(id + '-btn');
+    if (btn) btn.textContent = el.classList.contains('expanded') ? '收起' : '展开全文';
+  } else {
+    el.classList.toggle('hidden');
+  }
+}
+document.addEventListener('DOMContentLoaded', () => { initNav(); initBackToTop(); });
+</script>
+<style>
+#watermark {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  pointer-events: none;
+  z-index: 9999;
+  overflow: hidden;
+}
+#watermark::before {
+  content: '';
+  position: absolute;
+  top: -50%; left: -50%;
+  width: 200%; height: 200%;
+  background-image: repeating-linear-gradient(
+    transparent 0,
+    transparent 1px
+  );
+  background-repeat: repeat;
+  background-size: 220px 120px;
+  background-image: none;
+}
+.wm-text {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 0;
+  overflow: hidden;
+}
+.wm-tile {
+  display: inline-block;
+  width: 360px;
+  height: 200px;
+  line-height: 200px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 400;
+  color: rgba(80, 100, 140, 0.07);
+  white-space: nowrap;
+  transform: rotate(-25deg);
+  user-select: none;
+  letter-spacing: 1.5px;
+}
+</style>
+</head>
+<body>
+<div id="watermark"><div class="wm-text" id="wm-text"></div></div>
+<script>
+(function(){
+  var c=document.getElementById('wm-text');
+  var cols=Math.ceil(window.innerWidth/360)+2;
+  var rows=Math.ceil(window.innerHeight/200)+2;
+  var total=(cols+2)*(rows+2);
+  var f='';
+  for(var i=0;i<total;i++){f+='<span class="wm-tile">门塔特的视界 / Mentat\'s Horizon</span>';}
+  c.innerHTML=f;
+})();
+</script>
+
+
+<nav class="sticky-nav">
+  <button class="nav-item active" data-target="header" onclick="document.getElementById('sec-header').scrollIntoView({behavior:'smooth'})">概览</button>
+  <div class="nav-sep"></div><button class="nav-item" data-target="comparison" onclick="document.getElementById('sec-comparison').scrollIntoView({behavior:'smooth'})">热度</button>
+  <div class="nav-sep"></div><button class="nav-item" data-target="snap" onclick="document.getElementById('sec-snap').scrollIntoView({behavior:'smooth'})">行情</button>
+  <div class="nav-sep"></div><button class="nav-item" data-target="overview" onclick="document.getElementById('sec-overview').scrollIntoView({behavior:'smooth'})">综述</button>
+  <div class="nav-sep"></div><button class="nav-item" data-target="options" onclick="document.getElementById('sec-options').scrollIntoView({behavior:'smooth'})">期权</button>
+  <div class="nav-sep"></div><button class="nav-item" data-target="briefs" onclick="document.getElementById('sec-briefs').scrollIntoView({behavior:'smooth'})">简报</button>
+  <div class="nav-sep"></div>
+  <button class="nav-item" data-target="alerts" onclick="document.getElementById('sec-alerts').scrollIntoView({behavior:'smooth'})">预警</button>
+  <div class="nav-sep"></div><button class="nav-item" data-target="topics" onclick="document.getElementById('sec-topics').scrollIntoView({behavior:'smooth'})">主题</button>
+</nav>
+
+
+<div class="page-header" id="sec-header" data-section="header">
+  <h1>市场资讯摘要 - 2026年04月27日</h1>
+  <div class="meta">
+    <span>2026-04-27 16:09:28</span>
+    
+  </div>
+</div>
+
+
+
+
+  
+
+
+<div class="sentiment-dashboard">
+  <div class="sentiment-top">
+    <div class="sentiment-left">
+      <div class="sentiment-title">市场情绪指数</div>
+      <div class="sentiment-desc">重大信号密集，市场波动风险显著上升</div>
+    </div>
+    <div class="sentiment-right">
+      <div class="sentiment-score score-danger">66.5</div>
+      <span class="sentiment-label s-danger">高度警戒</span>
+    </div>
+  </div>
+
+  <div class="stats-pills">
+    <div class="stat-pill"><strong>23</strong> 条信号</div>
+    <div class="stat-pill red-pill"><strong>4</strong> 红色</div>
+    <div class="stat-pill orange-pill"><strong>19</strong> 黄色</div>
+    <div class="stat-pill"><strong>6</strong> 个主题</div>
+    
+    <div class="stat-pill"><strong>3</strong> 多源确认</div>
+    
+  </div>
+
+  <div class="gauge-wrap">
+    <div class="gauge-track">
+      <div class="gauge-needle" style="left: 66.52%;"></div>
+    </div>
+    <div class="gauge-ticks">
+      <span>0 平静</span><span>35</span><span>50</span><span>65</span><span>100 警戒</span>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+
+
+
+<div class="card" id="sec-comparison" data-section="comparison">
+  <div class="card-header gold" onclick="toggleCard('comparison')">
+    <span>热点主题</span>
+    <span class="toggle-btn" id="comparison-btn">▼ 收起</span>
+  </div>
+  <div id="comparison" class="collapsible">
+    <div class="tpc-grid">
+    
+    
+      
+      
+      
+
+      
+      
+        
+        
+      
+
+      
+      
+        
+      
+
+      <div class="tpc-card score-mid">
+        <!-- 主题名称 -->
+        <div class="tpc-name" title="地缘与能源">地缘与能源</div>
+
+        <!-- 中部：左侧评分 + 右侧今日/昨日条数 -->
+        <div class="tpc-main">
+          <!-- 左侧：评分（带标签） -->
+          <div class="tpc-score-box">
+            <div class="tpc-score-label">评分</div>
+            <div class="tpc-score" style="background:#fff7ed;color:#b45309;border:1px solid #fcd34d;">68</div>
+          </div>
+
+          <!-- 右侧：条数对比（今日无标签，昨日显示「昨」） -->
+          <div class="tpc-counts">
+            <div class="tpc-count-row">
+              <span class="tpc-count today">10</span>
+              <span class="tpc-unit">条</span>
+            </div>
+            <div class="tpc-count-row">
+              <span class="tpc-count-label">昨</span>
+              <span class="tpc-count yesterday">0</span>
+              <span class="tpc-unit">条</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 底部：变化量 -->
+        <div class="tpc-bottom">
+          <span class="tpc-delta new">NEW</span>
+        </div>
+      </div>
+    
+    
+    
+      
+      
+      
+
+      
+      
+        
+        
+      
+
+      
+      
+        
+      
+
+      <div class="tpc-card score-mid">
+        <!-- 主题名称 -->
+        <div class="tpc-name" title="FOMC/美联储">FOMC/美联储</div>
+
+        <!-- 中部：左侧评分 + 右侧今日/昨日条数 -->
+        <div class="tpc-main">
+          <!-- 左侧：评分（带标签） -->
+          <div class="tpc-score-box">
+            <div class="tpc-score-label">评分</div>
+            <div class="tpc-score" style="background:#fff7ed;color:#b45309;border:1px solid #fcd34d;">67</div>
+          </div>
+
+          <!-- 右侧：条数对比（今日无标签，昨日显示「昨」） -->
+          <div class="tpc-counts">
+            <div class="tpc-count-row">
+              <span class="tpc-count today">5</span>
+              <span class="tpc-unit">条</span>
+            </div>
+            <div class="tpc-count-row">
+              <span class="tpc-count-label">昨</span>
+              <span class="tpc-count yesterday">0</span>
+              <span class="tpc-unit">条</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 底部：变化量 -->
+        <div class="tpc-bottom">
+          <span class="tpc-delta new">NEW</span>
+        </div>
+      </div>
+    
+    
+    
+      
+      
+      
+
+      
+      
+        
+        
+      
+
+      
+      
+        
+      
+
+      <div class="tpc-card score-mid">
+        <!-- 主题名称 -->
+        <div class="tpc-name" title="通胀/就业/GDP（CPI/PCE/NFP/PMI）">通胀/就业/GDP（CPI/PCE/NFP/PMI）</div>
+
+        <!-- 中部：左侧评分 + 右侧今日/昨日条数 -->
+        <div class="tpc-main">
+          <!-- 左侧：评分（带标签） -->
+          <div class="tpc-score-box">
+            <div class="tpc-score-label">评分</div>
+            <div class="tpc-score" style="background:#fff7ed;color:#b45309;border:1px solid #fcd34d;">70</div>
+          </div>
+
+          <!-- 右侧：条数对比（今日无标签，昨日显示「昨」） -->
+          <div class="tpc-counts">
+            <div class="tpc-count-row">
+              <span class="tpc-count today">4</span>
+              <span class="tpc-unit">条</span>
+            </div>
+            <div class="tpc-count-row">
+              <span class="tpc-count-label">昨</span>
+              <span class="tpc-count yesterday">0</span>
+              <span class="tpc-unit">条</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 底部：变化量 -->
+        <div class="tpc-bottom">
+          <span class="tpc-delta new">NEW</span>
+        </div>
+      </div>
+    
+    
+    
+      
+      
+      
+
+      
+      
+        
+        
+      
+
+      
+      
+        
+      
+
+      <div class="tpc-card score-mid">
+        <!-- 主题名称 -->
+        <div class="tpc-name" title="科技巨头/财报季">科技巨头/财报季</div>
+
+        <!-- 中部：左侧评分 + 右侧今日/昨日条数 -->
+        <div class="tpc-main">
+          <!-- 左侧：评分（带标签） -->
+          <div class="tpc-score-box">
+            <div class="tpc-score-label">评分</div>
+            <div class="tpc-score" style="background:#fff7ed;color:#b45309;border:1px solid #fcd34d;">56</div>
+          </div>
+
+          <!-- 右侧：条数对比（今日无标签，昨日显示「昨」） -->
+          <div class="tpc-counts">
+            <div class="tpc-count-row">
+              <span class="tpc-count today">1</span>
+              <span class="tpc-unit">条</span>
+            </div>
+            <div class="tpc-count-row">
+              <span class="tpc-count-label">昨</span>
+              <span class="tpc-count yesterday">0</span>
+              <span class="tpc-unit">条</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 底部：变化量 -->
+        <div class="tpc-bottom">
+          <span class="tpc-delta new">NEW</span>
+        </div>
+      </div>
+    
+    
+    
+      
+      
+      
+
+      
+      
+        
+        
+      
+
+      
+      
+        
+      
+
+      <div class="tpc-card score-high">
+        <!-- 主题名称 -->
+        <div class="tpc-name" title="突发事件与监管">突发事件与监管</div>
+
+        <!-- 中部：左侧评分 + 右侧今日/昨日条数 -->
+        <div class="tpc-main">
+          <!-- 左侧：评分（带标签） -->
+          <div class="tpc-score-box">
+            <div class="tpc-score-label">评分</div>
+            <div class="tpc-score" style="background:#fef2f2;color:#c01818;border:1px solid #fca5a5;">72</div>
+          </div>
+
+          <!-- 右侧：条数对比（今日无标签，昨日显示「昨」） -->
+          <div class="tpc-counts">
+            <div class="tpc-count-row">
+              <span class="tpc-count today">1</span>
+              <span class="tpc-unit">条</span>
+            </div>
+            <div class="tpc-count-row">
+              <span class="tpc-count-label">昨</span>
+              <span class="tpc-count yesterday">0</span>
+              <span class="tpc-unit">条</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 底部：变化量 -->
+        <div class="tpc-bottom">
+          <span class="tpc-delta new">NEW</span>
+        </div>
+      </div>
+    
+    
+    
+      
+      
+      
+
+      
+      
+        
+        
+      
+
+      
+      
+        
+      
+
+      <div class="tpc-card score-mid">
+        <!-- 主题名称 -->
+        <div class="tpc-name" title="其他">其他</div>
+
+        <!-- 中部：左侧评分 + 右侧今日/昨日条数 -->
+        <div class="tpc-main">
+          <!-- 左侧：评分（带标签） -->
+          <div class="tpc-score-box">
+            <div class="tpc-score-label">评分</div>
+            <div class="tpc-score" style="background:#fff7ed;color:#b45309;border:1px solid #fcd34d;">57</div>
+          </div>
+
+          <!-- 右侧：条数对比（今日无标签，昨日显示「昨」） -->
+          <div class="tpc-counts">
+            <div class="tpc-count-row">
+              <span class="tpc-count today">2</span>
+              <span class="tpc-unit">条</span>
+            </div>
+            <div class="tpc-count-row">
+              <span class="tpc-count-label">昨</span>
+              <span class="tpc-count yesterday">0</span>
+              <span class="tpc-unit">条</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 底部：变化量 -->
+        <div class="tpc-bottom">
+          <span class="tpc-delta new">NEW</span>
+        </div>
+      </div>
+    
+    
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+<div class="card" id="sec-snap" data-section="snap">
+  <div class="card-header" onclick="toggleCard('snap')">
+    <span>实时行情快照</span>
+    <span class="toggle-btn" id="snap-btn">▼ 收起</span>
+  </div>
+  <div id="snap" class="collapsible">
+  <div class="snap-grid">
+  
+  
+  
+  
+  <div class="snap-group-label">📊 美股指数</div>
+  
+  
+  
+  <a href="https://finance.yahoo.com/quote/%5EGSPC" target="_blank"
+     class="snap-card up">
+    <div class="snap-top">
+      <span class="snap-sym">^GSPC</span>
+      
+    </div>
+    <div class="snap-name" title="标普500 (S&amp;P 500)">标普500</div>
+    <div class="snap-price-row">
+      <span class="snap-price">7,165.08</span>
+      <span class="snap-pct" style="color:var(--green);">+0.80%</span>
+    </div>
+    
+    <div class="snap-change">+56.68</div>
+    
+    <div class="snap-range">振幅 0.78%　7,112.82 ↔ 7,168.59</div>
+    
+    
+    <div class="snap-vol-row">
+      
+      <span>4.61B</span>
+      <span style="color:var(--faint);">均5.11B</span>
+      <span style="color:var(--faint);">×0.9</span>
+    </div>
+    
+    
+  </a>
+  
+  
+  
+  
+  <a href="https://finance.yahoo.com/quote/%5EDJI" target="_blank"
+     class="snap-card flat">
+    <div class="snap-top">
+      <span class="snap-sym">^DJI</span>
+      
+    </div>
+    <div class="snap-name" title="道琼斯指数 (DJIA)">道琼斯指数</div>
+    <div class="snap-price-row">
+      <span class="snap-price">49,230.71</span>
+      <span class="snap-pct" style="color:var(--muted);">-0.16%</span>
+    </div>
+    
+    <div class="snap-change">-79.59</div>
+    
+    <div class="snap-range">振幅 0.62%　49,085.75 ↔ 49,393.34</div>
+    
+    
+    <div class="snap-vol-row">
+      
+      <span>537.0M</span>
+      <span style="color:var(--faint);">均486.3M</span>
+      <span style="color:var(--faint);">×1.1</span>
+    </div>
+    
+    
+  </a>
+  
+  
+  
+  
+  <a href="https://finance.yahoo.com/quote/%5EIXIC" target="_blank"
+     class="snap-card up">
+    <div class="snap-top">
+      <span class="snap-sym">^IXIC</span>
+      
+      <span class="alert-badge" style="background:var(--green);">⚡</span>
+      
+    </div>
+    <div class="snap-name" title="纳斯达克综合 (NASDAQ)">纳斯达克综合</div>
+    <div class="snap-price-row">
+      <span class="snap-price">24,836.60</span>
+      <span class="snap-pct" style="color:var(--green);">+1.63%</span>
+    </div>
+    
+    <div class="snap-change">+398.10</div>
+    
+    <div class="snap-range">振幅 1.35%　24,524.37 ↔ 24,854.04</div>
+    
+    
+    <div class="snap-vol-row">
+      
+      <span>10.20B</span>
+      <span style="color:var(--faint);">均9.13B</span>
+      <span style="color:var(--faint);">×1.1</span>
+    </div>
+    
+    
+  </a>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <a href="https://finance.yahoo.com/quote/%5EVIX" target="_blank"
+     class="snap-card down">
+    <div class="snap-top">
+      <span class="snap-sym">^VIX</span>
+      
+    </div>
+    <div class="snap-name" title="VIX 恐慌指数">VIX 恐慌指数</div>
+    <div class="snap-price-row">
+      <span class="snap-price">19.16</span>
+      <span class="snap-pct" style="color:var(--red);">+2.41%</span>
+    </div>
+    
+    <div class="snap-change">+0.45</div>
+    
+    <div class="snap-range">振幅 0.43%　19.15 ↔ 19.23</div>
+    
+    
+    
+  </a>
+  
+  
+  
+  
+  
+  
+  
+  <div class="snap-group-label">🥇 贵金属</div>
+  
+  
+  
+  <a href="https://finance.yahoo.com/quote/GC%3DF" target="_blank"
+     class="snap-card flat">
+    <div class="snap-top">
+      <span class="snap-sym">GC=F</span>
+      
+    </div>
+    <div class="snap-name" title="黄金期货 (GOLD)">黄金期货</div>
+    <div class="snap-price-row">
+      <span class="snap-price">$4,727</span>
+      <span class="snap-pct" style="color:var(--muted);">-0.28%</span>
+    </div>
+    
+    <div class="snap-change">-14</div>
+    
+    <div class="snap-range">振幅 1.25%　$4,687 ↔ $4,746</div>
+    
+    
+    <div class="snap-vol-row">
+      
+      <span class="vol-badge vol-surge">⚡超量</span>
+      
+      <span>27.7K</span>
+      <span style="color:var(--faint);">均647</span>
+      <span style="color:var(--faint);">×42.8</span>
+    </div>
+    
+    
+  </a>
+  
+  
+  
+  
+  <a href="https://finance.yahoo.com/quote/SI%3DF" target="_blank"
+     class="snap-card down">
+    <div class="snap-top">
+      <span class="snap-sym">SI=F</span>
+      
+    </div>
+    <div class="snap-name" title="白银期货 (SILVER)">白银期货</div>
+    <div class="snap-price-row">
+      <span class="snap-price">75.75</span>
+      <span class="snap-pct" style="color:var(--red);">-0.87%</span>
+    </div>
+    
+    <div class="snap-change">-0.66</div>
+    
+    <div class="snap-range">振幅 2.44%　74.69 ↔ 76.56</div>
+    
+    
+    <div class="snap-vol-row">
+      
+      <span class="vol-badge vol-surge">⚡超量</span>
+      
+      <span>11.1K</span>
+      <span style="color:var(--faint);">均172</span>
+      <span style="color:var(--faint);">×64.5</span>
+    </div>
+    
+    
+  </a>
+  
+  
+  
+  
+  <a href="https://finance.yahoo.com/quote/HG%3DF" target="_blank"
+     class="snap-card flat">
+    <div class="snap-top">
+      <span class="snap-sym">HG=F</span>
+      
+    </div>
+    <div class="snap-name" title="铜期货 (COPPER)">铜期货</div>
+    <div class="snap-price-row">
+      <span class="snap-price">$6.105</span>
+      <span class="snap-pct" style="color:var(--muted);">+0.27%</span>
+    </div>
+    
+    <div class="snap-change">+0.017</div>
+    
+    <div class="snap-range">振幅 1.24%　$6.000 ↔ $6.076</div>
+    
+    
+    <div class="snap-vol-row">
+      
+      <span class="vol-badge vol-surge">⚡超量</span>
+      
+      <span>5.7K</span>
+      <span style="color:var(--faint);">均817</span>
+      <span style="color:var(--faint);">×7.0</span>
+    </div>
+    
+    
+  </a>
+  
+  
+  
+  
+  
+  
+  
+  <div class="snap-group-label">🛢️ 能源</div>
+  
+  
+  
+  <a href="https://finance.yahoo.com/quote/CL%3DF" target="_blank"
+     class="snap-card up">
+    <div class="snap-top">
+      <span class="snap-sym">CL=F</span>
+      
+      <span class="alert-badge" style="background:var(--green);">⚡</span>
+      
+    </div>
+    <div class="snap-name" title="WTI 原油 (CRUDE OIL)">WTI 原油</div>
+    <div class="snap-price-row">
+      <span class="snap-price">$96.83</span>
+      <span class="snap-pct" style="color:var(--green);">+2.57%</span>
+    </div>
+    
+    <div class="snap-change">+2.43</div>
+    
+    <div class="snap-range">振幅 1.99%　$94.99 ↔ $96.87</div>
+    
+    
+    <div class="snap-vol-row">
+      
+      <span class="vol-badge vol-down">⬇极缩</span>
+      
+      <span>33.6K</span>
+      <span style="color:var(--faint);">均274.1K</span>
+      <span style="color:var(--faint);">×0.1</span>
+    </div>
+    
+    
+  </a>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <div class="snap-group-label">📉 美债收益率</div>
+  
+  
+  
+  <a href="https://finance.yahoo.com/quote/%5ETNX" target="_blank"
+     class="snap-card down">
+    <div class="snap-top">
+      <span class="snap-sym">^TNX</span>
+      
+    </div>
+    <div class="snap-name" title="10年期美债收益率">10年期美债收益率</div>
+    <div class="snap-price-row">
+      <span class="snap-price">4.310%</span>
+      <span class="snap-pct" style="color:var(--red);">-0.30%</span>
+    </div>
+    
+    <div class="snap-change">-1.3bp</div>
+    
+    <div class="snap-range">振幅 1.23%　4.300% ↔ 4.353%</div>
+    
+    
+    
+  </a>
+  
+  
+  
+  
+  <a href="https://finance.yahoo.com/quote/%5EFVX" target="_blank"
+     class="snap-card down">
+    <div class="snap-top">
+      <span class="snap-sym">^FVX</span>
+      
+    </div>
+    <div class="snap-name" title="5年期美债收益率">5年期美债收益率</div>
+    <div class="snap-price-row">
+      <span class="snap-price">3.920%</span>
+      <span class="snap-pct" style="color:var(--red);">-0.81%</span>
+    </div>
+    
+    <div class="snap-change">-3.2bp</div>
+    
+    <div class="snap-range">振幅 1.64%　3.913% ↔ 3.978%</div>
+    
+    
+    
+  </a>
+  
+  
+  
+  
+  <a href="https://finance.yahoo.com/quote/%5ETYX" target="_blank"
+     class="snap-card flat">
+    <div class="snap-top">
+      <span class="snap-sym">^TYX</span>
+      
+    </div>
+    <div class="snap-name" title="30年期美债收益率">30年期美债收益率</div>
+    <div class="snap-price-row">
+      <span class="snap-price">4.916%</span>
+      <span class="snap-pct" style="color:var(--muted);">-0.04%</span>
+    </div>
+    
+    <div class="snap-change">-0.2bp</div>
+    
+    <div class="snap-range">振幅 0.91%　4.899% ↔ 4.944%</div>
+    
+    
+    
+  </a>
+  
+  
+  
+  
+  
+  
+  
+  <div class="snap-group-label">💱 外汇</div>
+  
+  
+  
+  <a href="https://finance.yahoo.com/quote/DX-Y.NYB" target="_blank"
+     class="snap-card flat">
+    <div class="snap-top">
+      <span class="snap-sym">DX-Y.NYB</span>
+      
+    </div>
+    <div class="snap-name" title="美元指数 (DXY)">美元指数</div>
+    <div class="snap-price-row">
+      <span class="snap-price">98.372</span>
+      <span class="snap-pct" style="color:var(--muted);">-0.16%</span>
+    </div>
+    
+    <div class="snap-change">-0.161</div>
+    
+    <div class="snap-range">振幅 1.00%　98.36 ↔ 99.34</div>
+    
+    
+    
+  </a>
+  
+  
+  
+  
+  <a href="https://finance.yahoo.com/quote/CNH%3DX" target="_blank"
+     class="snap-card flat">
+    <div class="snap-top">
+      <span class="snap-sym">CNH=X</span>
+      
+    </div>
+    <div class="snap-name" title="离岸人民币 (USD/CNH)">离岸人民币</div>
+    <div class="snap-price-row">
+      <span class="snap-price">6.8246</span>
+      <span class="snap-pct" style="color:var(--muted);">-0.12%</span>
+    </div>
+    
+    <div class="snap-change">-0.0080</div>
+    
+    <div class="snap-range">振幅 0.21%　6.8237 ↔ 6.8380</div>
+    
+    
+    
+  </a>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <div class="snap-group-label">₿ 加密货币</div>
+  
+  
+  
+  <a href="https://finance.yahoo.com/quote/BTC-USD" target="_blank"
+     class="snap-card down">
+    <div class="snap-top">
+      <span class="snap-sym">BTC-USD</span>
+      
+      <span class="alert-badge" style="background:var(--red);">⚡</span>
+      
+    </div>
+    <div class="snap-name" title="比特币 (BTC/USD)">比特币</div>
+    <div class="snap-price-row">
+      <span class="snap-price">$77,670</span>
+      <span class="snap-pct" style="color:var(--red);">-1.27%</span>
+    </div>
+    
+    <div class="snap-change">-1,000</div>
+    
+    <div class="snap-range">振幅 2.31%　$77,602 ↔ $79,420</div>
+    
+    
+    <div class="snap-vol-row">
+      
+      <span>30.70B</span>
+      <span style="color:var(--faint);">均34.69B</span>
+      <span style="color:var(--faint);">×0.9</span>
+    </div>
+    
+    
+  </a>
+  
+  
+  
+  
+  <a href="https://finance.yahoo.com/quote/ETH-USD" target="_blank"
+     class="snap-card down">
+    <div class="snap-top">
+      <span class="snap-sym">ETH-USD</span>
+      
+      <span class="alert-badge" style="background:var(--red);">⚡</span>
+      
+    </div>
+    <div class="snap-name" title="以太坊 (ETH/USD)">以太坊</div>
+    <div class="snap-price-row">
+      <span class="snap-price">2,316.93</span>
+      <span class="snap-pct" style="color:var(--red);">-2.25%</span>
+    </div>
+    
+    <div class="snap-change">-53.39</div>
+    
+    <div class="snap-range">振幅 3.49%　2,316.75 ↔ 2,399.44</div>
+    
+    
+    <div class="snap-vol-row">
+      
+      <span>15.04B</span>
+      <span style="color:var(--faint);">均16.61B</span>
+      <span style="color:var(--faint);">×0.9</span>
+    </div>
+    
+    
+  </a>
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  </div>
+  <div class="snap-footer">
+    数据来源：Yahoo Finance · 点击跳转详情 · 量比 = 当日成交量 ÷ 10日均量
+  </div>
+  </div>
+</div>
+
+
+
+
+<div class="card" id="sec-overview" data-section="overview">
+  <div class="card-header blue" onclick="toggleCard('overview')">
+    <span>AI 市场综述</span>
+    <span class="toggle-btn" id="overview-btn">▼ 收起</span>
+  </div>
+  <div id="overview" class="collapsible">
+    <div class="overview-body">【今日看点】
+今天市场有点“分裂”：纳斯达克大涨1.63%创新高，但道指微跌0.16%，标普500涨0.8%。最扎眼的是原油飙涨2.57%到96.83美元，黄金和白银却跌了。美债收益率下滑，美元指数走弱，比特币和以太坊也跌了。整体看，科技股和能源股在撑场面，但避险资产在退潮，市场情绪有点纠结。
+
+【三件大事】
+1. 【地缘政治】伊朗提议重开霍尔木兹海峡，但被美国视为“非启动性”方案。原油价格应声回落，美股期货跳涨至历史新高。关键数据：WTI原油涨2.57%至96.83美元，地缘风险缓和预期推高风险资产。
+
+2. 【基本面】本周三华尔街迎来“超级碗”：Alphabet、亚马逊、微软、Meta四大科技巨头同日财报，叠加美联储主席鲍威尔最后一次议息会议。市场聚焦业绩和利率信号，科技股提前大涨1.63%反应乐观预期。
+
+3. 【市场情绪】VIX恐慌指数涨2.41%至19.16，显示市场仍有不安。尽管科技股创新高，但道指下跌、黄金和比特币走弱，说明资金在板块间轮动，并非全面看多。
+
+【影响分析】
+- 地缘政治影响：伊朗提议虽被拒，但缓解了原油供应恐慌，油价短期承压。若谈判有实质进展，能源股和通胀预期可能降温，利好消费和科技板块。
+- 基本面影响：科技巨头财报和鲍威尔讲话是本周核心。若业绩超预期且利率信号偏鸽，可能推动纳指继续冲高；反之，高估值压力下回调风险加大。
+- 情绪面影响：VIX上升但股市创新高，显示市场处于“贪婪中带恐惧”的状态。资金从避险资产（黄金、债券）流向风险资产（科技、原油），但比特币下跌说明投机情绪分化。
+
+【接下来怎么看】
+未来1-3天，市场大概率围绕科技财报和美联储消息波动。标普500短期阻力在7200点附近，支撑在7100点；纳指若站稳25000点，可能继续上攻。关键风险：伊朗谈判反复导致油价剧烈波动，或科技财报不及预期引发抛售。建议紧盯周三的“超级碗”事件，别追高。</div>
+  </div>
+</div>
+
+
+
+
+
+
+<div class="card" id="sec-options" data-section="options">
+  
+  <div class="card-header gold" onclick="toggleCard('options')">
+    <span>期权策略方向 <span style="font-size:11px; font-weight:400; opacity:.85; margin-left:8px;">Futu 暂不可用，未核价</span></span>
+    <span class="toggle-btn" id="options-btn">▼ 收起</span>
+  </div>
+  
+  <div id="options" class="collapsible">
+    <div class="option-body unavailable">⚠️ Futu 连接异常，期权报价未能核验。
+错误：futu-api 未安装</div>
+    
+  </div>
+</div>
+
+
+
+
+<div class="card" id="sec-briefs" data-section="briefs">
+  <div class="card-header gold" onclick="toggleCard('briefs')">
+    <span>新闻简报 <span style="font-size:11px; font-weight:400; opacity:.75; margin-left:8px;">4 个主题</span></span>
+    <span style="display:flex;align-items:center;gap:8px;">
+      <span style="font-size:10px;color:var(--orange);opacity:.8;">按主题聚合</span>
+      <span class="toggle-btn" id="briefs-btn">▼ 收起</span>
+    </span>
+  </div>
+  <div id="briefs" class="collapsible">
+  <div class="briefs-list">
+  
+  
+  
+  <div class="brief-card">
+    <div class="brief-header" onclick="toggleBrief(1)">
+      <div class="brief-header-left">
+        <div class="brief-topic-dot"></div>
+        <span class="brief-topic">FOMC/美联储</span>
+        <span class="brief-count">5 条</span>
+      </div>
+      <span class="brief-toggle open" id="brief-btn-1">▼</span>
+    </div>
+    <div id="brief-1" class="brief-collapsible">
+      
+      
+      
+      
+      
+        
+        <div class="brief-body">基于已核实信息，美联储权力交接与市场风险偏好形成微妙对冲。鲍威尔任内最后一次新闻发布会恰逢科技巨头财报集中发布，市场短期波动率可能上升。参议员Tillis转向支持Warsh，叠加《经济学人》对其改革力度偏保守的评估，暗示美联储政策连续性大概率维持，这降低了极端政策转向的尾部风险。财长Bessent为美元互换额度辩护，阿联酋寻求资金支持，显示新兴市场流动性压力仍在，但美联储工具储备充足。匿名文章与起诉事件反映华盛顿政治博弈加剧，但尚未直接冲击金融定价。整体看，政策过渡平稳预期与科技股财报季共振，市场情绪偏向积极。</div>
+        <div class="brief-impact">判断为中性。理由：政策连续性预期对冲了政治噪音，但财报季与人事交接叠加带来短期不确定性。</div>
+      
+      <div class="brief-sources hidden" id="brief-src-1">
+        
+        <a class="brief-src-link"
+           href="https://www.marketwatch.com/story/wall-streets-super-bowl-wednesday-alphabet-amazon-microsoft-and-meta-report-along-with-powells-last-fed-meeting-88eb1710?mod=mw_rss_topstories" target="_blank"
+           >Wall Street’s Super Bowl Wednesday: Alph…</a>
+        
+        <a class="brief-src-link"
+           href="https://www.marketwatch.com/story/sen-thom-tillis-drops-opposition-says-hell-back-kevin-warshs-fed-confirmation-b7252136?mod=mw_rss_topstories" target="_blank"
+           >Sen. Thom Tillis drops opposition, says …</a>
+        
+        <a class="brief-src-link"
+           href="https://www.economist.com/finance-and-economics/2026/04/26/will-kevin-warsh-trumpify-the-federal-reserve" target="_blank"
+           >Will Kevin Warsh Trumpify the Federal Re…</a>
+        
+        <a class="brief-src-link brief-src-extra"
+           href="https://www.zerohedge.com/markets/bessent-defends-us-dollar-swap-lines-uae-considers-formal-funding-request" target="_blank"
+           style="display:none;">Bessent Defends US Dollar Swap Lines As …</a>
+        
+        <a class="brief-src-link brief-src-extra"
+           href="https://www.zerohedge.com/political/was-atlantics-kash-patel-smear-setup-discredit-splc-indictment" target="_blank"
+           style="display:none;">Was The Atlantic&#39;s Kash Patel Smear A Se…</a>
+        
+        
+        <span class="brief-src-more" id="brief-src-more-1" onclick="toggleBriefSrcMore(1, 5)">▶ 还有 2 条</span>
+        
+      </div>
+      <div class="brief-src-toggle" onclick="toggleBriefSrc(1)">
+        <span id="brief-src-btn-1">▶ 原始来源（5 条）</span>
+      </div>
+    </div>
+  </div>
+  
+  <div class="brief-card">
+    <div class="brief-header" onclick="toggleBrief(2)">
+      <div class="brief-header-left">
+        <div class="brief-topic-dot"></div>
+        <span class="brief-topic">通胀/就业/GDP（CPI/PCE/NFP/PMI）</span>
+        <span class="brief-count">4 条</span>
+      </div>
+      <span class="brief-toggle open" id="brief-btn-2">▼</span>
+    </div>
+    <div id="brief-2" class="brief-collapsible">
+      
+      
+      
+      
+      
+        
+        <div class="brief-body">基于最新事实，伊朗提出重新开放霍尔木兹海峡的提议被市场视为“非启动性”，叠加原油价格回落与美股期货跳涨至历史新高，显示地缘风险溢价正在快速消退。美伊谈判中力量对比已发生决定性转变，伊朗将海峡武器化的策略失败，美国通过持续施压削弱其石油变现能力，这进一步缓解了供应链中断的担忧。同时，美国正敦促盟友接受更高价格以减少对中国关键矿产的依赖，凸显全球供应链重构压力，但短期内对通胀影响有限。加州“亿万富翁税”提案推进至投票阶段，可能加剧市场对税收政策不确定性的担忧，但尚未形成即时冲击。整体看，地缘缓和与能源成本下降主导短期情绪，而结构性去风险化进程则构成中长期变量。</div>
+        <div class="brief-impact">综合判断：利多。地缘风险降温与能源价格回落支撑风险资产偏好。</div>
+      
+      <div class="brief-sources hidden" id="brief-src-2">
+        
+        <a class="brief-src-link"
+           href="https://www.zerohedge.com/markets/futures-slide-oil-jumps-3-week-high-after-iran-talks-collapse" target="_blank"
+           >Futures Jump To Record High After Report…</a>
+        
+        <a class="brief-src-link"
+           href="https://www.zerohedge.com/geopolitical/reality-behind-us-iran-negotiations" target="_blank"
+           >The Reality Behind US-Iran Negotiations</a>
+        
+        <a class="brief-src-link"
+           href="https://www.zerohedge.com/political/californias-billionaire-tax-proposal-has-slippery-slope-lever" target="_blank"
+           >California&#39;s Billionaire Tax Proposal Ha…</a>
+        
+        <a class="brief-src-link brief-src-extra"
+           href="https://www.zerohedge.com/markets/national-security-premium-us-plan-counter-china-critical-miners-could-drive-global-prices" target="_blank"
+           style="display:none;">&#34;The National Security Premium&#34;: US Plan…</a>
+        
+        
+        <span class="brief-src-more" id="brief-src-more-2" onclick="toggleBriefSrcMore(2, 4)">▶ 还有 1 条</span>
+        
+      </div>
+      <div class="brief-src-toggle" onclick="toggleBriefSrc(2)">
+        <span id="brief-src-btn-2">▶ 原始来源（4 条）</span>
+      </div>
+    </div>
+  </div>
+  
+  <div class="brief-card">
+    <div class="brief-header" onclick="toggleBrief(3)">
+      <div class="brief-header-left">
+        <div class="brief-topic-dot"></div>
+        <span class="brief-topic">地缘与能源</span>
+        <span class="brief-count">10 条</span>
+      </div>
+      <span class="brief-toggle open" id="brief-btn-3">▼</span>
+    </div>
+    <div id="brief-3" class="brief-collapsible">
+      
+      
+      
+      
+      
+        
+        <div class="brief-body">地缘冲突升级与能源供应博弈正主导市场情绪。乌克兰袭击事件与欧盟对华制裁僵局加剧了地缘不确定性，而中国金属制造商创下2016年以来最强季度利润，显示大宗商品价格持续受益于中东危机。WTI原油已上涨2.39%至96.66美元，高盛上调布伦特原油第四季度均价预测至90美元/桶，但国际能源署宣布释放超4亿桶战略储备，美国贡献1.72亿桶，这将在120天内显著增加供应，压制油价上行空间。德国精英阶层拒绝调整政策，可能拖累欧洲经济复苏，而中欧铁路网络在地缘冲突中凸显战略价值。综合来看，短期油价受地缘溢价支撑，但储备释放将形成中期压制。</div>
+        <div class="brief-impact">判断为中性：多空因素交织，油价短期偏强但储备释放限制涨幅。</div>
+      
+      <div class="brief-sources hidden" id="brief-src-3">
+        
+        <a class="brief-src-link"
+           href="https://www.scmp.com/news/world/russia-central-asia/article/3351499/16-dead-strikes-chernobyl-anniversary-highlights-nuclear-risks-russia-ukraine-war?utm_source=rss_feed" target="_blank"
+           >Strikes in Ukraine and Russia kill at le…</a>
+        
+        <a class="brief-src-link"
+           href="https://www.scmp.com/news/china/diplomacy/article/3351486/china-warns-eu-remove-firms-and-citizens-russian-sanctions-list?utm_source=rss_feed" target="_blank"
+           >China warns EU to remove firms and citiz…</a>
+        
+        <a class="brief-src-link"
+           href="https://www.zerohedge.com/geopolitical/reset-germany-breaking-exhausted-ruling-class" target="_blank"
+           >Reset Germany: Breaking With An Exhauste…</a>
+        
+        <a class="brief-src-link brief-src-extra"
+           href="https://finance.yahoo.com/quote/CL%3DF" target="_blank"
+           style="display:none;">📈 WTI 原油 (CRUDE OIL) 上涨 +2.39%｜现价 $96.66…</a>
+        
+        <a class="brief-src-link brief-src-extra"
+           href="https://www.marketwatch.com/story/u-s-stock-futures-fall-oil-rises-ahead-of-a-busy-week-for-wall-street-c3e49958?mod=mw_rss_topstories" target="_blank"
+           style="display:none;">U.S. stock futures mixed, oil rises ahea…</a>
+        
+        <a class="brief-src-link brief-src-extra"
+           href="https://oilprice.com/Latest-Energy-News/World-News/Chinas-Metals-Boom-Hits-Highest-Profit-Levels-Since-2016.html" target="_blank"
+           style="display:none;">China’s Metals Boom Hits Highest Profit …</a>
+        
+        <a class="brief-src-link brief-src-extra"
+           href="https://oilprice.com/Latest-Energy-News/World-News/Goldman-Sachs-Raises-Oil-Price-Forecast-Yet-Again.html" target="_blank"
+           style="display:none;">Goldman Sachs Raises Oil Price Forecast …</a>
+        
+        <a class="brief-src-link brief-src-extra"
+           href="https://oilprice.com/Energy/Crude-Oil/Europe-Emerges-As-Key-Buyer-Of-US-Strategic-Petroleum-Reserve-Oil.html" target="_blank"
+           style="display:none;">Europe Emerges As Key Buyer Of U.S. Stra…</a>
+        
+        <a class="brief-src-link brief-src-extra"
+           href="https://asia.nikkei.com/business/transportation/vietjet-presses-ahead-with-europe-flights-despite-middle-east-turmoil" target="_blank"
+           style="display:none;">Vietjet presses ahead with Europe flight…</a>
+        
+        <a class="brief-src-link brief-src-extra"
+           href="https://www.scmp.com/opinion/world-opinion/article/3350835/middle-east-shipping-crisis-elevates-china-europe-railways-profile?utm_source=rss_feed" target="_blank"
+           style="display:none;">Middle East shipping crisis elevates Chi…</a>
+        
+        
+        <span class="brief-src-more" id="brief-src-more-3" onclick="toggleBriefSrcMore(3, 10)">▶ 还有 7 条</span>
+        
+      </div>
+      <div class="brief-src-toggle" onclick="toggleBriefSrc(3)">
+        <span id="brief-src-btn-3">▶ 原始来源（10 条）</span>
+      </div>
+    </div>
+  </div>
+  
+  <div class="brief-card">
+    <div class="brief-header" onclick="toggleBrief(4)">
+      <div class="brief-header-left">
+        <div class="brief-topic-dot"></div>
+        <span class="brief-topic">其他</span>
+        <span class="brief-count">2 条</span>
+      </div>
+      <span class="brief-toggle open" id="brief-btn-4">▼</span>
+    </div>
+    <div id="brief-4" class="brief-collapsible">
+      
+      
+      
+      
+      
+        
+        <div class="brief-body">中国在无人机领域的竞争格局持续强化，DJI与Insta360的较量凸显出中国硬件在全球审查下的韧性，这为相关产业链提供了技术升级与市场拓展的支撑。同时，中国暗示下一代航母可能采用核动力，结合科学家研发的光驱动MOF微马达用于海洋铀提取，表明中国在高端制造与新能源材料领域正加速自主突破。这些进展直接指向国防与清洁能源两大战略方向，核动力航母的潜在部署将提升海军装备价值，而铀提取技术则利好核燃料供应链的长期稳定性。综合来看，中国在硬件与能源材料上的创新正形成协同效应，强化了相关板块的成长逻辑。</div>
+        <div class="brief-impact">判断为利多。理由：技术突破与战略布局共同推动国防及新能源产业链的长期竞争力。</div>
+      
+      <div class="brief-sources hidden" id="brief-src-4">
+        
+        <a class="brief-src-link"
+           href="https://www.scmp.com/news/world/article/3351509/dji-insta360-rivalry-nuclear-hint-chinas-next-carrier-5-weekend-reads-you-missed?utm_source=rss_feed" target="_blank"
+           >DJI-Insta360 rivalry, nuclear hint for C…</a>
+        
+        <a class="brief-src-link"
+           href="https://www.scmp.com/news/china/science/article/3351260/scientists-china-create-predator-material-hunt-uranium-ocean?utm_source=rss_feed" target="_blank"
+           >Scientists in China create a predator-li…</a>
+        
+        
+      </div>
+      <div class="brief-src-toggle" onclick="toggleBriefSrc(4)">
+        <span id="brief-src-btn-4">▶ 原始来源（2 条）</span>
+      </div>
+    </div>
+  </div>
+  
+  </div>
+  </div>
+</div>
+
+
+
+
+
+<div class="card" id="sec-alerts" data-section="alerts" style="overflow:visible;">
+  <div class="card-header red" onclick="toggleAlerts()">
+    <span>预警中心
+      <span style="font-size:11px; font-weight:400; opacity:.75; margin-left:8px;">
+        <span style="color:var(--red);font-weight:700;">4 红色</span> · <span style="color:var(--orange);font-weight:700;">19 黄色</span>
+      </span>
+    </span>
+    <span class="toggle-btn" id="alerts-toggle-btn">▼ 收起</span>
+  </div>
+
+  <div id="alerts-body" class="collapsible">
+    
+    <div class="alerts-section-header red-hdr">
+      红色预警
+      <span class="section-count">4 条</span>
+    </div>
+    <div class="alerts-body-inner">
+      
+
+<div class="alert-item level-red">
+  <div class="alert-top">
+    <div class="score-badge level-red">
+      <span class="score-num">100</span>
+      <span class="score-sub">分</span>
+    </div>
+    <div class="alert-main">
+      <div class="alert-title">
+        <span class="alert-topic-tag">地缘与能源</span>Strikes in Ukraine and Russia kill at least 16 on Chernobyl disaster anniversary
+      </div>
+      <div class="alert-badges">
+        
+        
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="zh-trans">乌克兰与俄罗斯袭击致切尔诺贝利灾难纪念日至少16人死亡</div>
+  
+
+  <div class="alert-meta">
+    <span class="alert-meta-item">SCMP-亚洲商业</span>
+    <span class="alert-meta-item">2026-04-27 01:57</span>
+  </div>
+
+  
+  <div class="ai-box">
+    <div class="ai-box-label">AI 深度解读</div>
+    <div class="summary-text">4月26日，乌克兰和俄罗斯占领区及俄罗斯本土在过去一天内遭遇袭击，造成至少16人死亡。当天正值切尔诺贝利核事故40周年，乌克兰总统泽连斯基警告称，俄罗斯的袭击可能重演历史灾难。冲突持续超过四年，核设施附近的安全风险引发国际关注。</div>
+    <div class="en-text">On April 26, strikes across Ukraine, Russian-occupied territory, and Russia killed at least 16 people, coinciding with the 40th anniversary of the Chernobyl nuclear disaster. Ukrainian President Volodymyr Zelensky warned that Russian attacks risk repeating history, highlighting dangers near nuclear plants during the over four-year invasion.</div>
+    
+    <div class="assets-row">
+      <span class="assets-lbl">相关标的</span>
+      <span class="asset-chip">黄金/Gold</span><span class="asset-chip">美元指数/DXY</span><span class="asset-chip">原油/Crude Oil</span>
+    </div>
+    
+    
+    
+    <div class="dir-bar bullish">
+      <span class="dir-chip bullish">利多</span>
+      <span>对黄金利多：地缘冲突升级推升避险需求；对原油利多：供应中断风险推高油价；对美元利多：避险资金流入美元资产。</span>
+    </div>
+    
+  </div>
+  
+
+  <div class="alert-footer">
+    <a class="alert-link primary" href="https://www.scmp.com/news/world/russia-central-asia/article/3351499/16-dead-strikes-chernobyl-anniversary-highlights-nuclear-risks-russia-ukraine-war?utm_source=rss_feed" target="_blank">原文链接</a>
+    
+  </div>
+  
+  <div class="reason-tags">评分依据：<span class="reason-tag">source_weight:32</span><span class="reason-tag">topic:geopolitics_energy</span><span class="reason-tag">topic:macro_general</span><span class="reason-tag">topic_bonus[geopolitics_energy]:+22</span><span class="reason-tag">multi_topic[macro_general]:+1</span><span class="reason-tag">shock_keyword:+25</span><span class="reason-tag">global_shock:+25</span></div>
+  
+</div>
+
+
+<div class="alert-item level-red">
+  <div class="alert-top">
+    <div class="score-badge level-red">
+      <span class="score-num">82</span>
+      <span class="score-sub">分</span>
+    </div>
+    <div class="alert-main">
+      <div class="alert-title">
+        <span class="alert-topic-tag">通胀/就业/GDP（CPI/PCE/NFP/PMI）</span>Futures Jump To Record High After Report Iran Offered New Non-Starter Proposal To Reopen Strait
+      </div>
+      <div class="alert-badges">
+        
+        
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="zh-trans">期货飙升至历史新高，报道称伊朗提出重开海峡的新非启动性提议</div>
+  
+
+  <div class="alert-meta">
+    <span class="alert-meta-item">ZeroHedge - 宏观风险预警</span>
+    <span class="alert-meta-item">2026-04-27 10:50</span>
+  </div>
+
+  
+  <div class="ai-box">
+    <div class="ai-box-label">AI 深度解读</div>
+    <div class="summary-text">据Axios记者Barak Ravid报道，伊朗向美国提出重新开放霍尔木兹海峡的新提议，但该提议被视为“非启动性”方案。受此消息影响，美股期货跳涨至历史新高，原油价格回落。美国总统特朗普预计周一将召开伊朗问题局势室会议，讨论与伊朗谈判的僵局及潜在选项。此前市场因半导体泡沫担忧可能迎来首个红色周一，但此消息扭转了市场情绪。</div>
+    <div class="en-text">According to Axios reporter Barak Ravid, Iran offered the US a new proposal to reopen the Strait of Hormuz, which is considered a non-starter. This news sent US stock futures jumping to a record high, while oil prices pared gains. President Trump is expected to hold a situation room meeting on Monday to discuss the stalemate in negotiations with Iran and potential options. The market had been bracing for its first red Monday in a while amid semiconductor bubble concerns, but the report reversed sentiment.</div>
+    
+    <div class="assets-row">
+      <span class="assets-lbl">相关标的</span>
+      <span class="asset-chip">原油/Crude Oil</span><span class="asset-chip">标普500/SPX</span>
+    </div>
+    
+    
+    
+    <div class="dir-bar bullish">
+      <span class="dir-chip bullish">利多</span>
+      <span>对原油利空：伊朗提议重新开放霍尔木兹海峡缓解供应中断担忧，油价承压；对标普500利多：地缘风险缓和提振风险偏好，推动美股期货创新高。</span>
+    </div>
+    
+  </div>
+  
+
+  <div class="alert-footer">
+    <a class="alert-link primary" href="https://www.zerohedge.com/markets/futures-slide-oil-jumps-3-week-high-after-iran-talks-collapse" target="_blank">原文链接</a>
+    
+  </div>
+  
+  <div class="reason-tags">评分依据：<span class="reason-tag">source_weight:22</span><span class="reason-tag">topic:inflation_jobs</span><span class="reason-tag">topic:geopolitics_energy</span><span class="reason-tag">topic:idiosyncratic_shocks</span><span class="reason-tag">topic:risk_sentiment</span><span class="reason-tag">topic:precious_metals</span><span class="reason-tag">topic:commodities</span><span class="reason-tag">topic:bonds_treasury</span><span class="reason-tag">topic:tech_giants_earnings</span><span class="reason-tag">topic:key_figures</span><span class="reason-tag">topic:macro_general</span><span class="reason-tag">topic_bonus[inflation_jobs]:+22</span><span class="reason-tag">multi_topic[geopolitics_energy]:+13</span><span class="reason-tag">global_shock:+25</span></div>
+  
+</div>
+
+
+<div class="alert-item level-red">
+  <div class="alert-top">
+    <div class="score-badge level-red">
+      <span class="score-num">82</span>
+      <span class="score-sub">分</span>
+    </div>
+    <div class="alert-main">
+      <div class="alert-title">
+        <span class="alert-topic-tag">通胀/就业/GDP（CPI/PCE/NFP/PMI）</span>The Reality Behind US-Iran Negotiations
+      </div>
+      <div class="alert-badges">
+        
+        
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="zh-trans">美伊谈判背后的现实</div>
+  
+
+  <div class="alert-meta">
+    <span class="alert-meta-item">ZeroHedge - 宏观风险预警</span>
+    <span class="alert-meta-item">2026-04-27 09:20</span>
+  </div>
+
+  
+  <div class="ai-box">
+    <div class="ai-box-label">AI 深度解读</div>
+    <div class="summary-text">美伊谈判被误读为边缘政策博弈，实则反映力量对比已发生决定性转变。伊朗曾试图将霍尔木兹海峡武器化，通过扰乱全球能源流动迫使美国让步，但该策略已失败。美国通过持续的经济和海上压力，削弱了伊朗变现石油的能力并限制了其回旋余地。尽管德黑兰仍能骚扰航运，但已不再控制战略环境。美国总统特朗普的谈判风格成为焦点，但核心是伊朗在无法逃脱的约束下进行谈判。</div>
+    <div class="en-text">The US-Iran negotiations are misread as brinkmanship but reflect a decisive shift in leverage. Iran&#39;s attempt to weaponize the Strait of Hormuz to disrupt global energy flows and force US concessions has failed. The US imposed sustained economic and maritime pressure, degrading Iran&#39;s oil monetization and constraining its maneuverability. Tehran retains harassment capability but no longer controls the strategic environment. President Donald Trump&#39;s negotiating style is highlighted, but the core is Iran negotiating under inescapable constraints.</div>
+    
+    <div class="assets-row">
+      <span class="assets-lbl">相关标的</span>
+      <span class="asset-chip">原油/Crude Oil</span><span class="asset-chip">黄金/Gold</span><span class="asset-chip">美元指数/DXY</span>
+    </div>
+    
+    
+    
+    <div class="dir-bar bearish">
+      <span class="dir-chip bearish">利空</span>
+      <span>对原油利空：伊朗压力缓解可能增加供应，降低地缘溢价；对黄金利空：地缘风险下降削弱避险需求；对美元利多：美国战略优势巩固美元信心。</span>
+    </div>
+    
+  </div>
+  
+
+  <div class="alert-footer">
+    <a class="alert-link primary" href="https://www.zerohedge.com/geopolitical/reality-behind-us-iran-negotiations" target="_blank">原文链接</a>
+    
+  </div>
+  
+  <div class="reason-tags">评分依据：<span class="reason-tag">source_weight:22</span><span class="reason-tag">topic:inflation_jobs</span><span class="reason-tag">topic:geopolitics_energy</span><span class="reason-tag">topic:market_structure</span><span class="reason-tag">topic:risk_sentiment</span><span class="reason-tag">topic:commodities</span><span class="reason-tag">topic:key_figures</span><span class="reason-tag">topic:macro_general</span><span class="reason-tag">topic_bonus[inflation_jobs]:+22</span><span class="reason-tag">multi_topic[geopolitics_energy]:+13</span><span class="reason-tag">global_shock:+25</span></div>
+  
+</div>
+
+
+<div class="alert-item level-red">
+  <div class="alert-top">
+    <div class="score-badge level-red">
+      <span class="score-num">80</span>
+      <span class="score-sub">分</span>
+    </div>
+    <div class="alert-main">
+      <div class="alert-title">
+        <span class="alert-topic-tag">地缘与能源</span>China warns EU to remove firms and citizens from Russian sanctions list
+      </div>
+      <div class="alert-badges">
+        
+        
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="zh-trans">中国警告欧盟将企业和公民从对俄制裁名单中移除</div>
+  
+
+  <div class="alert-meta">
+    <span class="alert-meta-item">SCMP-中国经济</span>
+    <span class="alert-meta-item">2026-04-26 19:40</span>
+  </div>
+
+  
+  <div class="ai-box">
+    <div class="ai-box-label">AI 深度解读</div>
+    <div class="summary-text">中国商务部要求欧盟将中国企业和个人从其最新涉俄制裁名单中移除，并警告若欧盟不解除制裁，中国将采取必要措施保护本国公民和企业的权益。商务部强调应通过对话协商解决分歧，但未明确具体后果。此事件凸显中欧在俄乌问题上的紧张关系，可能影响双边贸易和投资信心。</div>
+    <div class="en-text">China&#39;s Ministry of Commerce demanded the EU remove Chinese businesses and individuals from its latest sanctions list related to Russia&#39;s war in Ukraine, warning it would take necessary measures to protect their rights and interests if sanctions are not lifted. The ministry urged resolving concerns through dialogue, without specifying consequences. This highlights Sino-EU tensions over the Ukraine conflict, potentially impacting bilateral trade and investment.</div>
+    
+    <div class="assets-row">
+      <span class="assets-lbl">相关标的</span>
+      <span class="asset-chip">人民币/CNY</span><span class="asset-chip">欧元/欧元</span><span class="asset-chip">上证指数/SSE Composite Index</span>
+    </div>
+    
+    
+    
+    <div class="dir-bar bearish">
+      <span class="dir-chip bearish">利空</span>
+      <span>对人民币利空：中欧关系紧张可能削弱贸易信心，增加人民币贬值压力；对欧元利空：制裁争端可能影响欧盟对华出口和投资，拖累欧元区经济预期。</span>
+    </div>
+    
+  </div>
+  
+
+  <div class="alert-footer">
+    <a class="alert-link primary" href="https://www.scmp.com/news/china/diplomacy/article/3351486/china-warns-eu-remove-firms-and-citizens-russian-sanctions-list?utm_source=rss_feed" target="_blank">原文链接</a>
+    
+  </div>
+  
+  <div class="reason-tags">评分依据：<span class="reason-tag">source_weight:32</span><span class="reason-tag">topic:geopolitics_energy</span><span class="reason-tag">topic:macro_general</span><span class="reason-tag">topic_bonus[geopolitics_energy]:+22</span><span class="reason-tag">multi_topic[macro_general]:+1</span><span class="reason-tag">shock_keyword:+25</span></div>
+  
+</div>
+
+    </div>
+    
+
+    
+    <div class="alerts-section-header yellow-hdr">
+      黄色预警
+      <span class="section-count">19 条</span>
+    </div>
+    <div class="alerts-body-inner">
+      
+
+<div class="alert-item level-yellow">
+  <div class="alert-top">
+    <div class="score-badge level-yellow">
+      <span class="score-num">74</span>
+      <span class="score-sub">分</span>
+    </div>
+    <div class="alert-main">
+      <div class="alert-title">
+        <span class="alert-topic-tag">FOMC/美联储</span>Wall Street’s Super Bowl Wednesday: Alphabet, Amazon, Microsoft and Meta report along with Powell’s last Fed meeting
+      </div>
+      <div class="alert-badges">
+        
+        <span class="badge badge-ms">多源确认</span>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="zh-trans">华尔街超级碗周三：Alphabet、亚马逊、微软和Meta财报发布，鲍威尔最后一次美联储会议</div>
+  
+
+  <div class="alert-meta">
+    <span class="alert-meta-item">MarketWatch - Top Stories, MarketWatch-市场快讯 (2 sources)</span>
+    <span class="alert-meta-item">2026-04-27 05:00</span>
+  </div>
+
+  
+  <div class="ai-box">
+    <div class="ai-box-label">AI 深度解读</div>
+    <div class="summary-text">本周三（2月1日）华尔街迎来“超级碗”时刻：Alphabet、亚马逊、微软和Meta四大科技巨头同日发布财报，同时美联储主席鲍威尔将主持其任内最后一次新闻发布会。市场聚焦财报业绩与鲍威尔讲话，以判断经济前景和加息路径。</div>
+    <div class="en-text">This Wednesday marks a historic &#39;Super Bowl&#39; for Wall Street as Alphabet, Amazon, Microsoft, and Meta report earnings on the same day, alongside Jerome Powell&#39;s final press conference as Fed chair. Markets focus on earnings results and Powell&#39;s remarks to gauge economic outlook and rate path.</div>
+    
+    <div class="assets-row">
+      <span class="assets-lbl">相关标的</span>
+      <span class="asset-chip">标普500/SPX</span><span class="asset-chip">美元指数/DXY</span><span class="asset-chip">纳斯达克100/NDX</span>
+    </div>
+    
+    
+    
+    <div class="dir-bar neutral">
+      <span class="dir-chip neutral">中性</span>
+      <span>对美股中性：财报好坏参半可能引发板块分化；对美元中性：鲍威尔讲话若偏鹰则利多美元，若偏鸽则利空，需等待实际信号。</span>
+    </div>
+    
+  </div>
+  
+
+  <div class="alert-footer">
+    <a class="alert-link primary" href="https://www.marketwatch.com/story/wall-streets-super-bowl-wednesday-alphabet-amazon-microsoft-and-meta-report-along-with-powells-last-fed-meeting-88eb1710?mod=mw_rss_topstories" target="_blank">原文链接</a>
+    
+    <span class="fold-toggle" onclick="toggleFold('fold-links-y1')">1 个更多来源</span>
+    <div class="alert-extra-links hidden" id="fold-links-y1">
+      <a class="alert-link" href="https://www.marketwatch.com/story/wall-streets-super-bowl-wednesday-alphabet-amazon-microsoft-and-meta-report-along-with-powells-last-fed-meeting-88eb1710?mod=mw_rss_topstories" target="_blank">来源2</a>
+    </div>
+    
+  </div>
+  
+  <div class="reason-tags">评分依据：<span class="reason-tag">source_weight:35</span><span class="reason-tag">topic:fed</span><span class="reason-tag">topic:tech_giants_earnings</span><span class="reason-tag">topic:key_figures</span><span class="reason-tag">topic:macro_general</span><span class="reason-tag">topic_bonus[fed]:+30</span><span class="reason-tag">multi_topic[key_figures]:+9</span></div>
+  
+</div>
+
+
+<div class="alert-item level-yellow">
+  <div class="alert-top">
+    <div class="score-badge level-yellow">
+      <span class="score-num">74</span>
+      <span class="score-sub">分</span>
+    </div>
+    <div class="alert-main">
+      <div class="alert-title">
+        <span class="alert-topic-tag">FOMC/美联储</span>Sen. Thom Tillis drops opposition, says he’ll back Kevin Warsh’s Fed confirmation
+      </div>
+      <div class="alert-badges">
+        
+        <span class="badge badge-ms">多源确认</span>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="zh-trans">参议员汤姆·蒂利斯放弃反对，表示将支持凯文·沃什的美联储确认</div>
+  
+
+  <div class="alert-meta">
+    <span class="alert-meta-item">MarketWatch - Top Stories, MarketWatch-市场快讯 (2 sources)</span>
+    <span class="alert-meta-item">2026-04-27 03:56</span>
+  </div>
+
+  
+  <div class="ai-box">
+    <div class="ai-box-label">AI 深度解读</div>
+    <div class="summary-text">美国参议员Thom Tillis周日宣布，因司法部已撤销对即将离任的美联储主席Jerome Powell的刑事指控，他转而支持Kevin Warsh出任美联储新主席的确认。这一转变消除了Warsh确认程序的关键障碍，可能加速美联储领导层更迭，并影响未来货币政策方向。市场关注Warsh的鹰派立场可能带来的政策收紧预期。</div>
+    <div class="en-text">Sen. Thom Tillis said Sunday he now supports Kevin Warsh&#39;s confirmation as new Fed chair, after the Justice Department dropped its criminal case against outgoing Chair Jerome Powell. This removes a key hurdle for Warsh&#39;s confirmation, potentially accelerating Fed leadership transition and impacting future monetary policy direction. Markets are watching Warsh&#39;s hawkish stance for possible tightening expectations.</div>
+    
+    <div class="assets-row">
+      <span class="assets-lbl">相关标的</span>
+      <span class="asset-chip">美元指数/DXY</span><span class="asset-chip">标普500/SPX</span><span class="asset-chip">黄金/Gold</span><span class="asset-chip">美国国债/US Treasuries</span>
+    </div>
+    
+    
+    
+    <div class="dir-bar bullish">
+      <span class="dir-chip bullish">利多</span>
+      <span>对美元指数利多：Warsh的鹰派立场可能强化加息预期，推升美元需求；对美股利空：紧缩政策预期可能压制风险资产估值。</span>
+    </div>
+    
+  </div>
+  
+
+  <div class="alert-footer">
+    <a class="alert-link primary" href="https://www.marketwatch.com/story/sen-thom-tillis-drops-opposition-says-hell-back-kevin-warshs-fed-confirmation-b7252136?mod=mw_rss_topstories" target="_blank">原文链接</a>
+    
+    <span class="fold-toggle" onclick="toggleFold('fold-links-y2')">1 个更多来源</span>
+    <div class="alert-extra-links hidden" id="fold-links-y2">
+      <a class="alert-link" href="https://www.marketwatch.com/story/sen-thom-tillis-drops-opposition-says-hell-back-kevin-warshs-fed-confirmation-b7252136?mod=mw_rss_topstories" target="_blank">来源2</a>
+    </div>
+    
+  </div>
+  
+  <div class="reason-tags">评分依据：<span class="reason-tag">source_weight:35</span><span class="reason-tag">topic:fed</span><span class="reason-tag">topic:key_figures</span><span class="reason-tag">topic:macro_general</span><span class="reason-tag">topic_bonus[fed]:+30</span><span class="reason-tag">multi_topic[key_figures]:+9</span></div>
+  
+</div>
+
+
+<div class="alert-item level-yellow">
+  <div class="alert-top">
+    <div class="score-badge level-yellow">
+      <span class="score-num">72</span>
+      <span class="score-sub">分</span>
+    </div>
+    <div class="alert-main">
+      <div class="alert-title">
+        <span class="alert-topic-tag">突发事件与监管</span>Netanyahu’s biggest rivals join forces for Israel’s coming election
+      </div>
+      <div class="alert-badges">
+        
+        
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="zh-trans">内塔尼亚胡最大对手联手备战以色列即将举行的大选</div>
+  
+
+  <div class="alert-meta">
+    <span class="alert-meta-item">SCMP-亚洲商业</span>
+    <span class="alert-meta-item">2026-04-27 11:55</span>
+  </div>
+
+  
+  <div class="ai-box">
+    <div class="ai-box-label">AI 深度解读</div>
+    <div class="summary-text">以色列前总理内塔尼亚胡的两大政治对手——右翼的纳夫塔利·贝内特（Naftali Bennett）和中间派的亚伊尔·拉皮德（Yair Lapid）于周日宣布联手，合并其政党“贝内特2026”和“拥有未来”，旨在今年晚些时候的大选中推翻内塔尼亚胡的联合政府。此举加剧了以色列政治不确定性，可能影响中东地缘政治格局及市场情绪。</div>
+    <div class="en-text">Two of Israeli Prime Minister Benjamin Netanyahu&#39;s biggest political rivals, former prime ministers Naftali Bennett (right-wing) and Yair Lapid (centrist), announced on Sunday a merger of their parties, Bennett 2026 and There is a Future, aiming to oust his coalition government in the coming election expected later this year. This move heightens political uncertainty in Israel, potentially impacting Middle East geopolitical dynamics and market sentiment.</div>
+    
+    <div class="assets-row">
+      <span class="assets-lbl">相关标的</span>
+      <span class="asset-chip">美元指数/DXY</span><span class="asset-chip">原油/Crude Oil</span><span class="asset-chip">黄金/Gold</span>
+    </div>
+    
+    
+    
+    <div class="dir-bar neutral">
+      <span class="dir-chip neutral">中性</span>
+      <span>对美元指数中性：政治不确定性可能短期压制以色列谢克尔，但美元受全球因素主导；对原油中性：中东地缘风险溢价可能小幅上升，但影响有限。</span>
+    </div>
+    
+  </div>
+  
+
+  <div class="alert-footer">
+    <a class="alert-link primary" href="https://www.scmp.com/news/world/middle-east/article/3351517/netanyahus-biggest-rivals-join-forces-israels-coming-election?utm_source=rss_feed" target="_blank">原文链接</a>
+    
+  </div>
+  
+  <div class="reason-tags">评分依据：<span class="reason-tag">source_weight:32</span><span class="reason-tag">topic:idiosyncratic_shocks</span><span class="reason-tag">topic_bonus[idiosyncratic_shocks]:+15</span><span class="reason-tag">shock_keyword:+25</span></div>
+  
+</div>
+
+
+<div class="alert-item level-yellow">
+  <div class="alert-top">
+    <div class="score-badge level-yellow">
+      <span class="score-num">70</span>
+      <span class="score-sub">分</span>
+    </div>
+    <div class="alert-main">
+      <div class="alert-title">
+        <span class="alert-topic-tag">地缘与能源</span>Reset Germany: Breaking With An Exhausted Ruling Class
+      </div>
+      <div class="alert-badges">
+        
+        
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="zh-trans">重置德国：与疲惫的统治阶级决裂</div>
+  
+
+  <div class="alert-meta">
+    <span class="alert-meta-item">ZeroHedge - 宏观风险预警</span>
+    <span class="alert-meta-item">2026-04-27 14:00</span>
+  </div>
+
+  
+  <div class="ai-box">
+    <div class="ai-box-label">AI 深度解读</div>
+    <div class="summary-text">德国正面临一场由精英阶层引发的危机，而非单纯的经济、能源、移民或国家危机。文章指出，德国管理精英拒绝承认现实，即使政策后果已暴露无遗，仍不改变方向。这种现实回避和自我陶醉的统治阶层导致了国家困境。核心问题在于精英阶层缺乏自我纠正能力，不再以现实为衡量标准。</div>
+    <div class="en-text">Germany is facing a crisis of its elites, not merely economic, energy, migration, or state crises. The article argues that German managerial elites refuse to change course even when policy consequences are plainly exposed, sustaining a regime of reality-avoidance and self-congratulation. The core issue is the elite class&#39;s inability to self-correct, as they no longer measure themselves against reality.</div>
+    
+    <div class="assets-row">
+      <span class="assets-lbl">相关标的</span>
+      <span class="asset-chip">欧元/欧元兑美元/EUR/USD</span><span class="asset-chip">德国DAX指数/DAX</span>
+    </div>
+    
+    
+    
+    <div class="dir-bar bearish">
+      <span class="dir-chip bearish">利空</span>
+      <span>对欧元利空：德国政治不确定性可能削弱欧元信心；对德国DAX指数利空：精英危机加剧市场对德国经济前景的担忧。</span>
+    </div>
+    
+  </div>
+  
+
+  <div class="alert-footer">
+    <a class="alert-link primary" href="https://www.zerohedge.com/geopolitical/reset-germany-breaking-exhausted-ruling-class" target="_blank">原文链接</a>
+    
+  </div>
+  
+  <div class="reason-tags">评分依据：<span class="reason-tag">source_weight:22</span><span class="reason-tag">topic:geopolitics_energy</span><span class="reason-tag">topic:macro_general</span><span class="reason-tag">topic_bonus[geopolitics_energy]:+22</span><span class="reason-tag">multi_topic[macro_general]:+1</span><span class="reason-tag">shock_keyword:+25</span></div>
+  
+</div>
+
+
+<div class="alert-item level-yellow">
+  <div class="alert-top">
+    <div class="score-badge level-yellow">
+      <span class="score-num">67</span>
+      <span class="score-sub">分</span>
+    </div>
+    <div class="alert-main">
+      <div class="alert-title">
+        <span class="alert-topic-tag">FOMC/美联储</span>Will Kevin Warsh Trumpify the Federal Reserve?
+      </div>
+      <div class="alert-badges">
+        
+        
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="zh-trans">凯文·沃什会让美联储特朗普化吗？</div>
+  
+
+  <div class="alert-meta">
+    <span class="alert-meta-item">The Economist - Finance &amp; Economics</span>
+    <span class="alert-meta-item">2026-04-26 21:17</span>
+  </div>
+
+  
+  <div class="ai-box">
+    <div class="ai-box-label">AI 深度解读</div>
+    <div class="summary-text">《经济学人》报道指出，新任美联储主席凯文·沃什（Kevin Warsh）可能推动“特朗普化”改革，但实际革命性变革可能性较低。沃什主张“政权更迭”，强调改变美联储现有政策框架，但市场预期其行动将受制于经济现实和机构惯性。关键时间点未明确，但分析聚焦于沃什上任后的政策方向，涉及美联储（Federal Reserve）独立性及货币政策调整。</div>
+    <div class="en-text">The Economist reports that incoming Fed Chair Kevin Warsh may seek to &#39;Trumpify&#39; the Federal Reserve, advocating for regime change, but a revolution is unlikely. Warsh emphasizes altering the current policy framework, yet market expectations suggest his actions will be constrained by economic realities and institutional inertia. The analysis focuses on the Fed&#39;s independence and potential monetary policy shifts, with no specific dates mentioned.</div>
+    
+    <div class="assets-row">
+      <span class="assets-lbl">相关标的</span>
+      <span class="asset-chip">美元指数/DXY</span><span class="asset-chip">标普500/SPX</span><span class="asset-chip">黄金/Gold</span>
+    </div>
+    
+    
+    
+    <div class="dir-bar neutral">
+      <span class="dir-chip neutral">中性</span>
+      <span>对美元指数中性：沃什政策不确定性高，市场观望；对美股中性：改革预期与机构惯性博弈，短期方向不明；对黄金中性：政策路径模糊，避险需求未定。</span>
+    </div>
+    
+  </div>
+  
+
+  <div class="alert-footer">
+    <a class="alert-link primary" href="https://www.economist.com/finance-and-economics/2026/04/26/will-kevin-warsh-trumpify-the-federal-reserve" target="_blank">原文链接</a>
+    
+  </div>
+  
+  <div class="reason-tags">评分依据：<span class="reason-tag">source_weight:36</span><span class="reason-tag">topic:fed</span><span class="reason-tag">topic:macro_general</span><span class="reason-tag">topic_bonus[fed]:+30</span><span class="reason-tag">multi_topic[macro_general]:+1</span></div>
+  
+</div>
+
+
+<div class="alert-item level-yellow">
+  <div class="alert-top">
+    <div class="score-badge level-yellow">
+      <span class="score-num">66</span>
+      <span class="score-sub">分</span>
+    </div>
+    <div class="alert-main">
+      <div class="alert-title">
+        <span class="alert-topic-tag">地缘与能源</span>📈 WTI 原油 (CRUDE OIL) 上涨 +2.39%｜现价 $96.66（+2.26 USD）
+      </div>
+      <div class="alert-badges">
+        
+        
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="zh-trans">📈 WTI原油上涨+2.39%｜现价$96.66（+2.26美元）</div>
+  
+
+  <div class="alert-meta">
+    <span class="alert-meta-item">Yahoo Finance-美股指数+大宗商品</span>
+    <span class="alert-meta-item">2026-04-27 16:04</span>
+  </div>
+
+  
+  <div class="ai-box">
+    <div class="ai-box-label">AI 深度解读</div>
+    <div class="summary-text">WTI原油价格大幅上涨2.39%，当前报价为96.66美元，较前收盘价上涨2.26美元。此数据来自Yahoo Finance实时行情，反映市场对原油供应紧张的担忧加剧，可能受地缘政治风险或OPEC+减产预期影响。</div>
+    <div class="en-text">WTI crude oil surged 2.39% to $96.66, up $2.26 from the previous close, according to Yahoo Finance real-time data. The sharp rise reflects growing market concerns over supply tightness, possibly driven by geopolitical risks or OPEC+ production cut expectations.</div>
+    
+    <div class="assets-row">
+      <span class="assets-lbl">相关标的</span>
+      <span class="asset-chip">原油/Crude Oil</span><span class="asset-chip">美元指数/DXY</span><span class="asset-chip">标普500/SPX</span>
+    </div>
+    
+    
+    
+    <div class="dir-bar bullish">
+      <span class="dir-chip bullish">利多</span>
+      <span>对原油利多：价格上涨直接反映供需紧张或地缘风险溢价；对美元指数利空：油价上涨可能加剧通胀压力，削弱美元购买力。</span>
+    </div>
+    
+  </div>
+  
+
+  <div class="alert-footer">
+    <a class="alert-link primary" href="https://finance.yahoo.com/quote/CL%3DF" target="_blank">原文链接</a>
+    
+  </div>
+  
+  <div class="reason-tags">评分依据：<span class="reason-tag">source_weight:35</span><span class="reason-tag">topic:geopolitics_energy</span><span class="reason-tag">topic:commodities</span><span class="reason-tag">topic_bonus[geopolitics_energy]:+22</span><span class="reason-tag">multi_topic[commodities]:+9</span></div>
+  
+</div>
+
+
+<div class="alert-item level-yellow">
+  <div class="alert-top">
+    <div class="score-badge level-yellow">
+      <span class="score-num">66</span>
+      <span class="score-sub">分</span>
+    </div>
+    <div class="alert-main">
+      <div class="alert-title">
+        <span class="alert-topic-tag">地缘与能源</span>U.S. stock futures mixed, oil rises ahead of a busy week for Wall Street
+      </div>
+      <div class="alert-badges">
+        
+        <span class="badge badge-ms">多源确认</span>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="zh-trans">美股期货涨跌互现，油价上涨迎接华尔街繁忙一周</div>
+  
+
+  <div class="alert-meta">
+    <span class="alert-meta-item">MarketWatch - Top Stories, MarketWatch-市场快讯 (2 sources)</span>
+    <span class="alert-meta-item">2026-04-27 11:05</span>
+  </div>
+
+  
+  <div class="ai-box">
+    <div class="ai-box-label">AI 深度解读</div>
+    <div class="summary-text">周日美国股指期货涨跌互现，原油价格走高，华尔街迎来关键一周。此前标普500和纳斯达克指数均创历史新高。市场关注本周多项经济数据和美联储政策信号，油价上涨可能加剧通胀担忧，影响股市情绪。</div>
+    <div class="en-text">U.S. stock-index futures were mixed on Sunday as oil prices rose, ahead of a key week for Wall Street following record highs for the S&amp;P 500 and the tech-heavy Nasdaq. The market awaits economic data and Fed signals, with rising oil potentially fueling inflation concerns.</div>
+    
+    <div class="assets-row">
+      <span class="assets-lbl">相关标的</span>
+      <span class="asset-chip">标普500/SPX</span><span class="asset-chip">纳斯达克/Nasdaq</span><span class="asset-chip">原油/Crude Oil</span>
+    </div>
+    
+    
+    
+    <div class="dir-bar neutral">
+      <span class="dir-chip neutral">中性</span>
+      <span>对美股中性：油价上涨可能推升通胀预期，但市场等待本周数据和政策信号，方向不明。</span>
+    </div>
+    
+  </div>
+  
+
+  <div class="alert-footer">
+    <a class="alert-link primary" href="https://www.marketwatch.com/story/u-s-stock-futures-fall-oil-rises-ahead-of-a-busy-week-for-wall-street-c3e49958?mod=mw_rss_topstories" target="_blank">原文链接</a>
+    
+    <span class="fold-toggle" onclick="toggleFold('fold-links-y7')">1 个更多来源</span>
+    <div class="alert-extra-links hidden" id="fold-links-y7">
+      <a class="alert-link" href="https://www.marketwatch.com/story/u-s-stock-futures-fall-oil-rises-ahead-of-a-busy-week-for-wall-street-c3e49958?mod=mw_rss_topstories" target="_blank">来源2</a>
+    </div>
+    
+  </div>
+  
+  <div class="reason-tags">评分依据：<span class="reason-tag">source_weight:35</span><span class="reason-tag">topic:geopolitics_energy</span><span class="reason-tag">topic:commodities</span><span class="reason-tag">topic:macro_general</span><span class="reason-tag">topic_bonus[geopolitics_energy]:+22</span><span class="reason-tag">multi_topic[commodities]:+9</span></div>
+  
+</div>
+
+
+<div class="alert-item level-yellow">
+  <div class="alert-top">
+    <div class="score-badge level-yellow">
+      <span class="score-num">65</span>
+      <span class="score-sub">分</span>
+    </div>
+    <div class="alert-main">
+      <div class="alert-title">
+        <span class="alert-topic-tag">FOMC/美联储</span>Bessent Defends US Dollar Swap Lines As UAE Considers Formal Funding Request
+      </div>
+      <div class="alert-badges">
+        
+        
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="zh-trans">贝森特捍卫美元互换额度，阿联酋考虑正式资金请求</div>
+  
+
+  <div class="alert-meta">
+    <span class="alert-meta-item">ZeroHedge - 宏观风险预警</span>
+    <span class="alert-meta-item">2026-04-27 07:38</span>
+  </div>
+
+  
+  <div class="ai-box">
+    <div class="ai-box-label">AI 深度解读</div>
+    <div class="summary-text">美国财长贝森特（Bessent）为美元互换额度辩护，正值阿联酋考虑正式申请资金支持。据《华尔街日报》报道，多个海湾国家已讨论从美国获取美元互换额度。阿联酋央行行长哈立德·穆罕默德·巴拉马（Khaled Mohamed Balama）在华盛顿与贝森特及美联储官员会面时提出货币互换想法，强调虽暂避冲突最坏经济影响，但仍需金融生命线。会谈凸显阿联酋担忧战争可能严重损害其经济和全球金融中心地位。</div>
+    <div class="en-text">Treasury Secretary Bessent defends US dollar swap lines as UAE considers a formal funding request. Several Gulf countries have discussed receiving dollar swap lines from the US, per WSJ. UAE Central Bank Gov. Khaled Mohamed Balama raised the idea of a currency-swap line with Bessent and Treasury/Fed officials in Washington. Emiratis emphasized they have so far avoided the worst economic effects of the conflict but may still need a financial lifeline. Talks highlight UAE&#39;s concern that the war could inflict major damage on its economy and its position as a global financial hub.</div>
+    
+    <div class="assets-row">
+      <span class="assets-lbl">相关标的</span>
+      <span class="asset-chip">美元指数/DXY</span><span class="asset-chip">原油/Crude Oil</span><span class="asset-chip">黄金/Gold</span>
+    </div>
+    
+    
+    
+    <div class="dir-bar bullish">
+      <span class="dir-chip bullish">利多</span>
+      <span>对美元指数利多：美元互换额度需求增强美元流动性支撑，巩固美元全球储备货币地位。</span>
+    </div>
+    
+  </div>
+  
+
+  <div class="alert-footer">
+    <a class="alert-link primary" href="https://www.zerohedge.com/markets/bessent-defends-us-dollar-swap-lines-uae-considers-formal-funding-request" target="_blank">原文链接</a>
+    
+  </div>
+  
+  <div class="reason-tags">评分依据：<span class="reason-tag">source_weight:22</span><span class="reason-tag">topic:fed</span><span class="reason-tag">topic:inflation_jobs</span><span class="reason-tag">topic:us_politics_fiscal</span><span class="reason-tag">topic:risk_sentiment</span><span class="reason-tag">topic:commodities</span><span class="reason-tag">topic:bonds_treasury</span><span class="reason-tag">topic:key_figures</span><span class="reason-tag">topic:macro_general</span><span class="reason-tag">topic_bonus[fed]:+30</span><span class="reason-tag">multi_topic[inflation_jobs]:+13</span></div>
+  
+</div>
+
+
+<div class="alert-item level-yellow">
+  <div class="alert-top">
+    <div class="score-badge level-yellow">
+      <span class="score-num">61</span>
+      <span class="score-sub">分</span>
+    </div>
+    <div class="alert-main">
+      <div class="alert-title">
+        <span class="alert-topic-tag">地缘与能源</span>China’s Metals Boom Hits Highest Profit Levels Since 2016
+      </div>
+      <div class="alert-badges">
+        
+        
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="zh-trans">中国金属繁荣创2016年以来最高利润水平</div>
+  
+
+  <div class="alert-meta">
+    <span class="alert-meta-item">OilPrice-能源市场</span>
+    <span class="alert-meta-item">2026-04-27 15:00</span>
+  </div>
+
+  
+  <div class="summary-plain">China’s metals makers booked their strongest quarter since 2016 in January to March, benefiting from consistently higher prices for their products, enjoying an additional boost from the Middle East crisis. Aluminum and copper were the biggest winners, Bloomberg reported earlier today, helping Chinese metals producers book combined profits of some $21 billion for the three months to March. Copper prices hit an all-time high in the first quarter and aluminum rose to the highest since 2022. The disruption in energy production in the Middle East,…</div>
+  
+
+  <div class="alert-footer">
+    <a class="alert-link primary" href="https://oilprice.com/Latest-Energy-News/World-News/Chinas-Metals-Boom-Hits-Highest-Profit-Levels-Since-2016.html" target="_blank">原文链接</a>
+    
+  </div>
+  
+  <div class="reason-tags">评分依据：<span class="reason-tag">source_weight:30</span><span class="reason-tag">topic:geopolitics_energy</span><span class="reason-tag">topic:commodities</span><span class="reason-tag">topic:macro_general</span><span class="reason-tag">topic_bonus[geopolitics_energy]:+22</span><span class="reason-tag">multi_topic[commodities]:+9</span></div>
+  
+</div>
+
+
+<div class="alert-item level-yellow">
+  <div class="alert-top">
+    <div class="score-badge level-yellow">
+      <span class="score-num">61</span>
+      <span class="score-sub">分</span>
+    </div>
+    <div class="alert-main">
+      <div class="alert-title">
+        <span class="alert-topic-tag">地缘与能源</span>Goldman Sachs Raises Oil Price Forecast Yet Again
+      </div>
+      <div class="alert-badges">
+        
+        
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="zh-trans">高盛再次上调油价预测</div>
+  
+
+  <div class="alert-meta">
+    <span class="alert-meta-item">OilPrice-能源市场</span>
+    <span class="alert-meta-item">2026-04-27 13:14</span>
+  </div>
+
+  
+  <div class="summary-plain">Goldman Sachs once again raised its outlook for oil prices, now seeing Brent crude at an average of $90 per barrel in the fourth quarter of the year, and West Texas Intermediate at $83 per barrel. At the time of writing, Brent crude was trading at $106.68 per barrel, and WTI was changing hands at $95.35 per barrel as negotiations between Iran and the United States remain on hold, with the restart uncertain. “The economic risks are larger than our crude base case alone suggests because of the net upside risks to oil prices, unusually high…</div>
+  
+
+  <div class="alert-footer">
+    <a class="alert-link primary" href="https://oilprice.com/Latest-Energy-News/World-News/Goldman-Sachs-Raises-Oil-Price-Forecast-Yet-Again.html" target="_blank">原文链接</a>
+    
+  </div>
+  
+  <div class="reason-tags">评分依据：<span class="reason-tag">source_weight:30</span><span class="reason-tag">topic:geopolitics_energy</span><span class="reason-tag">topic:commodities</span><span class="reason-tag">topic:macro_general</span><span class="reason-tag">topic_bonus[geopolitics_energy]:+22</span><span class="reason-tag">multi_topic[commodities]:+9</span></div>
+  
+</div>
+
+
+<div class="alert-item level-yellow">
+  <div class="alert-top">
+    <div class="score-badge level-yellow">
+      <span class="score-num">61</span>
+      <span class="score-sub">分</span>
+    </div>
+    <div class="alert-main">
+      <div class="alert-title">
+        <span class="alert-topic-tag">地缘与能源</span>Europe Emerges As Key Buyer Of U.S. Strategic Petroleum Reserve Oil
+      </div>
+      <div class="alert-badges">
+        
+        
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="zh-trans">欧洲成为美国战略石油储备原油的主要买家</div>
+  
+
+  <div class="alert-meta">
+    <span class="alert-meta-item">OilPrice-能源市场</span>
+    <span class="alert-meta-item">2026-04-27 07:00</span>
+  </div>
+
+  
+  <div class="summary-plain">Last month, the International Energy Agency (IEA) announced the coordinated release of over 400 million barrels of oil from global strategic reserves to combat high energy prices amid the Middle East turmoil. The U.S. was to contribute approximately 172 million barrels of this total, with the release taking place over 120 days starting late March 2026 to help lower gasoline costs. And now reports have emerged that theTrump administration has authorized the release of millions of barrels of oil from the Strategic Petroleum Reserve (SPR), with Europe…</div>
+  
+
+  <div class="alert-footer">
+    <a class="alert-link primary" href="https://oilprice.com/Energy/Crude-Oil/Europe-Emerges-As-Key-Buyer-Of-US-Strategic-Petroleum-Reserve-Oil.html" target="_blank">原文链接</a>
+    
+  </div>
+  
+  <div class="reason-tags">评分依据：<span class="reason-tag">source_weight:30</span><span class="reason-tag">topic:geopolitics_energy</span><span class="reason-tag">topic:commodities</span><span class="reason-tag">topic_bonus[geopolitics_energy]:+22</span><span class="reason-tag">multi_topic[commodities]:+9</span></div>
+  
+</div>
+
+
+<div class="alert-item level-yellow">
+  <div class="alert-top">
+    <div class="score-badge level-yellow">
+      <span class="score-num">57</span>
+      <span class="score-sub">分</span>
+    </div>
+    <div class="alert-main">
+      <div class="alert-title">
+        DJI-Insta360 rivalry, nuclear hint for China’s next carrier: 5 weekend reads you missed
+      </div>
+      <div class="alert-badges">
+        
+        
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="zh-trans">DJI-Insta360竞争、中国下一代航母核动力暗示：你错过的5条周末要闻</div>
+  
+
+  <div class="alert-meta">
+    <span class="alert-meta-item">SCMP-亚洲商业</span>
+    <span class="alert-meta-item">2026-04-27 12:28</span>
+  </div>
+
+  
+  <div class="summary-plain">We have put together stories from our coverage last weekend to help you stay informed about news across Asia and beyond. If you would like to see more of our reporting, please consider subscribing. 1. As DJI duels Insta360, China sharpens global hardware edge amid US scrutiny 2. Did China just hint that its next aircraft carrier will be nuclear-powered? 3. Reverend Derek Li, father of injured Hong Kong Mirror dancer Mo Li, dies 4. 3 killed in Japanese Type 10 tank blast that has military...</div>
+  
+
+  <div class="alert-footer">
+    <a class="alert-link primary" href="https://www.scmp.com/news/world/article/3351509/dji-insta360-rivalry-nuclear-hint-chinas-next-carrier-5-weekend-reads-you-missed?utm_source=rss_feed" target="_blank">原文链接</a>
+    
+  </div>
+  
+  <div class="reason-tags">评分依据：<span class="reason-tag">source_weight:32</span><span class="reason-tag">global_shock:+25</span></div>
+  
+</div>
+
+
+<div class="alert-item level-yellow">
+  <div class="alert-top">
+    <div class="score-badge level-yellow">
+      <span class="score-num">57</span>
+      <span class="score-sub">分</span>
+    </div>
+    <div class="alert-main">
+      <div class="alert-title">
+        <span class="alert-topic-tag">通胀/就业/GDP（CPI/PCE/NFP/PMI）</span>California&#39;s Billionaire Tax Proposal Has &#39;Slippery Slope&#39; Lever
+      </div>
+      <div class="alert-badges">
+        
+        
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="zh-trans">加州亿万富翁税提案存“滑坡”效应</div>
+  
+
+  <div class="alert-meta">
+    <span class="alert-meta-item">ZeroHedge - 宏观风险预警</span>
+    <span class="alert-meta-item">2026-04-27 10:35</span>
+  </div>
+
+  
+  <div class="summary-plain">California&#39;s Billionaire Tax Proposal Has &#39;Slippery Slope&#39; Lever California’s latest effort to tax its richest residents into leaving is barreling toward the ballot - only this time, it&#39;s got a built-in &#39;slippery slope &#39; lever once voters hand them the keys. Backers of the proposed “billionaire tax” say they have already cleared the first hurdle, gathering more than enough signatures (at least 1.5 million) to qualify a measure that would impose a one-time 5% levy on residents with net worths above $1 billion, the Wall Street Journal reports. On its face, the proposal is straightforward: a targeted strike at roughly 200 ultrawealthy individuals meant to plug a looming multibillion-dollar hole in California’s healthcare funding. But buried in the fine print -and now surfacing in a growing political backlash-is a provision that could allow lawmakers to revisit, revise, and potentially expand the tax later with a two-thirds vote. That clause is fast becoming the real story. The initiative’s language allows the California Legislature to amend the law so long as changes are “consistent with” and “further the purposes” of the act (aka the slippery slope). In Sacramento, that phrasing is doing a lot of work. Critics argue it effectively hands lawmakers a tool that could evolve well beyond a one-time billionaire levy . With a two-thirds majority, the Legislature could lower thresholds, extend timelines, or reinterpret what qualifies as taxable wealth . In a state where Democrats already hold supermajorities in both chambers, that is less a hypothetical than a political reality. This is significant I get it — taxing Billionaires is popular But the proposed tax in CA is something vastly more expansive It would give the CA legislature a new power: The ability to lower the threshold or repeatedly pass the tax Simply with votes from the CA legislature https://t.co/YcBUy7gTJN — Shaun Maguire (@shaunmmaguire) April 27, 2026 California, meanwhile, has done this kind of thing before where they kick the door open with a seemingly innocuous bill. For example, in 2012 voters approved Proposition 30 as “temporary taxes to fund education,” promising a sunset once the recession eased. Four years later , with the economy recovered, the same coalition returned with Proposition 55 and extended the high-income tax hikes for another 12 years —without extending the sales tax or returning to voters for full approval. Nearly identical “consistent with and furthers the purposes” amendment clauses appear in Proposition 64 (marijuana legalization) and Proposition 63 (Mental Health Services Act), and have been used repeatedly to expand taxes, regulations, and spending far beyond the original ballot language. The billionaire tax measure contains this exact same permissive language. Once voters bless a flexible wealth-tax framework, Sacramento has shown it will use that door when fiscal pressure returns - which, in California, it always does. The proposal has already triggered a high-profile reaction among the very group it targets. One of the most prominent examples is Google co-founder Sergey Brin . Sergey BrinPhotographer: Will Oliver/EPA/Bloomberg In a late-evening confrontation at a Christmas party hosted by crypto titan Chris Larsen in a treehouse nestled in redwoods north of San Francisco, Brin and his wellness-influencer girlfriend Gerelyn Gilbert-Soto told Gov. Gavin Newsom they were leaving the state over the proposed billionaire tax, which could hit Brin’s massive stake in Alphabet and his fortune. Newsom, who opposes the wealth tax, was still telling people about the lengthy exchange at the party months later, complaining of a lingering cold the pair had given him, according to the people, who asked not to be named discussing private conversations with the governor. -Bloomberg Brin followed through: he relocated to Nevada ahead of the tax’s residency cutoff, purchasing a $42 million lakeside mansion on the Nevada side of Lake Tahoe. He has since poured more than $58 million into political efforts over the past four months, becoming the largest donor to the group Building a Better California, which is dedicated to fighting the wealth tax and pushing pro-business policies. His move and massive spending have become a symbol - if not entirely representative - of a broader anxiety rippling through California’s economic base. The concern isn’t just that billionaires might leave. It’s what happens if they do. Also his wellness-influencer girlfriend (Gilbert-Soto) is pretty hot. California’s tax structure is unusually dependent on its wealthiest residents. Even a small number of departures can create outsized revenue swings. Analysts have warned the proposed tax could generate “tens of billions” in the short term-but also risk long-term losses if it accelerates outmigration. Gov. Gavin Newsom has echoed that warning, opposing the measure on the grounds that it could destabilize the state’s already volatile revenue system. That leaves California facing a paradox increasingly common in blue-state fiscal policy: a push to extract more from the ultrawealthy, paired with a growing dependence on keeping them in place. Supporters argue the stakes justify the risk. The tax is designed to offset federal healthcare cuts projected to cost the state more than $28 billion annually and leave millions without coverage. “ This did not start as a political statement about rising inequality ,” said union leaders backing the measure. “ We are simply trying to solve a huge and immediate problem. ” But opponents say the mechanism matters as much as the goal. Their central warning is that once the state normalizes wealth-based taxation through a flexible statutory framework, the definition of “wealthy” can shift. Today that threshold is $1 billion. Tomorrow, critics argue, it could be far lower-especially in a legislature empowered to act without returning to voters. What a mess... Tyler Durden Sun, 04/26/2026 - 22:35</div>
+  
+
+  <div class="alert-footer">
+    <a class="alert-link primary" href="https://www.zerohedge.com/political/californias-billionaire-tax-proposal-has-slippery-slope-lever" target="_blank">原文链接</a>
+    
+  </div>
+  
+  <div class="reason-tags">评分依据：<span class="reason-tag">source_weight:22</span><span class="reason-tag">topic:inflation_jobs</span><span class="reason-tag">topic:us_politics_fiscal</span><span class="reason-tag">topic:tech_giants_earnings</span><span class="reason-tag">topic:macro_general</span><span class="reason-tag">topic_bonus[inflation_jobs]:+22</span><span class="reason-tag">multi_topic[us_politics_fiscal]:+13</span></div>
+  
+</div>
+
+
+<div class="alert-item level-yellow">
+  <div class="alert-top">
+    <div class="score-badge level-yellow">
+      <span class="score-num">57</span>
+      <span class="score-sub">分</span>
+    </div>
+    <div class="alert-main">
+      <div class="alert-title">
+        <span class="alert-topic-tag">通胀/就业/GDP（CPI/PCE/NFP/PMI）</span>&#34;The National Security Premium&#34;: US Plan To Counter China In Critical Miners Could Drive Up Global Prices
+      </div>
+      <div class="alert-badges">
+        
+        
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="zh-trans">“国家安全溢价”：美国应对中国关键矿产计划或推高全球价格</div>
+  
+
+  <div class="alert-meta">
+    <span class="alert-meta-item">ZeroHedge - 宏观风险预警</span>
+    <span class="alert-meta-item">2026-04-27 07:15</span>
+  </div>
+
+  
+  <div class="summary-plain">&#34;The National Security Premium&#34;: US Plan To Counter China In Critical Miners Could Drive Up Global Prices The US is pressing its allies to rethink how they source essential minerals, urging them to accept higher prices if it means reducing reliance on China, which currently dominates much of the global supply, according to a new report from Financial Times . According to US Trade Representative Jamieson Greer, countries working with Washington should expect to pay extra for materials obtained through a proposed network of trusted partners. He framed this added cost as a necessary trade-off to strengthen supply chain security. The idea under discussion involves setting minimum price levels for critical minerals among participating nations. The goal is to make mining and processing outside China financially viable, while potentially using tariffs or other restrictions to block cheaper imports from non-participants. “There is a premium we pay, and I call it the national security premium, and we will all pay a national security premium to have a secure supply chain,” Greer said. Not everyone is convinced. Some US partners, speaking privately, worry that such a system could drive up expenses for key industries and provoke a response from China. Businesses in sectors like defense, car manufacturing, and renewable energy could be particularly affected if input costs rise. The debate reflects a broader challenge: breaking China’s grip on these resources is difficult after years of heavy investment that gave it a leading position. At the same time, many developed economies are already dealing with inflation and high energy prices, adding to the sensitivity around any policy that could increase costs further. The FT report says that Greer has pushed back on concerns about affordability, arguing that prioritizing low prices in the past is exactly what left Western countries dependent on Chinese supplies. In his view, paying more now is the price of building a more secure and resilient system. Meanwhile, governments are wary of possible retaliation. China has previously used its control over mineral exports as leverage, and any coordinated effort to sideline its role could lead to countermeasures. Despite these tensions, there are signs of cooperation. Earlier this year, partners including the EU and Japan expressed interest in working together on a joint framework for critical minerals. Ideas being explored include shared pricing arrangements, financial support to bridge cost gaps, and agreements to buy from one another rather than external suppliers. Tyler Durden Sun, 04/26/2026 - 19:15</div>
+  
+
+  <div class="alert-footer">
+    <a class="alert-link primary" href="https://www.zerohedge.com/markets/national-security-premium-us-plan-counter-china-critical-miners-could-drive-global-prices" target="_blank">原文链接</a>
+    
+  </div>
+  
+  <div class="reason-tags">评分依据：<span class="reason-tag">source_weight:22</span><span class="reason-tag">topic:inflation_jobs</span><span class="reason-tag">topic:us_politics_fiscal</span><span class="reason-tag">topic:macro_general</span><span class="reason-tag">topic_bonus[inflation_jobs]:+22</span><span class="reason-tag">multi_topic[us_politics_fiscal]:+13</span></div>
+  
+</div>
+
+
+<div class="alert-item level-yellow">
+  <div class="alert-top">
+    <div class="score-badge level-yellow">
+      <span class="score-num">57</span>
+      <span class="score-sub">分</span>
+    </div>
+    <div class="alert-main">
+      <div class="alert-title">
+        Scientists in China create a predator-like material to hunt for uranium in the ocean
+      </div>
+      <div class="alert-badges">
+        
+        
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="zh-trans">中国科学家创造类捕食者材料从海洋中提取铀</div>
+  
+
+  <div class="alert-meta">
+    <span class="alert-meta-item">SCMP-中国经济</span>
+    <span class="alert-meta-item">2026-04-26 22:00</span>
+  </div>
+
+  
+  <div class="summary-plain">An international research team in China has developed a microscopic “predator-like” material capable of swimming through water and hunting uranium ions, a breakthrough that could open new possibilities for nuclear fuel extraction and cleaning up radioactive pollution. The light-powered material, a metal-organic framework (MOF) micromotor created by researchers at the Chinese Academy of Sciences’ Qinghai Institute of Salt Lakes, can autonomously move through water while capturing uranium ions....</div>
+  
+
+  <div class="alert-footer">
+    <a class="alert-link primary" href="https://www.scmp.com/news/china/science/article/3351260/scientists-china-create-predator-material-hunt-uranium-ocean?utm_source=rss_feed" target="_blank">原文链接</a>
+    
+  </div>
+  
+  <div class="reason-tags">评分依据：<span class="reason-tag">source_weight:32</span><span class="reason-tag">global_shock:+25</span></div>
+  
+</div>
+
+
+<div class="alert-item level-yellow">
+  <div class="alert-top">
+    <div class="score-badge level-yellow">
+      <span class="score-num">56</span>
+      <span class="score-sub">分</span>
+    </div>
+    <div class="alert-main">
+      <div class="alert-title">
+        <span class="alert-topic-tag">科技巨头/财报季</span>Google, Microsoft to be among bidders to lease SoftBank US data center
+      </div>
+      <div class="alert-badges">
+        
+        
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="zh-trans">谷歌、微软将竞标租赁软银美国数据中心</div>
+  
+
+  <div class="alert-meta">
+    <span class="alert-meta-item">Nikkei Asia</span>
+    <span class="alert-meta-item">2026-04-27 16:04</span>
+  </div>
+
+  
+
+  <div class="alert-footer">
+    <a class="alert-link primary" href="https://asia.nikkei.com/business/softbank/google-microsoft-to-be-among-bidders-to-lease-softbank-us-data-center" target="_blank">原文链接</a>
+    
+  </div>
+  
+  <div class="reason-tags">评分依据：<span class="reason-tag">source_weight:33</span><span class="reason-tag">topic:tech_giants_earnings</span><span class="reason-tag">topic_bonus[tech_giants_earnings]:+8</span><span class="reason-tag">heat_burst:+15(count=3)</span></div>
+  
+</div>
+
+
+<div class="alert-item level-yellow">
+  <div class="alert-top">
+    <div class="score-badge level-yellow">
+      <span class="score-num">55</span>
+      <span class="score-sub">分</span>
+    </div>
+    <div class="alert-main">
+      <div class="alert-title">
+        <span class="alert-topic-tag">地缘与能源</span>Vietjet presses ahead with Europe flights despite Middle East turmoil
+      </div>
+      <div class="alert-badges">
+        
+        
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="zh-trans">越捷航空无视中东动荡推进欧洲航班</div>
+  
+
+  <div class="alert-meta">
+    <span class="alert-meta-item">Nikkei Asia</span>
+    <span class="alert-meta-item">2026-04-27 16:04</span>
+  </div>
+
+  
+
+  <div class="alert-footer">
+    <a class="alert-link primary" href="https://asia.nikkei.com/business/transportation/vietjet-presses-ahead-with-europe-flights-despite-middle-east-turmoil" target="_blank">原文链接</a>
+    
+  </div>
+  
+  <div class="reason-tags">评分依据：<span class="reason-tag">source_weight:33</span><span class="reason-tag">topic:geopolitics_energy</span><span class="reason-tag">topic_bonus[geopolitics_energy]:+22</span></div>
+  
+</div>
+
+
+<div class="alert-item level-yellow">
+  <div class="alert-top">
+    <div class="score-badge level-yellow">
+      <span class="score-num">55</span>
+      <span class="score-sub">分</span>
+    </div>
+    <div class="alert-main">
+      <div class="alert-title">
+        <span class="alert-topic-tag">FOMC/美联储</span>Was The Atlantic&#39;s Kash Patel Smear A Setup To Discredit The SPLC Indictment?
+      </div>
+      <div class="alert-badges">
+        
+        
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="zh-trans">《大西洋月刊》对卡什·帕特尔的抹黑是抹黑SPLC起诉的圈套？</div>
+  
+
+  <div class="alert-meta">
+    <span class="alert-meta-item">ZeroHedge - 宏观风险预警</span>
+    <span class="alert-meta-item">2026-04-27 00:15</span>
+  </div>
+
+  
+  <div class="summary-plain">Was The Atlantic&#39;s Kash Patel Smear A Setup To Discredit The SPLC Indictment? On April 17, The Atlantic published an anonymously sourced hit piece against FBI Director Kash Patel - painting him as a blackout-drunk, paranoid, and erratic executive barely capable of running the nation&#39;s premier law enforcement agency. Three days later, a federal grand jury indicted the Southern Poverty Law Center for wire fraud, false statements, and conspiracy to commit money laundering. The question conservative circles are now asking is whether the hit piece was deliberately conceived and timed to discredit Patel and the SPLC investigation. Democrats pounced on The Atlantic hit piece, launching an investigation into his behavior the same day that the SPLC indictment was announced. And that was the point of the Atlantic story. See how that works. https://t.co/WRjlc4twIQ — Insurrection Barbie (@DefiyantlyFree) April 22, 2026 According to the Department of Justice, between 2014 and 2023, the organization secretly funneled more than $3 million in donated funds to individuals associated with violent extremist groups - including the Ku Klux Klan, Aryan Nations, American Nazi Party, and the National Socialist Party of America. &#34;They use their donor network to raise money to purportedly dismantle violent extremist groups. However, the SPLC — the Southern Poverty Law Center — used the money they raised from their donor network to actually pay the leadership of these very groups,” Patel said at the announcement. “They used the fraudulently raised money by lying to their donor network, thousands of Americans, to go ahead and actually pay the leadership of these supposed violent extremist groups.” Patel added, “ They attempted to hide their criminal activity from our financial banking network. They set up shell companies and entities around America so that the financial institutions that we rely on as everyday Americans were deceived in believing that money was not coming from the Southern Poverty Law Center in the perpetration of this scheme and fraud, but rather fictitious entities they stood up to perpetuate this ongoing fraud.” 🚨BREAKING: DOJ charges the Southern Poverty Law Center (SPLC) with wire fraud, false statements, and conspiracy to commit money laundering. The SPLC secretly funneled $3M+ in donor funds to violent racist extremist groups: -Ku Klux Klan -American Nazi Party -Aryan Nation… pic.twitter.com/0hcf2sH9LZ — KanekoaTheGreat (@KanekoaTheGreat) April 21, 2026 The Atlantic is owned by Laurene Powell Jobs through her Emerson Collective, which holds a majority stake in the magazine. And her connection to the SPLC goes back a long time. In a 2018 Washington Post profile, the paper described her very personal connection to the SPLC: Laurene Powell made her first foray into philanthropy near the beginning of high school in West Milford. She learned of the work of the Southern Poverty Law Center and dipped into her savings to send a cashier’s check of about $20. She got a form thank-you letter back from civil rights crusader Morris Dees. “They would reliably write to me a couple of times a year,” she says. “I would read them over and over, and they told really beautiful stories. I was always animated by the notion of who gets the opportunity and who doesn’t.” In 2019, Powell Jobs reportedly revealed that she’d been anonymously funding the SPLC for years. Lauren Powell Jobs, May 27, 2019: &#34;We do all of our philanthropic giving anonymously. But we had been funding SPLC and we decided that we wanted to do some teaching tolerance curriculum in partnership with them. And so one of our team members was actually talking to Morris Dees,… https://t.co/9vVsXCjO8V — Erica Knight (@_EricaKnight) April 22, 2026 The SPLC wasn&#39;t just a charity she supported. It was, by her own account, the organization that introduced her to philanthropy. Former FBI Deputy Director Dan Bongino revealed earlier this week that he believes something larger is operating underneath the surface. &#34;The hit on Kash Patel, the bullshit hit by The Atlantic , which I addressed yesterday, is gonna make a lot more sense in the coming weeks and months ,&#34; he said. &#34;I can&#39;t give you a definitive timeline. I&#39;m on the outside now. However, I can tell you what I know is going on because I started a lot of it.&#34; He added, “I promise this thing is gonna make a whole lot of sense. You&#39;re gonna find out, as they say in the South, right quick about why they need him out, like, now. It&#39;s got nothing to do with that story being even remotely true. Remember this. Bookmark it.&#34; 🚨🚨🚨 @dbongino : &#34;I promise you this. Look at me. Everybody zoom in. Focker, look at me... The hit on Kash Patel is going to make a lot of sense very soon. There&#39;s a reason the media and Democrats want him out NOW. Flag it.&#34; 🚩 pic.twitter.com/oizQlLtq0I — Bongino Report (@BonginoReport) April 21, 2026 Whether he was referring to the connection between The Atlantic and SPLC is not clear, but the hit piece dropped days before that indictment became public, and the SPLC would have had reason to anticipate charges were coming. The Atlantic hit piece bought time, diverted attention, and handed critics a ready-made narrative to undermine Patel&#39;s credibility at exactly the moment it mattered most. Tyler Durden Sun, 04/26/2026 - 12:15</div>
+  
+
+  <div class="alert-footer">
+    <a class="alert-link primary" href="https://www.zerohedge.com/political/was-atlantics-kash-patel-smear-setup-discredit-splc-indictment" target="_blank">原文链接</a>
+    
+  </div>
+  
+  <div class="reason-tags">评分依据：<span class="reason-tag">source_weight:22</span><span class="reason-tag">topic:fed</span><span class="reason-tag">topic:inflation_jobs</span><span class="reason-tag">topic:key_figures</span><span class="reason-tag">topic:macro_general</span><span class="reason-tag">topic_bonus[fed]:+30</span><span class="reason-tag">multi_topic[inflation_jobs]:+13</span><span class="reason-tag">uncertainty:-10</span></div>
+  
+</div>
+
+
+<div class="alert-item level-yellow">
+  <div class="alert-top">
+    <div class="score-badge level-yellow">
+      <span class="score-num">55</span>
+      <span class="score-sub">分</span>
+    </div>
+    <div class="alert-main">
+      <div class="alert-title">
+        <span class="alert-topic-tag">地缘与能源</span>Middle East shipping crisis elevates China-Europe railway’s profile
+      </div>
+      <div class="alert-badges">
+        
+        
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="zh-trans">中东航运危机提升中欧铁路地位</div>
+  
+
+  <div class="alert-meta">
+    <span class="alert-meta-item">SCMP-亚洲商业</span>
+    <span class="alert-meta-item">2026-04-26 20:30</span>
+  </div>
+
+  
+  <div class="summary-plain">The China-Europe railway network has evolved in the past decade from a nascent logistical experiment into a growing commercial alternative to maritime and air freight. In the wake of the US-Israel war on Iran, it might now be assuming an unanticipated role as a key security provider for transcontinental supply chains. What began as sporadic trial runs has matured into a sprawling web of rail connections that currently links 235 cities across 26 European countries with more than 120 Chinese...</div>
+  
+
+  <div class="alert-footer">
+    <a class="alert-link primary" href="https://www.scmp.com/opinion/world-opinion/article/3350835/middle-east-shipping-crisis-elevates-china-europe-railways-profile?utm_source=rss_feed" target="_blank">原文链接</a>
+    
+  </div>
+  
+  <div class="reason-tags">评分依据：<span class="reason-tag">source_weight:32</span><span class="reason-tag">topic:geopolitics_energy</span><span class="reason-tag">topic:macro_general</span><span class="reason-tag">topic_bonus[geopolitics_energy]:+22</span><span class="reason-tag">multi_topic[macro_general]:+1</span></div>
+  
+</div>
+
+    </div>
+    
+
+    
+  </div>
+</div>
+
+
+
+<div class="card" id="sec-topics" data-section="topics">
+  <div class="card-header teal" onclick="toggleCard('topics')">
+    <span>主题分类新闻
+      <span style="font-size:11px; font-weight:400; opacity:.75; margin-left:8px;">6 个主题</span>
+    </span>
+    <span class="toggle-btn" id="topics-btn">▼ 收起</span>
+  </div>
+  <div id="topics" class="collapsible">
+    <div class="topic-list">
+    
+    
+    
+    <div class="topic-group">
+      <div class="topic-group-header" onclick="toggleTopicGroup(1)">
+        <span class="topic-group-name">地缘与能源</span>
+        <span class="topic-count">10 条</span>
+        <span class="topic-group-chevron open" id="tg-chev-1">▼</span>
+      </div>
+      <div class="topic-items-wrap" id="tg-1">
+      
+      <div class="topic-item">
+        <div class="topic-item-title"><a href="https://www.scmp.com/news/world/russia-central-asia/article/3351499/16-dead-strikes-chernobyl-anniversary-highlights-nuclear-risks-russia-ukraine-war?utm_source=rss_feed" target="_blank">Strikes in Ukraine and Russia kill at least 16 on Chernobyl disaster anniversary</a></div>
+        <div class="topic-item-meta">SCMP-亚洲商业 · 2026-04-27 01:57 · 100分</div>
+      </div>
+      
+      <div class="topic-item">
+        <div class="topic-item-title"><a href="https://www.scmp.com/news/china/diplomacy/article/3351486/china-warns-eu-remove-firms-and-citizens-russian-sanctions-list?utm_source=rss_feed" target="_blank">China warns EU to remove firms and citizens from Russian sanctions list</a></div>
+        <div class="topic-item-meta">SCMP-中国经济 · 2026-04-26 19:40 · 80分</div>
+      </div>
+      
+      <div class="topic-item">
+        <div class="topic-item-title"><a href="https://www.zerohedge.com/geopolitical/reset-germany-breaking-exhausted-ruling-class" target="_blank">Reset Germany: Breaking With An Exhausted Ruling Class</a></div>
+        <div class="topic-item-meta">ZeroHedge - 宏观风险预警 · 2026-04-27 14:00 · 70分</div>
+      </div>
+      
+      <div class="topic-item">
+        <div class="topic-item-title"><a href="https://finance.yahoo.com/quote/CL%3DF" target="_blank">📈 WTI 原油 (CRUDE OIL) 上涨 +2.39%｜现价 $96.66（+2.26 USD）</a></div>
+        <div class="topic-item-meta">Yahoo Finance-美股指数+大宗商品 · 2026-04-27 16:04 · 66分</div>
+      </div>
+      
+      <div class="topic-item">
+        <div class="topic-item-title"><a href="https://www.marketwatch.com/story/u-s-stock-futures-fall-oil-rises-ahead-of-a-busy-week-for-wall-street-c3e49958?mod=mw_rss_topstories" target="_blank">U.S. stock futures mixed, oil rises ahead of a busy week for Wall Street</a></div>
+        <div class="topic-item-meta">MarketWatch - Top Stories, MarketWatch-市场快讯 (2 sources) · 2026-04-27 11:05 · 66分</div>
+      </div>
+      
+      <div class="topic-item">
+        <div class="topic-item-title"><a href="https://oilprice.com/Latest-Energy-News/World-News/Chinas-Metals-Boom-Hits-Highest-Profit-Levels-Since-2016.html" target="_blank">China’s Metals Boom Hits Highest Profit Levels Since 2016</a></div>
+        <div class="topic-item-meta">OilPrice-能源市场 · 2026-04-27 15:00 · 61分</div>
+      </div>
+      
+      <div class="topic-item">
+        <div class="topic-item-title"><a href="https://oilprice.com/Latest-Energy-News/World-News/Goldman-Sachs-Raises-Oil-Price-Forecast-Yet-Again.html" target="_blank">Goldman Sachs Raises Oil Price Forecast Yet Again</a></div>
+        <div class="topic-item-meta">OilPrice-能源市场 · 2026-04-27 13:14 · 61分</div>
+      </div>
+      
+      <div class="topic-item">
+        <div class="topic-item-title"><a href="https://oilprice.com/Energy/Crude-Oil/Europe-Emerges-As-Key-Buyer-Of-US-Strategic-Petroleum-Reserve-Oil.html" target="_blank">Europe Emerges As Key Buyer Of U.S. Strategic Petroleum Reserve Oil</a></div>
+        <div class="topic-item-meta">OilPrice-能源市场 · 2026-04-27 07:00 · 61分</div>
+      </div>
+      
+      <div class="topic-item">
+        <div class="topic-item-title"><a href="https://asia.nikkei.com/business/transportation/vietjet-presses-ahead-with-europe-flights-despite-middle-east-turmoil" target="_blank">Vietjet presses ahead with Europe flights despite Middle East turmoil</a></div>
+        <div class="topic-item-meta">Nikkei Asia · 2026-04-27 16:04 · 55分</div>
+      </div>
+      
+      <div class="topic-item">
+        <div class="topic-item-title"><a href="https://www.scmp.com/opinion/world-opinion/article/3350835/middle-east-shipping-crisis-elevates-china-europe-railways-profile?utm_source=rss_feed" target="_blank">Middle East shipping crisis elevates China-Europe railway’s profile</a></div>
+        <div class="topic-item-meta">SCMP-亚洲商业 · 2026-04-26 20:30 · 55分</div>
+      </div>
+      
+      </div>
+    </div>
+    
+    <div class="topic-group">
+      <div class="topic-group-header" onclick="toggleTopicGroup(2)">
+        <span class="topic-group-name">FOMC/美联储</span>
+        <span class="topic-count">5 条</span>
+        <span class="topic-group-chevron open" id="tg-chev-2">▼</span>
+      </div>
+      <div class="topic-items-wrap" id="tg-2">
+      
+      <div class="topic-item">
+        <div class="topic-item-title"><a href="https://www.marketwatch.com/story/wall-streets-super-bowl-wednesday-alphabet-amazon-microsoft-and-meta-report-along-with-powells-last-fed-meeting-88eb1710?mod=mw_rss_topstories" target="_blank">Wall Street’s Super Bowl Wednesday: Alphabet, Amazon, Microsoft and Meta report along with Powell’s last Fed meeting</a></div>
+        <div class="topic-item-meta">MarketWatch - Top Stories, MarketWatch-市场快讯 (2 sources) · 2026-04-27 05:00 · 74分</div>
+      </div>
+      
+      <div class="topic-item">
+        <div class="topic-item-title"><a href="https://www.marketwatch.com/story/sen-thom-tillis-drops-opposition-says-hell-back-kevin-warshs-fed-confirmation-b7252136?mod=mw_rss_topstories" target="_blank">Sen. Thom Tillis drops opposition, says he’ll back Kevin Warsh’s Fed confirmation</a></div>
+        <div class="topic-item-meta">MarketWatch - Top Stories, MarketWatch-市场快讯 (2 sources) · 2026-04-27 03:56 · 74分</div>
+      </div>
+      
+      <div class="topic-item">
+        <div class="topic-item-title"><a href="https://www.economist.com/finance-and-economics/2026/04/26/will-kevin-warsh-trumpify-the-federal-reserve" target="_blank">Will Kevin Warsh Trumpify the Federal Reserve?</a></div>
+        <div class="topic-item-meta">The Economist - Finance &amp; Economics · 2026-04-26 21:17 · 67分</div>
+      </div>
+      
+      <div class="topic-item">
+        <div class="topic-item-title"><a href="https://www.zerohedge.com/markets/bessent-defends-us-dollar-swap-lines-uae-considers-formal-funding-request" target="_blank">Bessent Defends US Dollar Swap Lines As UAE Considers Formal Funding Request</a></div>
+        <div class="topic-item-meta">ZeroHedge - 宏观风险预警 · 2026-04-27 07:38 · 65分</div>
+      </div>
+      
+      <div class="topic-item">
+        <div class="topic-item-title"><a href="https://www.zerohedge.com/political/was-atlantics-kash-patel-smear-setup-discredit-splc-indictment" target="_blank">Was The Atlantic&#39;s Kash Patel Smear A Setup To Discredit The SPLC Indictment?</a></div>
+        <div class="topic-item-meta">ZeroHedge - 宏观风险预警 · 2026-04-27 00:15 · 55分</div>
+      </div>
+      
+      </div>
+    </div>
+    
+    <div class="topic-group">
+      <div class="topic-group-header" onclick="toggleTopicGroup(3)">
+        <span class="topic-group-name">通胀/就业/GDP（CPI/PCE/NFP/PMI）</span>
+        <span class="topic-count">4 条</span>
+        <span class="topic-group-chevron open" id="tg-chev-3">▼</span>
+      </div>
+      <div class="topic-items-wrap" id="tg-3">
+      
+      <div class="topic-item">
+        <div class="topic-item-title"><a href="https://www.zerohedge.com/markets/futures-slide-oil-jumps-3-week-high-after-iran-talks-collapse" target="_blank">Futures Jump To Record High After Report Iran Offered New Non-Starter Proposal To Reopen Strait</a></div>
+        <div class="topic-item-meta">ZeroHedge - 宏观风险预警 · 2026-04-27 10:50 · 82分</div>
+      </div>
+      
+      <div class="topic-item">
+        <div class="topic-item-title"><a href="https://www.zerohedge.com/geopolitical/reality-behind-us-iran-negotiations" target="_blank">The Reality Behind US-Iran Negotiations</a></div>
+        <div class="topic-item-meta">ZeroHedge - 宏观风险预警 · 2026-04-27 09:20 · 82分</div>
+      </div>
+      
+      <div class="topic-item">
+        <div class="topic-item-title"><a href="https://www.zerohedge.com/political/californias-billionaire-tax-proposal-has-slippery-slope-lever" target="_blank">California&#39;s Billionaire Tax Proposal Has &#39;Slippery Slope&#39; Lever</a></div>
+        <div class="topic-item-meta">ZeroHedge - 宏观风险预警 · 2026-04-27 10:35 · 57分</div>
+      </div>
+      
+      <div class="topic-item">
+        <div class="topic-item-title"><a href="https://www.zerohedge.com/markets/national-security-premium-us-plan-counter-china-critical-miners-could-drive-global-prices" target="_blank">&#34;The National Security Premium&#34;: US Plan To Counter China In Critical Miners Could Drive Up Global Prices</a></div>
+        <div class="topic-item-meta">ZeroHedge - 宏观风险预警 · 2026-04-27 07:15 · 57分</div>
+      </div>
+      
+      </div>
+    </div>
+    
+    <div class="topic-group">
+      <div class="topic-group-header" onclick="toggleTopicGroup(4)">
+        <span class="topic-group-name">突发事件与监管</span>
+        <span class="topic-count">1 条</span>
+        <span class="topic-group-chevron open" id="tg-chev-4">▼</span>
+      </div>
+      <div class="topic-items-wrap" id="tg-4">
+      
+      <div class="topic-item">
+        <div class="topic-item-title"><a href="https://www.scmp.com/news/world/middle-east/article/3351517/netanyahus-biggest-rivals-join-forces-israels-coming-election?utm_source=rss_feed" target="_blank">Netanyahu’s biggest rivals join forces for Israel’s coming election</a></div>
+        <div class="topic-item-meta">SCMP-亚洲商业 · 2026-04-27 11:55 · 72分</div>
+      </div>
+      
+      </div>
+    </div>
+    
+    <div class="topic-group">
+      <div class="topic-group-header" onclick="toggleTopicGroup(5)">
+        <span class="topic-group-name">科技巨头/财报季</span>
+        <span class="topic-count">1 条</span>
+        <span class="topic-group-chevron open" id="tg-chev-5">▼</span>
+      </div>
+      <div class="topic-items-wrap" id="tg-5">
+      
+      <div class="topic-item">
+        <div class="topic-item-title"><a href="https://asia.nikkei.com/business/softbank/google-microsoft-to-be-among-bidders-to-lease-softbank-us-data-center" target="_blank">Google, Microsoft to be among bidders to lease SoftBank US data center</a></div>
+        <div class="topic-item-meta">Nikkei Asia · 2026-04-27 16:04 · 56分</div>
+      </div>
+      
+      </div>
+    </div>
+    
+    <div class="topic-group">
+      <div class="topic-group-header" onclick="toggleTopicGroup(6)">
+        <span class="topic-group-name">uncategorized</span>
+        <span class="topic-count">2 条</span>
+        <span class="topic-group-chevron open" id="tg-chev-6">▼</span>
+      </div>
+      <div class="topic-items-wrap" id="tg-6">
+      
+      <div class="topic-item">
+        <div class="topic-item-title"><a href="https://www.scmp.com/news/world/article/3351509/dji-insta360-rivalry-nuclear-hint-chinas-next-carrier-5-weekend-reads-you-missed?utm_source=rss_feed" target="_blank">DJI-Insta360 rivalry, nuclear hint for China’s next carrier: 5 weekend reads you missed</a></div>
+        <div class="topic-item-meta">SCMP-亚洲商业 · 2026-04-27 12:28 · 57分</div>
+      </div>
+      
+      <div class="topic-item">
+        <div class="topic-item-title"><a href="https://www.scmp.com/news/china/science/article/3351260/scientists-china-create-predator-material-hunt-uranium-ocean?utm_source=rss_feed" target="_blank">Scientists in China create a predator-like material to hunt for uranium in the ocean</a></div>
+        <div class="topic-item-meta">SCMP-中国经济 · 2026-04-26 22:00 · 57分</div>
+      </div>
+      
+      </div>
+    </div>
+    
+    </div>
+  </div>
+</div>
+
+
+
+<div class="page-footer">
+  市场资讯摘要 · 2026-04-27 16:09:28 · 本内容仅供新闻资讯分享，不构成任何投资建议。
+</div>
+
+<button id="back-to-top" title="返回顶部">↑</button>
+
+</body>
+</html>
