@@ -1,0 +1,3385 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>市场资讯摘要 - 2026年04月25日</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+/* Fonts — Mentat Design System */
+@font-face {
+  font-family: 'NotoSerifCJKsc-Bold';
+  src: url('https://assets-persist.lovart.ai/agent-static-assets/NotoSerifCJKsc-Bold.otf');
+}
+@font-face {
+  font-family: 'NotoSerifCJKsc-Regular';
+  src: url('https://assets-persist.lovart.ai/agent-static-assets/NotoSerifCJKsc-Regular.otf');
+}
+@font-face {
+  font-family: 'MiSans-Regular';
+  src: url('https://assets-persist.lovart.ai/agent-static-assets/MiSans-Regular.ttf');
+}
+@font-face {
+  font-family: 'MiSans-Medium';
+  src: url('https://assets-persist.lovart.ai/agent-static-assets/MiSans-Medium.ttf');
+}
+
+/* ══ Design Tokens — Mentat Intelligence 设计规范 ═══════════════════ */
+:root {
+  --bg:       #1A1A1B;
+  --bg-card:  #1E1E1F;
+  --bg-hover: #222222;
+  --surface:  #1E1E1F;
+  --border:   #3A3A3A;
+  --border2:  #2A2A2A;
+  --text:     #E5E5E5;
+  --text2:    #E5E5E5;
+  --muted:    #999999;
+  --faint:    #888888;
+  --ghost:    rgba(255,255,255,.03);
+
+  --gold:     #C19A6B;
+  --gold-dim: rgba(193, 154, 107, 0.1);
+  --gold-active: rgba(193, 154, 107, 0.2);
+  --burgundy: #4E1010;
+  --burgundy-dim: rgba(78, 16, 16, 0.15);
+  --burgundy-light: #8B2E2E;
+
+  --red:     #FF4444;   --red-light: rgba(78, 16, 16, 0.2);   --red-mid: rgba(255,68,68,.15);   --red-border: #8B2E2E;
+  --orange:  #D4A55A;   --orange-light: rgba(212,165,90,.1);   --orange-mid: rgba(212,165,90,.2);  --orange-border: #C19A6B;
+  --green:   #4CAF50;    --green-light: rgba(76,175,80,.1);    --green-mid: rgba(76,175,80,.2);   --green-border: #388E3C;
+  --blue:    #5A9FD4;    --blue-light: rgba(90,159,212,.1);   --blue-mid: rgba(90,159,212,.15);  --blue-border: #5A9FD4;
+  --purple:  #9B8DC4;    --purple-light: rgba(155,141,196,.1); --purple-mid: rgba(155,141,196,.2);
+  --teal:    #5A9FD4;
+
+  --shadow-xs: 0 1px 2px rgba(0,0,0,.2);
+  --shadow-sm: 0 1px 4px rgba(0,0,0,.25), 0 1px 2px rgba(0,0,0,.15);
+  --shadow:    0 3px 8px rgba(0,0,0,.3), 0 1px 3px rgba(0,0,0,.2);
+  --shadow-md: 0 6px 16px rgba(0,0,0,.35), 0 2px 6px rgba(0,0,0,.2);
+
+  --r-sm: 2px;
+  --r:    4px;
+  --r-lg: 4px;
+  --r-btn: 2px;
+  --ease-hover: cubic-bezier(0.4, 0, 0.2, 1);
+  --transition: 0.2s var(--ease-hover);
+  --section-gap: 12px;
+
+  --font-serif: 'NotoSerifCJKsc-Regular', serif;
+  --font-serif-bold: 'NotoSerifCJKsc-Bold', serif;
+  --font-sans: 'MiSans-Regular', -apple-system, BlinkMacSystemFont, 'PingFang SC', sans-serif;
+  --mono: 'Courier New', Courier, monospace;
+}
+
+/* ══ Reset & Base ════════════════════════════════════ */
+*, *::before, *::after { margin:0; padding:0; box-sizing:border-box; -webkit-font-smoothing: antialiased; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--font-sans);
+  font-size: 14px; line-height: 1.6; color: var(--text);
+  background: var(--bg);
+  background-image: linear-gradient(var(--border) 1px, transparent 1px), linear-gradient(90deg, var(--border) 1px, transparent 1px);
+  background-size: 40px 40px; background-position: center top;
+  padding: 12px 16px 36px; max-width: 1720px; margin: 0 auto;
+}
+body::before {
+  content: ''; position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+  background: var(--bg); opacity: 0.97; z-index: -1; pointer-events: none;
+}
+a { color: var(--gold); text-decoration: none; transition: color var(--transition); }
+a:hover { color: #d4af7a; }
+
+/* ══ Sticky Nav — 设计规范: 深色 + 金强调 ══════════════ */
+.sticky-nav {
+  position: sticky; top: 0; z-index: 100;
+  background: rgba(26, 26, 27, 0.95);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border);
+  margin-bottom: var(--section-gap);
+  padding: 0 10px; height: 48px;
+  display: flex; align-items: center; gap: 0;
+  overflow-x: auto; scrollbar-width: none;
+}
+.sticky-nav::-webkit-scrollbar { display: none; }
+.nav-item {
+  flex-shrink: 0; padding: 0 20px; font-size: 12px; font-weight: 500;
+  color: var(--muted); cursor: pointer; border-radius: 0;
+  transition: all 0.2s var(--ease-hover); white-space: nowrap; user-select: none;
+  border: none; background: transparent; letter-spacing: 1px;
+  text-transform: uppercase; height: 48px; display: flex; align-items: center;
+  border-bottom: 2px solid transparent; margin-bottom: -1px;
+  font-family: var(--font-sans);
+}
+.nav-item:hover { color: var(--text); background: var(--gold-dim); }
+.nav-item.active { color: var(--gold); border-bottom-color: var(--gold); background: var(--gold-dim); }
+.nav-sep { width: 1px; height: 14px; background: var(--border); flex-shrink: 0; }
+
+/* ══ Card System — 设计规范 02: 卡片状态 (hover lift + 左侧金条) ══ */
+.card {
+  background: var(--bg-card); border: 1px solid var(--border);
+  border-radius: var(--r);
+  margin-bottom: var(--section-gap); overflow: hidden;
+  transition: transform 0.15s var(--ease-hover), border-color var(--transition), box-shadow var(--transition);
+}
+.card:hover {
+  border-color: var(--border); transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,.3);
+}
+.card-header {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 12px 20px;
+  background: var(--ghost);
+  border-bottom: 1px solid var(--border);
+  border-left: 3px solid var(--gold);
+  color: var(--text); font-weight: 600; font-size: 12px;
+  font-family: var(--font-sans); user-select: none;
+  letter-spacing: 1px; text-transform: uppercase;
+}
+.card-header.blue   { border-left-color: var(--blue);   background: var(--blue-light); color: var(--blue); }
+.card-header.purple { border-left-color: var(--purple); background: var(--purple-light); color: var(--purple); }
+.card-header.green  { border-left-color: var(--green);  background: var(--green-light); color: var(--green); }
+.card-header.gold   { border-left-color: var(--gold);    background: var(--gold-dim); color: var(--gold); }
+.card-header.red    { border-left-color: var(--red);    background: var(--red-light); color: #ff6b6b; }
+.card-header.teal   { border-left-color: var(--teal);   background: var(--blue-light); color: var(--blue); }
+.card-header[onclick] { cursor: pointer; }
+.card-header[onclick]:hover { background: var(--bg-hover); }
+
+.toggle-btn {
+  flex-shrink: 0; font-size: 11px; font-weight: 600;
+  padding: 6px 14px; border-radius: var(--r-btn);
+  background: transparent; color: var(--muted);
+  border: 1px solid var(--border);
+  transition: all 0.2s var(--ease-hover); user-select: none; white-space: nowrap;
+  letter-spacing: 0.5px; text-transform: uppercase;
+  font-family: var(--font-sans);
+}
+.toggle-btn:hover { background: var(--gold-dim); border-color: var(--gold); color: var(--gold); box-shadow: 0 0 15px rgba(193,154,107,0.15); }
+
+.collapsible { }
+.collapsible.hidden { display: none; }
+.brief-collapsible { }
+.brief-collapsible.hidden { display: none; }
+
+/* ══ Page Header — 设计规范: 深色 + 金强调 ══════════ */
+.page-header {
+  background: var(--bg-card);
+  color: var(--text); border-radius: var(--r-lg); padding: 24px 28px 16px;
+  margin-bottom: var(--section-gap);
+  border: 1px solid var(--border); border-left: 4px solid var(--gold);
+  position: relative; overflow: hidden;
+  box-shadow: var(--shadow-sm);
+}
+.page-header::before {
+  content: ''; position: absolute; inset: 0; pointer-events: none;
+  background: radial-gradient(ellipse at 90% 50%, var(--gold-dim) 0%, transparent 60%);
+}
+.page-header h1 {
+  font-family: var(--font-serif-bold);
+  font-size: 24px; font-weight: 700; margin-bottom: 8px;
+  letter-spacing: 1px; position: relative;
+}
+.page-header .meta {
+  font-family: var(--mono);
+  font-size: 12px; color: var(--muted); position: relative;
+  display: flex; align-items: center; gap: 14px; flex-wrap: wrap;
+  letter-spacing: 0.5px;
+}
+.meta-tag {
+  display: inline-flex; align-items: center; gap: 4px;
+  background: var(--ghost); border: 1px solid var(--border);
+  border-radius: var(--r-sm); padding: 4px 10px; font-size: 10px; font-weight: 600;
+  text-transform: uppercase; letter-spacing: 0.5px;
+  font-family: var(--font-sans);
+}
+
+/* ══ Sentiment Dashboard — 设计规范: 进度条 4px + 金/红 ═════════ */
+.sentiment-dashboard {
+  background: var(--bg-card); border: 1px solid var(--border);
+  border-radius: var(--r); padding: 20px 24px; margin-bottom: var(--section-gap);
+  border-left: 4px solid var(--gold);
+  box-shadow: var(--shadow-sm);
+}
+.sentiment-top {
+  display: flex; align-items: flex-start; justify-content: space-between;
+  margin-bottom: 12px; flex-wrap: wrap; gap: 8px;
+}
+.sentiment-left { flex: 1; min-width: 200px; }
+.sentiment-title {
+  font-family: var(--font-serif);
+  font-weight: 600; font-size: 12px; color: var(--muted); margin-bottom: 6px;
+  letter-spacing: 1px; text-transform: uppercase;
+}
+.sentiment-desc { font-size: 14px; color: var(--text2); line-height: 1.6; font-family: var(--font-sans); }
+.sentiment-right { text-align: right; }
+.sentiment-score {
+  font-size: 42px; font-weight: 400; line-height: 1; letter-spacing: -2px;
+  font-variant-numeric: tabular-nums;
+  font-family: var(--mono);
+}
+.sentiment-label {
+  display: inline-block; margin-top: 6px;
+  font-size: 10px; font-weight: 700; padding: 4px 10px;
+  border-radius: var(--r-sm); text-transform: uppercase; letter-spacing: 0.5px;
+  font-family: var(--font-sans);
+}
+.s-calm   { color: var(--green); background: var(--green-mid); border: 1px solid var(--green-border); }
+.s-watch  { color: var(--orange); background: var(--orange-mid); border: 1px solid var(--orange-border); }
+.s-alert  { color: var(--orange); background: var(--orange-mid); border: 1px solid var(--orange-border); }
+.s-danger { color: #ff6b6b; background: var(--burgundy-dim); border: 1px solid var(--burgundy-light); }
+.score-calm   { color: var(--green); }
+.score-watch  { color: var(--gold); }
+.score-alert  { color: var(--orange); }
+.score-danger { color: #ff6b6b; }
+
+.gauge-wrap { margin-bottom: 8px; }
+.gauge-track {
+  height: 4px; border-radius: 0; overflow: hidden; position: relative;
+  background: #2A2A2A;
+  background: linear-gradient(to right,
+    var(--green) 0%, var(--green) 30%,
+    var(--gold) 30%, var(--gold) 55%,
+    var(--orange) 55%, var(--orange) 75%,
+    #ff6b6b 75%, #ff6b6b 100%);
+}
+.gauge-needle {
+  position: absolute; top: -4px; width: 2px; height: 12px;
+  background: var(--gold); border-radius: 0; transform: translateX(-50%);
+  box-shadow: 0 0 0 1px var(--bg);
+  transition: left 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+.gauge-ticks {
+  display: flex; justify-content: space-between;
+  font-size: 10px; color: var(--faint); margin-top: 6px;
+  font-family: var(--mono);
+}
+
+.stats-pills {
+  display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 10px; align-items: center;
+}
+.stat-pill {
+  display: inline-flex; align-items: center; gap: 4px;
+  background: var(--ghost); border: 1px solid var(--border);
+  border-radius: var(--r-sm); padding: 5px 12px;
+  font-size: 12px; color: var(--muted); font-weight: 500;
+  font-family: var(--font-sans);
+}
+.stat-pill:hover { border-color: var(--gold); background: var(--gold-dim); }
+.stat-pill strong {
+  color: var(--text); font-weight: 700;
+  font-family: var(--mono);
+}
+.stat-pill.red-pill    { background: var(--burgundy-dim); border-color: var(--burgundy-light); }
+.stat-pill.red-pill strong    { color: #ff6b6b; }
+.stat-pill.orange-pill { background: var(--orange-light); border-color: var(--orange-border); }
+.stat-pill.orange-pill strong { color: var(--gold); }
+
+.briefs-ctrl { margin-left: auto; display: flex; gap: 6px; align-items: center; }
+.ctrl-btn {
+  font-size: 11px; color: var(--muted); cursor: pointer;
+  padding: 6px 14px; border-radius: var(--r-btn); border: 1px solid var(--border);
+  background: transparent; transition: all 0.2s var(--ease-hover);
+  user-select: none; white-space: nowrap; font-weight: 600; letter-spacing: 0.5px;
+  text-transform: uppercase; font-family: var(--font-sans);
+}
+.ctrl-btn:hover { background: var(--gold-dim); border-color: var(--gold); color: var(--gold); }
+
+/* ══ Market Snapshot — 设计规范: 卡片 hover lift + 左侧色条 ═════ */
+.snap-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+  gap: 8px; padding: 14px 16px 10px;
+}
+.snap-group-label {
+  grid-column: 1 / -1;
+  font-size: 10px; font-weight: 700; color: var(--muted);
+  text-transform: uppercase; letter-spacing: 1px;
+  padding: 8px 0 4px; margin-top: 6px;
+  border-bottom: 1px solid var(--border);
+  display: flex; align-items: center; gap: 6px;
+  font-family: var(--font-sans);
+}
+.snap-group-label:first-child { margin-top: 0; }
+.snap-card {
+  min-width: 170px; /* 防止窄屏下涨跌幅、价格等溢出边框 */
+  border-radius: var(--r-sm); padding: 12px 14px;
+  border: 1px solid var(--border); background: var(--bg-card);
+  transition: transform 0.15s var(--ease-hover), border-color var(--transition), box-shadow var(--transition);
+  text-decoration: none; display: block; color: inherit; position: relative;
+  overflow: hidden;
+}
+.snap-card:hover {
+  border-color: var(--gold); transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0,0,0,.3);
+  text-decoration: none;
+}
+.snap-card:hover::before {
+  content: ''; position: absolute; left: 0; top: 12px; bottom: 12px; width: 3px; background: var(--gold);
+}
+.snap-card.up   { border-left: 3px solid var(--green); }
+.snap-card.down { border-left: 3px solid #ff6b6b; }
+.snap-card.flat { border-left: 3px solid var(--border); }
+.snap-top { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 4px; }
+.snap-sym  { font-size: 9px; color: var(--faint); font-family: var(--mono); letter-spacing: 0.5px; font-weight: 600; }
+.snap-name { font-size: 12px; font-weight: 600; margin: 2px 0 6px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: var(--text); font-family: var(--font-sans); }
+.snap-price-row { display: flex; align-items: baseline; justify-content: space-between; gap: 6px; min-width: 0; }
+.snap-price { font-size: 18px; font-weight: 400; letter-spacing: -0.5px; font-variant-numeric: tabular-nums; font-family: var(--mono); color: var(--text); min-width: 0; overflow: hidden; text-overflow: ellipsis; }
+.snap-pct   { font-size: 14px; font-weight: 600; font-variant-numeric: tabular-nums; font-family: var(--mono); flex-shrink: 0; }
+.snap-change { font-size: 11px; color: var(--muted); margin-top: 4px; font-family: var(--mono); }
+.snap-range  { font-size: 9px; color: var(--faint); margin-top: 2px; }
+.snap-vol-row {
+  display: flex; align-items: center; gap: 4px;
+  margin-top: 8px; padding-top: 8px;
+  border-top: 1px solid var(--border);
+  font-size: 10px; color: var(--muted);
+}
+.vol-badge { font-size: 8.5px; font-weight: 700; padding: 2px 5px; border-radius: 1px; }
+.vol-surge { background: var(--orange-mid); color: var(--gold); }
+.vol-up    { background: var(--green-mid);  color: var(--green); }
+.vol-down  { background: var(--ghost); color: var(--muted); }
+.alert-badge { font-size: 9px; font-weight: 600; padding: 2px 6px; border-radius: 1px; color: var(--text); }
+.snap-footer {
+  font-size: 11px; color: var(--faint); text-align: right;
+  padding: 8px 20px 12px; border-top: 1px solid var(--border);
+  font-family: var(--mono);
+}
+
+/* ══ AI 市场综述 — 标题与正文层级 + 正式阅读字体 ═══════════════ */
+#sec-overview .card-header span:first-child {
+  font-family: var(--font-serif-bold);
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+.overview-body {
+  padding: 20px 24px; white-space: pre-wrap; line-height: 1.85;
+  font-size: 15px; font-weight: 400; color: var(--text2);
+  background: var(--bg-card);
+  border-left: 4px solid var(--gold);
+  word-wrap: break-word; overflow-wrap: break-word;
+  font-family: 'Noto Sans SC', -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+}
+
+/* ══ Options Strategy ════════════════════════════════ */
+.option-body {
+  padding: 12px 18px; white-space: pre-wrap; line-height: 1.75;
+  font-size: 13.5px; word-wrap: break-word; overflow-wrap: break-word;
+}
+.option-body.verified    { border-left: 4px solid var(--green); background: var(--green-light); }
+.option-body.not-viable  { background: var(--ghost); border-left: 4px solid var(--faint); color: var(--muted); }
+.option-body.unavailable { background: var(--orange-light); border-left: 4px solid var(--orange); }
+
+.option-candidates { padding: 10px 14px; background: var(--ghost); border-top: 1px solid var(--border); }
+.option-candidates-title {
+  font-size: 10.5px; color: var(--muted); font-weight: 800;
+  text-transform: uppercase; letter-spacing: .08em; margin-bottom: 12px;
+  display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
+}
+.option-dir-badge {
+  font-size: 10px; font-weight: 800; padding: 2px 8px; border-radius: 2px;
+  text-transform: uppercase; letter-spacing: .06em;
+}
+.option-dir-put  { background: var(--red-mid);   color: var(--red); }
+.option-dir-call { background: var(--green-mid); color: var(--green); }
+
+.option-table { width: 100%; border-collapse: collapse; font-size: 12px; }
+.option-table th {
+  text-align: left; padding: 8px 12px; background: var(--bg);
+  font-size: 10px; color: var(--muted); font-weight: 600;
+  text-transform: uppercase; letter-spacing: 0.5px;
+  border-bottom: 1px solid var(--border); white-space: nowrap;
+  font-family: var(--font-sans);
+}
+.option-table td { padding: 8px 12px; border-bottom: 1px solid var(--border); vertical-align: middle; color: var(--text); }
+.option-table tr:last-child td { border-bottom: none; }
+.option-table tbody tr:hover td { background: var(--ghost); }
+.otm-badge { display: inline-block; padding: 2px 6px; border-radius: 2px; font-size: 10px; font-weight: 600; color: var(--blue); background: var(--blue-light); }
+.lev-high { color: var(--green); font-weight: 700; }
+.lev-mid  { color: var(--gold); font-weight: 600; }
+.option-note {
+  font-size: 11px; color: var(--faint); margin-top: 10px;
+  padding: 10px 14px; background: var(--ghost); border-radius: 0;
+  border: 1px solid var(--border); border-left: 3px solid var(--gold);
+}
+.candidate-reason-row td { padding: 0 !important; border-top: none !important; }
+.candidate-reason-row:hover td { background: transparent !important; }
+.candidate-reason {
+  font-size: 12px; color: var(--muted); line-height: 1.5;
+  padding: 8px 12px 12px 12px !important; background: var(--ghost);
+  border-bottom: 1px solid var(--border) !important;
+}
+
+/* ══ News Briefs — 设计规范: 金强调 + 卡片 hover ═════════════════ */
+.briefs-list { padding: 14px 16px 10px; display: flex; flex-direction: column; gap: 10px; }
+.brief-card {
+  border-radius: var(--r); border: 1px solid var(--border);
+  overflow: hidden; background: var(--bg-card);
+  transition: transform 0.15s var(--ease-hover), border-color var(--transition), box-shadow var(--transition);
+}
+.brief-card:hover {
+  border-color: var(--gold); transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(193,154,107,0.15);
+}
+.brief-header {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 12px 18px;
+  background: var(--gold-dim);
+  border-bottom: 1px solid var(--border);
+  border-left: 4px solid var(--gold);
+  cursor: pointer; user-select: none;
+  transition: background 0.2s var(--ease-hover);
+}
+.brief-header:hover { background: var(--gold-active); }
+.brief-header-left { display: flex; align-items: center; gap: 10px; }
+.brief-topic-dot { display: none; }
+.brief-topic { font-weight: 600; color: var(--text); font-size: 14px; letter-spacing: 0.5px; font-family: var(--font-sans); }
+.brief-count {
+  font-size: 10px; color: var(--gold);
+  background: var(--gold-active); border: 1px solid var(--gold);
+  border-radius: 10px; padding: 3px 10px; font-weight: 600; letter-spacing: 0.5px;
+  font-family: var(--mono);
+}
+.brief-toggle {
+  font-size: 10px; width: 24px; height: 24px;
+  display: flex; align-items: center; justify-content: center;
+  border-radius: 50%; background: transparent; border: 1px solid var(--border);
+  color: var(--muted); transition: all 0.2s var(--ease-hover); flex-shrink: 0;
+}
+.brief-toggle:hover { border-color: var(--gold); color: var(--gold); }
+.brief-toggle.open { transform: rotate(0deg); }
+.brief-toggle.closed { transform: rotate(-90deg); }
+.brief-body {
+  padding: 14px 18px; font-size: 14px; line-height: 1.85;
+  color: var(--text2); background: var(--bg-card);
+  font-family: var(--font-sans);
+}
+.brief-sources {
+  padding: 8px 18px 10px; background: var(--ghost);
+  border-top: 1px solid var(--border); font-size: 12px; color: var(--muted);
+}
+.brief-sources.hidden { display: none; }
+.brief-sources-label {
+  margin-bottom: 6px; font-weight: 700; font-size: 10px;
+  text-transform: uppercase; letter-spacing: 0.5px;
+  font-family: var(--font-sans);
+}
+.brief-src-toggle {
+  padding: 8px 18px; background: var(--ghost);
+  border-top: 1px solid var(--border);
+  font-size: 11px; color: var(--muted); cursor: pointer;
+  user-select: none; transition: background 0.2s var(--ease-hover);
+  display: flex; align-items: center; gap: 4px;
+}
+.brief-src-toggle:hover { background: var(--gold-dim); color: var(--gold); }
+.brief-src-more {
+  display: inline-block; margin: 4px 0 2px;
+  font-size: 11px; color: var(--gold); cursor: pointer;
+  font-weight: 600; user-select: none;
+}
+.brief-src-more:hover { color: #d4af7a; }
+.brief-src-link {
+  display: inline-block; margin: 2px 4px 2px 0;
+  padding: 4px 12px; background: var(--bg-card); border: 1px solid var(--border);
+  border-radius: 2px; font-size: 11px; color: var(--muted);
+  max-width: 260px; overflow: hidden; text-overflow: ellipsis;
+  white-space: nowrap; vertical-align: middle; transition: all 0.2s var(--ease-hover);
+}
+.brief-src-link:hover { border-color: var(--gold); color: var(--gold); background: var(--gold-dim); text-decoration: none; }
+
+/* ══ Alert Items — 设计规范 05: Info / Warning / Critical ═════════ */
+.alerts-section-header {
+  display: flex; align-items: center; gap: 8px;
+  padding: 10px 20px; font-size: 11px; font-weight: 700;
+  letter-spacing: 1px; text-transform: uppercase;
+  border-bottom: 1px solid var(--border);
+  position: sticky; top: 48px; z-index: 10;
+  font-family: var(--font-sans);
+}
+.alerts-section-header.red-hdr {
+  background: var(--burgundy-dim);
+  color: #ff6b6b;
+  border-left: 4px solid var(--burgundy);
+  border-top: 1px solid var(--burgundy-light);
+}
+.alerts-section-header.yellow-hdr {
+  background: var(--orange-light);
+  color: var(--gold);
+  border-left: 4px solid var(--gold);
+  border-top: 1px solid var(--orange-border);
+}
+.alerts-section-header .section-count { margin-left: auto; font-size: 11px; font-weight: 600; opacity: .8; }
+.alerts-body-inner { padding: 10px 14px; }
+.empty-alerts { text-align: center; padding: 32px 20px; color: var(--faint); font-size: 14px; }
+
+.alert-item {
+  border-radius: var(--r-sm); margin-bottom: 8px; overflow: hidden;
+  border: 1px solid var(--border); background: var(--bg-card);
+  transition: border-color 0.2s var(--ease-hover), box-shadow var(--transition);
+}
+.alert-item:hover { border-color: var(--border); box-shadow: 0 2px 8px rgba(0,0,0,.25); }
+.alert-item:last-child { margin-bottom: 0; }
+.alert-item.level-red {
+  border-left: 4px solid var(--burgundy); background: var(--burgundy-dim);
+  animation: pulse-border 2s infinite;
+}
+@keyframes pulse-border {
+  0% { box-shadow: 0 0 0 0 rgba(78, 16, 16, 0.4); }
+  70% { box-shadow: 0 0 0 10px rgba(78, 16, 16, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(78, 16, 16, 0); }
+}
+.alert-item.level-yellow {
+  border-left: 4px solid var(--gold); background: var(--orange-light);
+}
+
+.alert-top { padding: 12px 16px 8px; display: flex; align-items: flex-start; gap: 12px; }
+.score-badge {
+  flex-shrink: 0; border-radius: var(--r-sm);
+  display: flex; flex-direction: row; align-items: baseline;
+  justify-content: center; padding: 6px 10px; gap: 2px;
+  border: 1px solid; white-space: nowrap;
+}
+.score-badge.level-red {
+  background: var(--burgundy-dim); border-color: var(--burgundy-light); color: #ff6b6b;
+}
+.score-badge.level-yellow {
+  background: var(--orange-mid); border-color: var(--orange-border); color: var(--gold);
+}
+.score-num {
+  font-size: 18px; font-weight: 700; line-height: 1; letter-spacing: -1px;
+  font-variant-numeric: tabular-nums; font-family: var(--mono);
+}
+.score-sub { font-size: 10px; font-weight: 600; letter-spacing: 0.5px; opacity: .8; }
+
+.alert-main { flex: 1; min-width: 0; }
+.alert-title { font-size: 14px; font-weight: 600; line-height: 1.45; color: var(--text); word-break: break-word; font-family: var(--font-sans); }
+.alert-topic-tag {
+  display: inline-block; font-size: 10px; color: var(--muted);
+  background: var(--ghost); border: 1px solid var(--border);
+  border-radius: 2px; padding: 3px 8px; margin-right: 6px;
+  vertical-align: middle; font-weight: 600;
+  text-transform: uppercase; letter-spacing: 0.5px;
+  font-family: var(--font-sans);
+}
+.alert-badges { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 6px; }
+.badge {
+  display: inline-flex; align-items: center; gap: 3px;
+  padding: 3px 8px; border-radius: var(--r-sm); font-size: 10px; font-weight: 700;
+  text-transform: uppercase; letter-spacing: 0.5px;
+}
+.badge-emg { background: var(--burgundy-dim); color: #ff6b6b; border: 1px solid var(--burgundy-light); }
+.badge-ms  { background: var(--green-light); color: var(--green); border: 1px solid var(--green-border); }
+
+.alert-meta {
+  padding: 0 16px 8px; display: flex; flex-wrap: wrap;
+  gap: 12px; font-size: 12px; color: var(--muted); align-items: center;
+  font-family: var(--mono);
+}
+.alert-meta-item { display: flex; align-items: center; gap: 4px; }
+
+.zh-trans {
+  margin: 0 16px 8px; padding: 8px 14px; border-radius: 0;
+  background: var(--blue-light); border-left: 4px solid var(--blue);
+  font-size: 13px; color: var(--blue); line-height: 1.5;
+  font-family: var(--font-sans);
+}
+
+.ai-box {
+  margin: 0 16px 8px; padding: 12px 16px; border-radius: 0;
+  background: var(--ghost); border: 1px solid var(--border);
+  border-left: 4px solid var(--purple);
+}
+.ai-box-label {
+  font-size: 10px; color: var(--purple); font-weight: 700;
+  margin-bottom: 6px; display: flex; align-items: center; gap: 5px;
+  text-transform: uppercase; letter-spacing: 0.5px;
+  font-family: var(--font-sans);
+}
+.summary-text { font-size: 14px; line-height: 1.7; color: var(--text2); font-family: var(--font-sans); }
+.en-text {
+  font-size: 12px; color: var(--muted); font-style: italic;
+  margin-top: 8px; padding: 8px 12px;
+  background: var(--ghost); border-left: 3px solid var(--border);
+  line-height: 1.55; border-radius: 0;
+  font-family: var(--font-sans);
+}
+.assets-row { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; align-items: center; }
+.assets-lbl { font-size: 12px; color: var(--muted); font-weight: 600; font-family: var(--font-sans); }
+.asset-chip {
+  display: inline-block; padding: 3px 8px; border-radius: 2px;
+  font-size: 11px; font-weight: 600; background: var(--blue-light); color: var(--blue);
+  font-family: var(--mono); border: 1px solid var(--blue);
+}
+.dir-bar {
+  display: flex; align-items: center; gap: 8px; margin-top: 8px;
+  padding: 8px 12px; border-radius: 0; font-size: 13px;
+  font-family: var(--font-sans);
+}
+.dir-bar.bullish { background: var(--green-light); color: var(--green); border: 1px solid var(--green-border); border-left: 3px solid var(--green); }
+.dir-bar.bearish { background: var(--burgundy-dim); color: #ff6b6b; border: 1px solid var(--burgundy-light); border-left: 3px solid var(--burgundy); }
+.dir-bar.neutral { background: var(--ghost); color: var(--muted); border: 1px solid var(--border); border-left: 3px solid var(--border); }
+.dir-chip { padding: 3px 8px; border-radius: 2px; font-size: 10px; font-weight: 700; flex-shrink: 0; text-transform: uppercase; letter-spacing: 0.5px; }
+.dir-chip.bullish { background: var(--green); color: var(--text); }
+.dir-chip.bearish { background: var(--burgundy); color: #ffcccc; }
+.dir-chip.neutral { background: var(--border); color: var(--text); }
+
+.raw-toggle {
+  display: inline-flex; align-items: center; gap: 4px;
+  font-size: 11px; color: var(--faint); cursor: pointer; margin-top: 8px;
+  padding: 4px 10px; border-radius: 2px; border: 1px solid var(--border);
+  background: transparent; transition: all 0.2s var(--ease-hover);
+  font-family: var(--font-sans);
+}
+.raw-toggle:hover { color: var(--gold); border-color: var(--gold); background: var(--gold-dim); }
+.raw-content {
+  font-size: 12px; color: var(--faint); font-style: italic;
+  margin-top: 8px; padding: 10px 14px; background: var(--ghost);
+  border-radius: 0; border: 1px solid var(--border); line-height: 1.55;
+  font-family: var(--font-sans);
+}
+.raw-content.hidden { display: none; }
+
+.summary-plain {
+  padding: 8px 14px 10px; font-size: 13px; color: var(--muted);
+  line-height: 1.6; border-left: 3px solid var(--gold);
+  margin: 0 16px 8px; background: var(--ghost);
+  font-family: var(--font-sans);
+}
+
+.alert-footer {
+  padding: 8px 16px 10px; display: flex; flex-wrap: wrap;
+  gap: 8px; font-size: 12px; align-items: center;
+  border-top: 1px solid var(--border); background: var(--ghost);
+  font-family: var(--font-sans);
+}
+.alert-link {
+  display: inline-flex; align-items: center; gap: 4px;
+  padding: 6px 14px; border-radius: var(--r-btn);
+  background: transparent; border: 1px solid var(--border);
+  font-size: 12px; color: var(--muted); transition: all 0.2s var(--ease-hover);
+  font-family: var(--font-sans);
+}
+.alert-link:hover { border-color: var(--gold); color: var(--gold); background: var(--gold-dim); text-decoration: none; }
+.alert-link.primary { color: var(--gold); border-color: var(--gold); background: var(--gold-dim); font-weight: 600; }
+
+.reason-tags { padding: 2px 12px 7px; font-size: 10px; color: var(--faint); }
+.reason-tag {
+  display: inline-block; margin-right: 4px; margin-bottom: 2px;
+  padding: 1px 6px; background: var(--ghost); border-radius: 2px;
+  border: 1px solid var(--border); font-family: var(--mono);
+}
+
+/* ══ Topic Groups — 设计规范: 深色 + 金/蓝强调 ═══════════════════ */
+.topic-list { padding: 14px 16px 10px; display: flex; flex-direction: column; gap: 10px; }
+.topic-group { border: 1px solid var(--border); border-radius: var(--r); overflow: hidden; background: var(--bg-card); }
+.topic-group-header {
+  display: flex; align-items: center; gap: 10px;
+  padding: 12px 18px; border-radius: 0;
+  cursor: pointer; transition: background 0.2s var(--ease-hover); user-select: none;
+  background: var(--blue-light);
+  border-left: 4px solid var(--blue);
+}
+.topic-group-header:hover { background: var(--bg-hover); }
+.topic-group-chevron { font-size: 10px; color: var(--blue); margin-left: auto; transition: transform 0.2s var(--ease-hover); opacity: .85; }
+.topic-group-chevron.open { transform: rotate(0deg); }
+.topic-group-chevron.closed { transform: rotate(-90deg); }
+.topic-group-name { font-weight: 600; font-size: 14px; color: var(--text); letter-spacing: 0.5px; font-family: var(--font-sans); }
+.topic-count {
+  font-size: 10px; color: var(--blue); font-weight: 600;
+  background: var(--blue-light); padding: 3px 10px; border-radius: 10px;
+  border: 1px solid var(--blue); font-family: var(--mono);
+}
+.topic-items-wrap { padding: 8px 16px 10px 24px; background: var(--bg-card); }
+.topic-item {
+  padding: 8px 0 8px 12px; border-left: 2px solid var(--border);
+  margin-bottom: 4px; transition: border-color 0.2s var(--ease-hover), background 0.2s var(--ease-hover);
+}
+.topic-item:hover { border-left-color: var(--gold); background: var(--ghost); }
+.topic-item-title { font-size: 13px; color: var(--text2); line-height: 1.4; font-family: var(--font-sans); }
+.topic-item-title a:hover { color: var(--gold); }
+.topic-item-meta  { font-size: 11px; color: var(--faint); margin-top: 3px; font-family: var(--mono); }
+
+/* ══ Topic Heatmap (legacy, kept for compat) ════════ */
+.hmx-change-badge {
+  display: inline-flex; align-items: center; gap: 2px;
+  font-size: 10px; font-weight: 800; padding: 2px 6px; border-radius: 2px;
+  white-space: nowrap; font-family: var(--mono);
+}
+.hmx-change-badge.up   { background: var(--green-light); color: var(--green); border: 1px solid var(--green-border); }
+.hmx-change-badge.down { background: var(--red-light);   color: var(--red); border: 1px solid var(--red-border); }
+.hmx-change-badge.flat { background: var(--ghost);        color: var(--faint); border: 1px solid var(--border); }
+.hmx-change-badge.new  { background: var(--blue-mid);     color: var(--blue); border: 1px solid var(--blue-border); }
+
+/* ══ Topic Compact Cards ════════════════════════════ */
+.tpc-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+  gap: 8px; padding: 14px 16px 14px;
+  background: var(--bg-card);
+}
+.tpc-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--r);
+  padding: 10px 12px 8px;
+  display: flex; flex-direction: column; gap: 6px;
+  transition: transform 0.15s var(--ease-hover), border-color 0.2s var(--ease-hover), box-shadow 0.2s var(--ease-hover);
+  cursor: default;
+  position: relative;
+}
+.tpc-card:hover {
+  border-color: var(--gold);
+  border-left: 3px solid var(--gold);
+  box-shadow: 0 4px 12px rgba(0,0,0,.3);
+  transform: translateY(-4px);
+}
+/* 顶部色条标识评分等级 */
+.tpc-card::before {
+  content: ''; position: absolute; top: 0; left: 0; right: 0;
+  height: 2px; border-radius: 4px 4px 0 0;
+}
+.tpc-card.score-high::before { background: linear-gradient(90deg, var(--burgundy), #ff6b6b); }
+.tpc-card.score-mid::before  { background: linear-gradient(90deg, var(--gold), var(--orange)); }
+.tpc-card.score-low::before  { background: linear-gradient(90deg, var(--blue), #7eb8e8); }
+
+/* 主题名称：固定两行高度，与评分区对齐 */
+.tpc-name {
+  font-size: 10px; font-weight: 700; color: var(--text);
+  line-height: 1.35;
+  min-height: 2.7em;
+  overflow: hidden; text-overflow: ellipsis;
+  display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;
+  margin-bottom: 4px;
+}
+
+/* 中部：评分框与「今日/昨日」上边界对齐 */
+.tpc-main {
+  display: flex; align-items: flex-start; justify-content: space-between; gap: 8px;
+  padding: 0;
+}
+
+/* 左侧：仅分数框（评分数字写在框内），与今日条数行顶对齐 */
+.tpc-score-box {
+  display: flex; flex-direction: column; align-items: center; justify-content: flex-start;
+  flex-shrink: 0;
+}
+.tpc-score-label {
+  display: none;
+}
+.tpc-score {
+  font-size: 14px; font-weight: 700; font-family: var(--mono);
+  padding: 4px 10px; border-radius: 3px;
+  min-width: 32px; text-align: center;
+  color: var(--text);
+  line-height: 1.2;
+}
+.tpc-score::after {
+  content: '分';
+  font-size: 0.5em;
+  font-weight: 500;
+  margin-left: 1px;
+  opacity: 0.9;
+}
+/* 覆盖内联样式，使评分徽章符合深色主题 */
+.tpc-card .tpc-score[style] {
+  background: var(--orange-mid) !important;
+  color: var(--gold) !important;
+  border: 1px solid var(--orange-border) !important;
+}
+.tpc-card.score-high .tpc-score[style] {
+  background: var(--burgundy-dim) !important;
+  color: #ff6b6b !important;
+  border: 1px solid var(--burgundy-light) !important;
+}
+.tpc-card.score-low .tpc-score[style] {
+  background: var(--blue-light) !important;
+  color: var(--blue) !important;
+  border: 1px solid var(--blue) !important;
+}
+
+/* 右侧：今日/昨日条数对比 */
+.tpc-counts {
+  display: flex; flex-direction: column; gap: 1px;
+  flex: 1; min-width: 0;
+}
+.tpc-count-row {
+  display: flex; align-items: baseline; justify-content: flex-end; gap: 3px;
+}
+.tpc-count-label {
+  font-size: 7.5px; color: var(--faint); font-weight: 600;
+  letter-spacing: .02em;
+}
+.tpc-count {
+  font-size: 16px; font-weight: 900; color: var(--text);
+  font-family: var(--mono); letter-spacing: -.5px; line-height: 1;
+}
+.tpc-count.today {
+  font-size: 18px;
+  color: var(--text);
+}
+.tpc-count.yesterday {
+  font-size: 13px;
+  color: var(--muted);
+}
+.tpc-unit {
+  font-size: 8px; color: var(--muted); font-weight: 600;
+}
+
+/* 底部：变化量 */
+.tpc-bottom {
+  display: flex; align-items: center; justify-content: flex-end;
+  padding-top: 3px; border-top: 1px solid var(--border);
+  font-size: 9px;
+}
+.tpc-delta {
+  font-weight: 900; font-family: var(--mono);
+  padding: 1px 5px; border-radius: 2px; font-size: 8px;
+}
+.tpc-delta.up   { color: var(--green); background: var(--green-light); }
+.tpc-delta.down { color: var(--red);   background: var(--red-light); }
+.tpc-delta.flat { color: var(--faint); background: var(--ghost); }
+.tpc-delta.new  { color: var(--blue);  background: var(--blue-light); }
+
+@media (max-width: 768px) {
+  .tpc-grid { grid-template-columns: repeat(auto-fill, minmax(105px, 1fr)); gap: 5px; }
+  .tpc-card { padding: 6px 7px 5px; gap: 3px; }
+  .tpc-count.today { font-size: 16px; }
+  .tpc-count.yesterday { font-size: 12px; }
+}
+@media (max-width: 480px) {
+  .tpc-grid { grid-template-columns: repeat(3, 1fr); gap: 5px; padding: 8px 10px 10px; }
+  .tpc-card { padding: 6px 7px; }
+  .tpc-count.today { font-size: 15px; }
+  .tpc-count.yesterday { font-size: 11px; }
+  .tpc-name { font-size: 9px; }
+}
+
+/* ══ Brief Market Impact — 设计规范 Critical 红 ═══════════════════ */
+.brief-impact {
+  margin: 0; padding: 10px 18px;
+  background: var(--burgundy-dim); border-left: 4px solid var(--burgundy);
+  font-size: 13px; font-weight: 600; color: #ff6b6b;
+  line-height: 1.5; font-family: var(--font-sans);
+}
+
+/* ══ Grok 核查标记 ══════════════════════════════════════════════════ */
+.grok-badge {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 2px 7px;
+  font-size: 10px; font-weight: 700;
+  color: var(--gold); background: var(--gold-dim);
+  border: 1px solid var(--gold); border-radius: 2px;
+  letter-spacing: 0.4px; font-family: var(--mono);
+  vertical-align: middle; cursor: default;
+  white-space: nowrap;
+}
+
+/* ══ Collapsible Long Content ════════════════════════ */
+.content-fold {
+  max-height: 4.5em; overflow: hidden; position: relative;
+  transition: max-height 0.3s var(--ease-hover);
+}
+.content-fold.expanded { max-height: none; }
+.content-fold:not(.expanded)::after {
+  content: ''; position: absolute; bottom: 0; left: 0; right: 0;
+  height: 2em;
+  background: linear-gradient(transparent, var(--bg-card));
+  pointer-events: none;
+}
+.fold-toggle {
+  display: inline-block; font-size: 11px; color: var(--gold);
+  cursor: pointer; padding: 3px 0; font-weight: 600;
+  margin-top: 4px; user-select: none;
+  transition: color 0.2s var(--ease-hover);
+  font-family: var(--font-sans);
+}
+.fold-toggle:hover { color: #d4af7a; }
+.alert-extra-links { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 4px; }
+.alert-extra-links.hidden { display: none; }
+
+/* ══ Heatmap Card Grid (legacy, replaced by ttr) ═══ */
+
+/* ══ Footer — 设计规范 ══════════════════════════════════════════ */
+.page-footer {
+  margin-top: 10px; padding: 16px 24px; border: 1px solid var(--border);
+  font-size: 11px; color: var(--faint); text-align: center;
+  background: var(--bg-card); border-radius: var(--r);
+  font-family: var(--mono); letter-spacing: 0.5px;
+}
+
+/* ══ Back to Top — 设计规范 01 按钮 Hover ═════════════════════════ */
+#back-to-top {
+  position: fixed; bottom: 24px; right: 24px; z-index: 200;
+  width: 40px; height: 40px; border-radius: var(--r-btn);
+  background: transparent; color: var(--text);
+  border: 1px solid var(--border);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 16px; cursor: pointer;
+  opacity: 0; transform: translateY(8px);
+  transition: all 0.2s var(--ease-hover);
+}
+#back-to-top.visible { opacity: 1; transform: translateY(0); }
+#back-to-top:hover { background: var(--gold-dim); border-color: var(--gold); color: var(--gold); box-shadow: 0 0 15px rgba(193,154,107,0.15); }
+
+/* ══ Responsive — 设计规范 移动端 ══════════════════════════════════ */
+@media (max-width: 640px) {
+  body { padding: 10px 12px 32px; background-size: 20px 20px; }
+  .sticky-nav { height: 44px; }
+  .nav-item { padding: 0 14px; font-size: 11px; }
+  .snap-grid { grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); padding: 12px; }
+  .page-header { padding: 20px 18px 16px; }
+  .page-header h1 { font-size: 18px; }
+  .hmx-table { font-size: 11.5px; }
+  .hmx-name-cell { max-width: 110px; font-size: 11px; }
+}
+</style>
+
+<script>
+function toggleCard(id) {
+  const el = document.getElementById(id);
+  const btn = document.getElementById(id + '-btn');
+  if (!el) return;
+  const hidden = el.classList.toggle('hidden');
+  if (btn) btn.textContent = hidden ? '▶ 展开' : '▼ 收起';
+}
+function toggleRaw(id) {
+  const el = document.getElementById('raw-' + id);
+  if (el) el.classList.toggle('hidden');
+}
+function expandAllBriefs() {
+  const briefsCard = document.getElementById('briefs');
+  const briefsBtn  = document.getElementById('briefs-btn');
+  if (briefsCard && briefsCard.classList.contains('hidden')) {
+    briefsCard.classList.remove('hidden');
+    if (briefsBtn) briefsBtn.textContent = '▼ 收起';
+  }
+  document.querySelectorAll('.brief-collapsible').forEach(e => e.classList.remove('hidden'));
+  document.querySelectorAll('[id^="brief-btn-"]').forEach(b => { b.textContent = '▼'; b.classList.remove('closed'); b.classList.add('open'); });
+}
+function collapseAllBriefs() {
+  document.querySelectorAll('.brief-collapsible').forEach(e => e.classList.add('hidden'));
+  document.querySelectorAll('[id^="brief-btn-"]').forEach(b => { b.textContent = '▶'; b.classList.remove('open'); b.classList.add('closed'); });
+}
+function toggleBrief(idx) {
+  const el = document.getElementById('brief-' + idx);
+  const btn = document.getElementById('brief-btn-' + idx);
+  if (!el || !btn) return;
+  const hidden = el.classList.toggle('hidden');
+  btn.textContent = hidden ? '▶' : '▼';
+  btn.classList.toggle('closed', hidden);
+  btn.classList.toggle('open', !hidden);
+}
+function toggleAlerts() {
+  const el = document.getElementById('alerts-body');
+  const btn = document.getElementById('alerts-toggle-btn');
+  if (!el) return;
+  const hidden = el.classList.toggle('hidden');
+  if (btn) btn.textContent = hidden ? '▶ 展开' : '▼ 收起';
+}
+function toggleTopicGroup(idx) {
+  const el = document.getElementById('tg-' + idx);
+  const chevron = document.getElementById('tg-chev-' + idx);
+  if (!el) return;
+  const hidden = el.classList.toggle('hidden');
+  if (chevron) {
+    chevron.textContent = hidden ? '▶' : '▼';
+    chevron.classList.toggle('closed', hidden);
+    chevron.classList.toggle('open', !hidden);
+  }
+}
+function initNav() {
+  const sections = document.querySelectorAll('[data-section]');
+  const navItems = document.querySelectorAll('.nav-item[data-target]');
+  if (!sections.length || !navItems.length) return;
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const id = entry.target.getAttribute('data-section');
+        navItems.forEach(n => {
+          n.classList.toggle('active', n.getAttribute('data-target') === id);
+        });
+      }
+    });
+  }, { threshold: 0.15, rootMargin: '-50px 0px -50% 0px' });
+  sections.forEach(s => observer.observe(s));
+}
+function initBackToTop() {
+  const btn = document.getElementById('back-to-top');
+  if (!btn) return;
+  window.addEventListener('scroll', () => {
+    btn.classList.toggle('visible', window.scrollY > 400);
+  }, { passive: true });
+  btn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+}
+function toggleBriefSrc(idx) {
+  const el = document.getElementById('brief-src-' + idx);
+  const btn = document.getElementById('brief-src-btn-' + idx);
+  if (!el) return;
+  const hidden = el.classList.toggle('hidden');
+  const total = el.querySelectorAll('a').length;
+  if (btn) btn.textContent = hidden
+    ? '▶ 原始来源（' + total + ' 条）'
+    : '▼ 收起来源';
+}
+function toggleBriefSrcMore(idx, total) {
+  const container = document.getElementById('brief-src-' + idx);
+  const moreBtn = document.getElementById('brief-src-more-' + idx);
+  if (!container || !moreBtn) return;
+  const extras = container.querySelectorAll('.brief-src-extra');
+  const isHidden = extras.length > 0 && extras[0].style.display === 'none';
+  extras.forEach(a => a.style.display = isHidden ? 'inline-block' : 'none');
+  moreBtn.textContent = isHidden
+    ? '▲ 收起'
+    : '▶ 还有 ' + (total - 3) + ' 条';
+}
+function toggleFold(id) {
+  const el = document.getElementById(id);
+  if (!el) return;
+  if (el.classList.contains('content-fold')) {
+    el.classList.toggle('expanded');
+    const btn = document.getElementById(id + '-btn');
+    if (btn) btn.textContent = el.classList.contains('expanded') ? '收起' : '展开全文';
+  } else {
+    el.classList.toggle('hidden');
+  }
+}
+document.addEventListener('DOMContentLoaded', () => { initNav(); initBackToTop(); });
+</script>
+<style>
+#watermark {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  pointer-events: none;
+  z-index: 9999;
+  overflow: hidden;
+}
+#watermark::before {
+  content: '';
+  position: absolute;
+  top: -50%; left: -50%;
+  width: 200%; height: 200%;
+  background-image: repeating-linear-gradient(
+    transparent 0,
+    transparent 1px
+  );
+  background-repeat: repeat;
+  background-size: 220px 120px;
+  background-image: none;
+}
+.wm-text {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 0;
+  overflow: hidden;
+}
+.wm-tile {
+  display: inline-block;
+  width: 360px;
+  height: 200px;
+  line-height: 200px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 400;
+  color: rgba(80, 100, 140, 0.07);
+  white-space: nowrap;
+  transform: rotate(-25deg);
+  user-select: none;
+  letter-spacing: 1.5px;
+}
+</style>
+</head>
+<body>
+<div id="watermark"><div class="wm-text" id="wm-text"></div></div>
+<script>
+(function(){
+  var c=document.getElementById('wm-text');
+  var cols=Math.ceil(window.innerWidth/360)+2;
+  var rows=Math.ceil(window.innerHeight/200)+2;
+  var total=(cols+2)*(rows+2);
+  var f='';
+  for(var i=0;i<total;i++){f+='<span class="wm-tile">门塔特的视界 / Mentat\'s Horizon</span>';}
+  c.innerHTML=f;
+})();
+</script>
+
+
+<nav class="sticky-nav">
+  <button class="nav-item active" data-target="header" onclick="document.getElementById('sec-header').scrollIntoView({behavior:'smooth'})">概览</button>
+  <div class="nav-sep"></div><button class="nav-item" data-target="comparison" onclick="document.getElementById('sec-comparison').scrollIntoView({behavior:'smooth'})">热度</button>
+  <div class="nav-sep"></div><button class="nav-item" data-target="snap" onclick="document.getElementById('sec-snap').scrollIntoView({behavior:'smooth'})">行情</button>
+  <div class="nav-sep"></div><button class="nav-item" data-target="overview" onclick="document.getElementById('sec-overview').scrollIntoView({behavior:'smooth'})">综述</button>
+  <div class="nav-sep"></div><button class="nav-item" data-target="options" onclick="document.getElementById('sec-options').scrollIntoView({behavior:'smooth'})">期权</button>
+  <div class="nav-sep"></div><button class="nav-item" data-target="briefs" onclick="document.getElementById('sec-briefs').scrollIntoView({behavior:'smooth'})">简报</button>
+  <div class="nav-sep"></div>
+  <button class="nav-item" data-target="alerts" onclick="document.getElementById('sec-alerts').scrollIntoView({behavior:'smooth'})">预警</button>
+  <div class="nav-sep"></div><button class="nav-item" data-target="topics" onclick="document.getElementById('sec-topics').scrollIntoView({behavior:'smooth'})">主题</button>
+<div class="nav-sep"></div><a id="nav-online-link" class="nav-item" href="https://cocat.github.io/moriqiquanHermes/reports/20260425.html" target="_blank" style="text-decoration:none;color:inherit;">🔗 在线查看</a>
+</nav>
+
+
+<div class="page-header" id="sec-header" data-section="header">
+  <h1>市场资讯摘要 - 2026年04月25日</h1>
+  <div class="meta">
+    <span>2026-04-25 23:24:40</span>
+    
+  </div>
+</div>
+
+
+
+
+  
+
+
+<div class="sentiment-dashboard">
+  <div class="sentiment-top">
+    <div class="sentiment-left">
+      <div class="sentiment-title">市场情绪指数</div>
+      <div class="sentiment-desc">重大信号密集，市场波动风险显著上升</div>
+    </div>
+    <div class="sentiment-right">
+      <div class="sentiment-score score-danger">69.7</div>
+      <span class="sentiment-label s-danger">高度警戒</span>
+    </div>
+  </div>
+
+  <div class="stats-pills">
+    <div class="stat-pill"><strong>20</strong> 条信号</div>
+    <div class="stat-pill red-pill"><strong>3</strong> 红色</div>
+    <div class="stat-pill orange-pill"><strong>17</strong> 黄色</div>
+    <div class="stat-pill"><strong>6</strong> 个主题</div>
+    
+  </div>
+
+  <div class="gauge-wrap">
+    <div class="gauge-track">
+      <div class="gauge-needle" style="left: 69.65%;"></div>
+    </div>
+    <div class="gauge-ticks">
+      <span>0 平静</span><span>35</span><span>50</span><span>65</span><span>100 警戒</span>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+
+
+
+<div class="card" id="sec-comparison" data-section="comparison">
+  <div class="card-header gold" onclick="toggleCard('comparison')">
+    <span>热点主题</span>
+    <span class="toggle-btn" id="comparison-btn">▼ 收起</span>
+  </div>
+  <div id="comparison" class="collapsible">
+    <div class="tpc-grid">
+    
+    
+      
+      
+      
+
+      
+      
+        
+        
+      
+
+      
+      
+        
+      
+
+      <div class="tpc-card score-high">
+        <!-- 主题名称 -->
+        <div class="tpc-name" title="FOMC/美联储">FOMC/美联储</div>
+
+        <!-- 中部：左侧评分 + 右侧今日/昨日条数 -->
+        <div class="tpc-main">
+          <!-- 左侧：评分（带标签） -->
+          <div class="tpc-score-box">
+            <div class="tpc-score-label">评分</div>
+            <div class="tpc-score" style="background:#fef2f2;color:#c01818;border:1px solid #fca5a5;">73</div>
+          </div>
+
+          <!-- 右侧：条数对比（今日无标签，昨日显示「昨」） -->
+          <div class="tpc-counts">
+            <div class="tpc-count-row">
+              <span class="tpc-count today">8</span>
+              <span class="tpc-unit">条</span>
+            </div>
+            <div class="tpc-count-row">
+              <span class="tpc-count-label">昨</span>
+              <span class="tpc-count yesterday">2</span>
+              <span class="tpc-unit">条</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 底部：变化量 -->
+        <div class="tpc-bottom">
+          <span class="tpc-delta up">+6</span>
+        </div>
+      </div>
+    
+    
+    
+      
+      
+      
+
+      
+      
+        
+        
+      
+
+      
+      
+        
+      
+
+      <div class="tpc-card score-high">
+        <!-- 主题名称 -->
+        <div class="tpc-name" title="地缘与能源">地缘与能源</div>
+
+        <!-- 中部：左侧评分 + 右侧今日/昨日条数 -->
+        <div class="tpc-main">
+          <!-- 左侧：评分（带标签） -->
+          <div class="tpc-score-box">
+            <div class="tpc-score-label">评分</div>
+            <div class="tpc-score" style="background:#fef2f2;color:#c01818;border:1px solid #fca5a5;">71</div>
+          </div>
+
+          <!-- 右侧：条数对比（今日无标签，昨日显示「昨」） -->
+          <div class="tpc-counts">
+            <div class="tpc-count-row">
+              <span class="tpc-count today">5</span>
+              <span class="tpc-unit">条</span>
+            </div>
+            <div class="tpc-count-row">
+              <span class="tpc-count-label">昨</span>
+              <span class="tpc-count yesterday">7</span>
+              <span class="tpc-unit">条</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 底部：变化量 -->
+        <div class="tpc-bottom">
+          <span class="tpc-delta down">-2</span>
+        </div>
+      </div>
+    
+    
+    
+      
+      
+      
+
+      
+      
+        
+        
+      
+
+      
+      
+        
+      
+
+      <div class="tpc-card score-mid">
+        <!-- 主题名称 -->
+        <div class="tpc-name" title="贵金属（黄金/白银/铂金）">贵金属（黄金/白银/铂金）</div>
+
+        <!-- 中部：左侧评分 + 右侧今日/昨日条数 -->
+        <div class="tpc-main">
+          <!-- 左侧：评分（带标签） -->
+          <div class="tpc-score-box">
+            <div class="tpc-score-label">评分</div>
+            <div class="tpc-score" style="background:#fff7ed;color:#b45309;border:1px solid #fcd34d;">63</div>
+          </div>
+
+          <!-- 右侧：条数对比（今日无标签，昨日显示「昨」） -->
+          <div class="tpc-counts">
+            <div class="tpc-count-row">
+              <span class="tpc-count today">3</span>
+              <span class="tpc-unit">条</span>
+            </div>
+            <div class="tpc-count-row">
+              <span class="tpc-count-label">昨</span>
+              <span class="tpc-count yesterday">4</span>
+              <span class="tpc-unit">条</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 底部：变化量 -->
+        <div class="tpc-bottom">
+          <span class="tpc-delta down">-1</span>
+        </div>
+      </div>
+    
+    
+    
+      
+      
+      
+
+      
+      
+        
+        
+      
+
+      
+      
+        
+      
+
+      <div class="tpc-card score-high">
+        <!-- 主题名称 -->
+        <div class="tpc-name" title="风险偏好与波动">风险偏好与波动</div>
+
+        <!-- 中部：左侧评分 + 右侧今日/昨日条数 -->
+        <div class="tpc-main">
+          <!-- 左侧：评分（带标签） -->
+          <div class="tpc-score-box">
+            <div class="tpc-score-label">评分</div>
+            <div class="tpc-score" style="background:#fef2f2;color:#c01818;border:1px solid #fca5a5;">72</div>
+          </div>
+
+          <!-- 右侧：条数对比（今日无标签，昨日显示「昨」） -->
+          <div class="tpc-counts">
+            <div class="tpc-count-row">
+              <span class="tpc-count today">2</span>
+              <span class="tpc-unit">条</span>
+            </div>
+            <div class="tpc-count-row">
+              <span class="tpc-count-label">昨</span>
+              <span class="tpc-count yesterday">1</span>
+              <span class="tpc-unit">条</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 底部：变化量 -->
+        <div class="tpc-bottom">
+          <span class="tpc-delta up">+1</span>
+        </div>
+      </div>
+    
+    
+    
+      
+      
+      
+
+      
+      
+        
+        
+      
+
+      
+      
+        
+      
+
+      <div class="tpc-card score-mid">
+        <!-- 主题名称 -->
+        <div class="tpc-name" title="宏观经济综合">宏观经济综合</div>
+
+        <!-- 中部：左侧评分 + 右侧今日/昨日条数 -->
+        <div class="tpc-main">
+          <!-- 左侧：评分（带标签） -->
+          <div class="tpc-score-box">
+            <div class="tpc-score-label">评分</div>
+            <div class="tpc-score" style="background:#fff7ed;color:#b45309;border:1px solid #fcd34d;">58</div>
+          </div>
+
+          <!-- 右侧：条数对比（今日无标签，昨日显示「昨」） -->
+          <div class="tpc-counts">
+            <div class="tpc-count-row">
+              <span class="tpc-count today">1</span>
+              <span class="tpc-unit">条</span>
+            </div>
+            <div class="tpc-count-row">
+              <span class="tpc-count-label">昨</span>
+              <span class="tpc-count yesterday">0</span>
+              <span class="tpc-unit">条</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 底部：变化量 -->
+        <div class="tpc-bottom">
+          <span class="tpc-delta new">NEW</span>
+        </div>
+      </div>
+    
+    
+    
+      
+      
+      
+
+      
+      
+        
+        
+      
+
+      
+      
+        
+      
+
+      <div class="tpc-card score-mid">
+        <!-- 主题名称 -->
+        <div class="tpc-name" title="通胀/就业/GDP（CPI/PCE/NFP/PMI）">通胀/就业/GDP（CPI/PCE/NFP/PMI）</div>
+
+        <!-- 中部：左侧评分 + 右侧今日/昨日条数 -->
+        <div class="tpc-main">
+          <!-- 左侧：评分（带标签） -->
+          <div class="tpc-score-box">
+            <div class="tpc-score-label">评分</div>
+            <div class="tpc-score" style="background:#fff7ed;color:#b45309;border:1px solid #fcd34d;">66</div>
+          </div>
+
+          <!-- 右侧：条数对比（今日无标签，昨日显示「昨」） -->
+          <div class="tpc-counts">
+            <div class="tpc-count-row">
+              <span class="tpc-count today">1</span>
+              <span class="tpc-unit">条</span>
+            </div>
+            <div class="tpc-count-row">
+              <span class="tpc-count-label">昨</span>
+              <span class="tpc-count yesterday">2</span>
+              <span class="tpc-unit">条</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 底部：变化量 -->
+        <div class="tpc-bottom">
+          <span class="tpc-delta down">-1</span>
+        </div>
+      </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+<div class="card" id="sec-snap" data-section="snap">
+  <div class="card-header" onclick="toggleCard('snap')">
+    <span>实时行情快照</span>
+    <span class="toggle-btn" id="snap-btn">▼ 收起</span>
+  </div>
+  <div id="snap" class="collapsible">
+  <div class="snap-grid">
+  
+  
+  
+  
+  <div class="snap-group-label">📊 美股指数</div>
+  
+  
+  
+  <a href="https://finance.yahoo.com/quote/%5EGSPC" target="_blank"
+     class="snap-card ">
+    <div class="snap-top">
+      <span class="snap-sym">^GSPC</span>
+      
+    </div>
+    <div class="snap-name" title="标普500 (S&amp;P 500)">标普500</div>
+    <div class="snap-price-row">
+      <span class="snap-price">N/A</span>
+      <span class="snap-pct" style="color:var(--faint);">—</span>
+    </div>
+    
+  </a>
+  
+  
+  
+  
+  <a href="https://finance.yahoo.com/quote/%5EDJI" target="_blank"
+     class="snap-card ">
+    <div class="snap-top">
+      <span class="snap-sym">^DJI</span>
+      
+    </div>
+    <div class="snap-name" title="道琼斯指数 (DJIA)">道琼斯指数</div>
+    <div class="snap-price-row">
+      <span class="snap-price">N/A</span>
+      <span class="snap-pct" style="color:var(--faint);">—</span>
+    </div>
+    
+  </a>
+  
+  
+  
+  
+  <a href="https://finance.yahoo.com/quote/%5EIXIC" target="_blank"
+     class="snap-card ">
+    <div class="snap-top">
+      <span class="snap-sym">^IXIC</span>
+      
+    </div>
+    <div class="snap-name" title="纳斯达克综合 (NASDAQ)">纳斯达克综合</div>
+    <div class="snap-price-row">
+      <span class="snap-price">N/A</span>
+      <span class="snap-pct" style="color:var(--faint);">—</span>
+    </div>
+    
+  </a>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <a href="https://finance.yahoo.com/quote/%5EVIX" target="_blank"
+     class="snap-card ">
+    <div class="snap-top">
+      <span class="snap-sym">^VIX</span>
+      
+    </div>
+    <div class="snap-name" title="VIX 恐慌指数">VIX 恐慌指数</div>
+    <div class="snap-price-row">
+      <span class="snap-price">N/A</span>
+      <span class="snap-pct" style="color:var(--faint);">—</span>
+    </div>
+    
+  </a>
+  
+  
+  
+  
+  
+  
+  
+  <div class="snap-group-label">🥇 贵金属</div>
+  
+  
+  
+  <a href="https://finance.yahoo.com/quote/GC%3DF" target="_blank"
+     class="snap-card ">
+    <div class="snap-top">
+      <span class="snap-sym">GC=F</span>
+      
+    </div>
+    <div class="snap-name" title="黄金期货 (GOLD)">黄金期货</div>
+    <div class="snap-price-row">
+      <span class="snap-price">N/A</span>
+      <span class="snap-pct" style="color:var(--faint);">—</span>
+    </div>
+    
+  </a>
+  
+  
+  
+  
+  <a href="https://finance.yahoo.com/quote/SI%3DF" target="_blank"
+     class="snap-card ">
+    <div class="snap-top">
+      <span class="snap-sym">SI=F</span>
+      
+    </div>
+    <div class="snap-name" title="白银期货 (SILVER)">白银期货</div>
+    <div class="snap-price-row">
+      <span class="snap-price">N/A</span>
+      <span class="snap-pct" style="color:var(--faint);">—</span>
+    </div>
+    
+  </a>
+  
+  
+  
+  
+  <a href="https://finance.yahoo.com/quote/HG%3DF" target="_blank"
+     class="snap-card ">
+    <div class="snap-top">
+      <span class="snap-sym">HG=F</span>
+      
+    </div>
+    <div class="snap-name" title="铜期货 (COPPER)">铜期货</div>
+    <div class="snap-price-row">
+      <span class="snap-price">N/A</span>
+      <span class="snap-pct" style="color:var(--faint);">—</span>
+    </div>
+    
+  </a>
+  
+  
+  
+  
+  
+  
+  
+  <div class="snap-group-label">🛢️ 能源</div>
+  
+  
+  
+  <a href="https://finance.yahoo.com/quote/CL%3DF" target="_blank"
+     class="snap-card ">
+    <div class="snap-top">
+      <span class="snap-sym">CL=F</span>
+      
+    </div>
+    <div class="snap-name" title="WTI 原油 (CRUDE OIL)">WTI 原油</div>
+    <div class="snap-price-row">
+      <span class="snap-price">N/A</span>
+      <span class="snap-pct" style="color:var(--faint);">—</span>
+    </div>
+    
+  </a>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <div class="snap-group-label">📉 美债收益率</div>
+  
+  
+  
+  <a href="https://finance.yahoo.com/quote/%5ETNX" target="_blank"
+     class="snap-card ">
+    <div class="snap-top">
+      <span class="snap-sym">^TNX</span>
+      
+    </div>
+    <div class="snap-name" title="10年期美债收益率">10年期美债收益率</div>
+    <div class="snap-price-row">
+      <span class="snap-price">N/A</span>
+      <span class="snap-pct" style="color:var(--faint);">—</span>
+    </div>
+    
+  </a>
+  
+  
+  
+  
+  <a href="https://finance.yahoo.com/quote/%5EFVX" target="_blank"
+     class="snap-card ">
+    <div class="snap-top">
+      <span class="snap-sym">^FVX</span>
+      
+    </div>
+    <div class="snap-name" title="5年期美债收益率">5年期美债收益率</div>
+    <div class="snap-price-row">
+      <span class="snap-price">N/A</span>
+      <span class="snap-pct" style="color:var(--faint);">—</span>
+    </div>
+    
+  </a>
+  
+  
+  
+  
+  <a href="https://finance.yahoo.com/quote/%5ETYX" target="_blank"
+     class="snap-card ">
+    <div class="snap-top">
+      <span class="snap-sym">^TYX</span>
+      
+    </div>
+    <div class="snap-name" title="30年期美债收益率">30年期美债收益率</div>
+    <div class="snap-price-row">
+      <span class="snap-price">N/A</span>
+      <span class="snap-pct" style="color:var(--faint);">—</span>
+    </div>
+    
+  </a>
+  
+  
+  
+  
+  
+  
+  
+  <div class="snap-group-label">💱 外汇</div>
+  
+  
+  
+  <a href="https://finance.yahoo.com/quote/DX-Y.NYB" target="_blank"
+     class="snap-card ">
+    <div class="snap-top">
+      <span class="snap-sym">DX-Y.NYB</span>
+      
+    </div>
+    <div class="snap-name" title="美元指数 (DXY)">美元指数</div>
+    <div class="snap-price-row">
+      <span class="snap-price">N/A</span>
+      <span class="snap-pct" style="color:var(--faint);">—</span>
+    </div>
+    
+  </a>
+  
+  
+  
+  
+  <a href="https://finance.yahoo.com/quote/CNH%3DX" target="_blank"
+     class="snap-card ">
+    <div class="snap-top">
+      <span class="snap-sym">CNH=X</span>
+      
+    </div>
+    <div class="snap-name" title="离岸人民币 (USD/CNH)">离岸人民币</div>
+    <div class="snap-price-row">
+      <span class="snap-price">N/A</span>
+      <span class="snap-pct" style="color:var(--faint);">—</span>
+    </div>
+    
+  </a>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <div class="snap-group-label">₿ 加密货币</div>
+  
+  
+  
+  <a href="https://finance.yahoo.com/quote/BTC-USD" target="_blank"
+     class="snap-card ">
+    <div class="snap-top">
+      <span class="snap-sym">BTC-USD</span>
+      
+    </div>
+    <div class="snap-name" title="比特币 (BTC/USD)">比特币</div>
+    <div class="snap-price-row">
+      <span class="snap-price">N/A</span>
+      <span class="snap-pct" style="color:var(--faint);">—</span>
+    </div>
+    
+  </a>
+  
+  
+  
+  
+  <a href="https://finance.yahoo.com/quote/ETH-USD" target="_blank"
+     class="snap-card ">
+    <div class="snap-top">
+      <span class="snap-sym">ETH-USD</span>
+      
+    </div>
+    <div class="snap-name" title="以太坊 (ETH/USD)">以太坊</div>
+    <div class="snap-price-row">
+      <span class="snap-price">N/A</span>
+      <span class="snap-pct" style="color:var(--faint);">—</span>
+    </div>
+    
+  </a>
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  </div>
+  <div class="snap-footer">
+    数据来源：Yahoo Finance · 点击跳转详情 · 量比 = 当日成交量 ÷ 10日均量
+  </div>
+  </div>
+</div>
+
+
+
+
+<div class="card" id="sec-overview" data-section="overview">
+  <div class="card-header blue" onclick="toggleCard('overview')">
+    <span>AI 市场综述</span>
+    <span class="toggle-btn" id="overview-btn">▼ 收起</span>
+  </div>
+  <div id="overview" class="collapsible">
+    <div class="overview-body">【今日看点】
+今天市场整体挺纠结的。黄金在美联储会议前小幅下跌，油价因为地缘冲突和IEA的“永久性需求削减”言论在100美元上方晃悠。美股那边，AI巨头财报要来了，大家既期待又怕崩盘，气氛有点像暴风雨前的宁静。最值得关注的是黄金和原油的“跷跷板”——一个被利率预期压着，一个被战争撑着。
+
+【三件大事】
+1. 【地缘政治】IEA警告伊朗战争将永久削减石油需求
+国际能源署署长比罗尔说，伊朗战争已经永久改变了化石燃料行业，会加速向可再生能源转型，从而削减未来石油需求。这话是在布伦特原油高于105美元/桶时说的，他强调霍尔木兹海峡中断对相关国家影响很大。
+
+2. 【基本面】美联储会议倒计时，黄金白银承压下跌
+随着FOMC会议临近，黄金和白银价格走低。市场普遍预期本次会议维持利率不变，但投资者更关注鲍威尔讲话，想找未来政策线索。贵金属下跌反映了市场对利率长期高位的担忧，削弱了黄金这类无收益资产的吸引力。
+
+3. 【市场情绪】155年历史指标被用来评估特朗普任内是否崩盘
+雅虎财经报道，一个拥有155年历史、预测股市重大走势记录完美的指标，正被用来评估特朗普任内是否会发生股市崩盘。该指标历史表现精准，但当前解读未明确指向崩盘，市场关注它对特朗普政策下股市前景的暗示。
+
+【影响分析】
+地缘方面，IEA的“永久性需求削减”言论短期会压制油价情绪，但实际供应中断风险（霍尔木兹海峡）仍支撑油价在100美元以上，这是个矛盾点。基本面看，美联储会议前黄金下跌，说明市场在定价“利率更高更久”，这对中长期黄金不利。情绪面上，那个155年历史的崩盘指标虽然没给出明确信号，但大家心里都犯嘀咕——AI财报要是撑不住，市场可能从“贪婪”转向“恐惧”。
+
+【接下来怎么看】
+未来1-3天，市场大概率跟着美联储会议走。黄金短期支撑在2300美元附近，阻力在2350美元；布伦特原油在100-105美元区间震荡。需要盯紧的风险：一是鲍威尔讲话是否暗示加息，二是AI巨头财报能否撑住估值。如果财报不及预期，美股可能回调，黄金和美元会跟着波动。整体上，建议多看少动，等方向明朗。</div>
+  </div>
+</div>
+
+
+
+
+
+
+<div class="card" id="sec-options" data-section="options">
+  
+  <div class="card-header gold" onclick="toggleCard('options')">
+    <span>期权策略方向 <span style="font-size:11px; font-weight:400; opacity:.85; margin-left:8px;">Futu 暂不可用，未核价</span></span>
+    <span class="toggle-btn" id="options-btn">▼ 收起</span>
+  </div>
+  
+  <div id="options" class="collapsible">
+    <div class="option-body unavailable">⚠️ Futu 连接异常，期权报价未能核验。
+错误：futu-api 未安装</div>
+    
+  </div>
+</div>
+
+
+
+
+<div class="card" id="sec-briefs" data-section="briefs">
+  <div class="card-header gold" onclick="toggleCard('briefs')">
+    <span>新闻简报 <span style="font-size:11px; font-weight:400; opacity:.75; margin-left:8px;">4 个主题</span></span>
+    <span style="display:flex;align-items:center;gap:8px;">
+      <span style="font-size:10px;color:var(--orange);opacity:.8;">按主题聚合</span>
+      <span class="toggle-btn" id="briefs-btn">▼ 收起</span>
+    </span>
+  </div>
+  <div id="briefs" class="collapsible">
+  <div class="briefs-list">
+  
+  
+  
+  <div class="brief-card">
+    <div class="brief-header" onclick="toggleBrief(1)">
+      <div class="brief-header-left">
+        <div class="brief-topic-dot"></div>
+        <span class="brief-topic">贵金属（黄金/白银/铂金）</span>
+        <span class="brief-count">3 条</span>
+      </div>
+      <span class="brief-toggle open" id="brief-btn-1">▼</span>
+    </div>
+    <div id="brief-1" class="brief-collapsible">
+      
+      
+      
+      
+      
+        
+        <div class="brief-body">黄金市场当前呈现多空交织的格局。一方面，Kitco于4月24日发布的日内关键入场水平分析，为活跃交易者提供了短期操作参考，但并未改变价格整体走势；另一方面，黄金价格在交易员评估地缘政治局势时保持稳定，显示市场情绪趋于谨慎，缺乏单边突破动能。值得关注的是，阿塞拜疆国家石油基金在第一季度出售近22吨黄金，这一主权级抛售行为对市场构成实质性供给压力，可能削弱部分避险买盘。综合来看，地缘风险支撑与主权基金减持形成对冲，短期金价大概率维持区间震荡，方向性突破需等待新的催化剂。</div>
+        <div class="brief-impact">判断为中性。理由：地缘局势提供底部支撑，但主权基金减持压制上行空间。</div>
+      
+      <div class="brief-sources hidden" id="brief-src-1">
+        
+        <a class="brief-src-link"
+           href="https://www.kitco.com/news/article/2026-04-24/gold-market-analysis-april-24-key-intra-day-price-entry-levels-active" target="_blank"
+           >Gold market analysis for April 24 - key …</a>
+        
+        <a class="brief-src-link"
+           href="https://www.kitco.com/news/article/2026-04-24/gold-price-near-steady-traders-assess-geopolitics" target="_blank"
+           >Gold price near steady as traders assess…</a>
+        
+        <a class="brief-src-link"
+           href="https://www.kitco.com/news/article/2026-04-24/azerbaijans-state-oil-fund-sells-nearly-22-tonnes-gold-q1" target="_blank"
+           >Azerbaijan’s state oil fund sells nearly…</a>
+        
+        
+      </div>
+      <div class="brief-src-toggle" onclick="toggleBriefSrc(1)">
+        <span id="brief-src-btn-1">▶ 原始来源（3 条）</span>
+      </div>
+    </div>
+  </div>
+  
+  <div class="brief-card">
+    <div class="brief-header" onclick="toggleBrief(2)">
+      <div class="brief-header-left">
+        <div class="brief-topic-dot"></div>
+        <span class="brief-topic">风险偏好与波动</span>
+        <span class="brief-count">2 条</span>
+      </div>
+      <span class="brief-toggle open" id="brief-btn-2">▼</span>
+    </div>
+    <div id="brief-2" class="brief-collapsible">
+      
+      
+      
+      
+      
+        
+        <div class="brief-body">一项拥有155年历史且预测股市重大走势记录完美的指标，当前被用于评估特朗普任内是否会发生股市崩盘。尽管该指标历史表现精准，但最新解读并未明确指向崩盘，这暗示市场风险偏好可能尚未急剧恶化。同时，标普500指数过去30年年化回报率为8.3%，而华尔街对2026年的回报预期更高，显示机构对中长期前景仍持乐观态度。综合来看，历史波动预警未触发明确信号，叠加未来收益预期上行，市场情绪偏向积极。</div>
+        <div class="brief-impact">判断为中性偏利多。理由：历史指标未确认崩盘风险，且未来回报预期高于长期均值，但短期波动仍需警惕。</div>
+      
+      <div class="brief-sources hidden" id="brief-src-2">
+        
+        <a class="brief-src-link"
+           href="https://www.fool.com/investing/2026/04/25/stock-market-crash-donald-trump-155-years-history/?.tsrc=rss" target="_blank"
+           >Will There Be a Stock Market Crash Under…</a>
+        
+        <a class="brief-src-link"
+           href="https://www.fool.com/investing/2026/04/25/stock-market-return-2026-will-beat-30-year-average/?.tsrc=rss" target="_blank"
+           >Wall Street Says the Stock Market&#39;s Retu…</a>
+        
+        
+      </div>
+      <div class="brief-src-toggle" onclick="toggleBriefSrc(2)">
+        <span id="brief-src-btn-2">▶ 原始来源（2 条）</span>
+      </div>
+    </div>
+  </div>
+  
+  <div class="brief-card">
+    <div class="brief-header" onclick="toggleBrief(3)">
+      <div class="brief-header-left">
+        <div class="brief-topic-dot"></div>
+        <span class="brief-topic">FOMC/美联储</span>
+        <span class="brief-count">8 条</span>
+      </div>
+      <span class="brief-toggle open" id="brief-btn-3">▼</span>
+    </div>
+    <div id="brief-3" class="brief-collapsible">
+      
+      
+      
+      
+      
+        
+        <div class="brief-body">基于已核实信息，FOMC会议临近及鲍威尔面临离职不确定性，导致黄金白银承压下跌，市场避险情绪升温。尽管美股因AI财报预期情绪乐观，但贵金属市场显然更关注美联储政策路径的潜在转变。司法部结束对鲍威尔的调查，参议院确认凯文·沃什任职取得突破，这暗示美联储领导层可能更迭，进而影响未来利率决策方向。当前市场处于观望状态，等待利率决议及政策信号明朗化。</div>
+        <div class="brief-impact">综合判断：利空黄金。（美联储领导层不确定性及政策转向预期压制贵金属价格。）</div>
+      
+      <div class="brief-sources hidden" id="brief-src-3">
+        
+        <a class="brief-src-link"
+           href="https://www.kitco.com/news/article/2026-04-24/wall-street-and-main-street-retreat-fence-after-gold-remains-rangebound" target="_blank"
+           >Wall Street and Main Street retreat to t…</a>
+        
+        <a class="brief-src-link"
+           href="https://www.kitco.com/opinion/2026-04-23/gold-and-silver-press-lower-fomc-countdown-begins" target="_blank"
+           >Gold and silver press lower as FOMC coun…</a>
+        
+        <a class="brief-src-link"
+           href="https://www.fool.com/investing/2026/04/25/fed-interest-rate-dilemma-bad-to-warsh-wall-street/?.tsrc=rss" target="_blank"
+           >The Federal Reserve&#39;s Interest Rate Dile…</a>
+        
+        <a class="brief-src-link brief-src-extra"
+           href="https://finance.yahoo.com/m/15ef4c3b-df6b-3b46-9027-889261d80ae5/stock-market-week-ahead%3A.html?.tsrc=rss" target="_blank"
+           style="display:none;">Stock Market Week Ahead: Hyperscaler Bli…</a>
+        
+        <a class="brief-src-link brief-src-extra"
+           href="https://www.cnbc.com/2026/04/24/will-he-stay-or-will-he-go-with-criminal-probe-over-fed-chair-powell-faces-big-decision.html" target="_blank"
+           style="display:none;">Will he stay or will he go? With crimina…</a>
+        
+        <a class="brief-src-link brief-src-extra"
+           href="https://www.federalreserve.gov/newsevents/pressreleases/orders20260424a.htm" target="_blank"
+           style="display:none;">Federal Reserve Board announces approval…</a>
+        
+        <a class="brief-src-link brief-src-extra"
+           href="https://www.federalreserve.gov/newsevents/pressreleases/orders20260424b.htm" target="_blank"
+           style="display:none;">Federal Reserve Board announces approval…</a>
+        
+        <a class="brief-src-link brief-src-extra"
+           href="https://wolfstreet.com/2026/04/24/senate-confirmation-of-warsh-who-wants-to-reduce-the-feds-balance-sheet-gets-unstuck-as-doj-ends-powell-investigation/" target="_blank"
+           style="display:none;">Senate Confirmation of Warsh, who Wants …</a>
+        
+        
+        <span class="brief-src-more" id="brief-src-more-3" onclick="toggleBriefSrcMore(3, 8)">▶ 还有 5 条</span>
+        
+      </div>
+      <div class="brief-src-toggle" onclick="toggleBriefSrc(3)">
+        <span id="brief-src-btn-3">▶ 原始来源（8 条）</span>
+      </div>
+    </div>
+  </div>
+  
+  <div class="brief-card">
+    <div class="brief-header" onclick="toggleBrief(4)">
+      <div class="brief-header-left">
+        <div class="brief-topic-dot"></div>
+        <span class="brief-topic">地缘与能源</span>
+        <span class="brief-count">5 条</span>
+      </div>
+      <span class="brief-toggle open" id="brief-btn-4">▼</span>
+    </div>
+    <div id="brief-4" class="brief-collapsible">
+      
+      
+      
+      
+      
+        
+        <div class="brief-body">地缘冲突与能源制裁正形成双重供给冲击。美国对锡那罗亚卡特尔的金融制裁虽直接针对毒品供应链，但可能波及墨西哥湾能源贸易的合规成本，间接收紧区域原油流通。更关键的是，国际能源署署长明确将伊朗战争定性为化石燃料行业的永久性转折点，这直接削弱了市场对长期石油需求的预期。然而，短期现实是布伦特原油已站稳105美元，空袭后突破100美元的事实表明地缘溢价正在固化。贝克休斯超预期的营收与LNG订单激增，验证了上游资本开支正从传统石油转向天然气，这进一步强化了原油供给弹性下降的逻辑。美伊外交重启虽带来回调压力，但结构性缺口难以快速弥合。</div>
+        <div class="brief-impact">综合判断：利多。地缘风险溢价与供给刚性共同支撑油价高位运行。</div>
+      
+      <div class="brief-sources hidden" id="brief-src-4">
+        
+        <a class="brief-src-link"
+           href="https://home.treasury.gov/news/press-releases/sb0468" target="_blank"
+           >Treasury Sanctions Global Illicit Drug S…</a>
+        
+        <a class="brief-src-link"
+           href="https://oilprice.com/Latest-Energy-News/World-News/IEAs-Birol-Says-Iran-War-Will-Permanently-Cut-Into-Future-Oil-Demand.html" target="_blank"
+           >IEA’s Birol Says Iran War Will Permanent…</a>
+        
+        <a class="brief-src-link"
+           href="https://oilprice.com/Energy/Energy-General/Colombias-Oil-Industry-Eyes-Comeback-as-100-Crude-Revives-Investment-Case.html" target="_blank"
+           >Colombia’s Oil Industry Eyes Comeback as…</a>
+        
+        <a class="brief-src-link brief-src-extra"
+           href="https://oilprice.com/Energy/Energy-General/Brent-Holds-at-105-as-Iran-Talks-Temper-Rally.html" target="_blank"
+           style="display:none;">Brent Holds at $105 as Iran Talks Temper…</a>
+        
+        <a class="brief-src-link brief-src-extra"
+           href="https://oilprice.com/Latest-Energy-News/World-News/Baker-Hughes-Q1-Revenue-Beats-Estimates-by-260-Million-as-LNG-Orders-Surge.html" target="_blank"
+           style="display:none;">Baker Hughes Q1 Revenue Beats Estimates …</a>
+        
+        
+        <span class="brief-src-more" id="brief-src-more-4" onclick="toggleBriefSrcMore(4, 5)">▶ 还有 2 条</span>
+        
+      </div>
+      <div class="brief-src-toggle" onclick="toggleBriefSrc(4)">
+        <span id="brief-src-btn-4">▶ 原始来源（5 条）</span>
+      </div>
+    </div>
+  </div>
+  
+  </div>
+  </div>
+</div>
+
+
+
+
+
+<div class="card" id="sec-alerts" data-section="alerts" style="overflow:visible;">
+  <div class="card-header red" onclick="toggleAlerts()">
+    <span>预警中心
+      <span style="font-size:11px; font-weight:400; opacity:.75; margin-left:8px;">
+        <span style="color:var(--red);font-weight:700;">3 红色</span> · <span style="color:var(--orange);font-weight:700;">17 黄色</span>
+      </span>
+    </span>
+    <span class="toggle-btn" id="alerts-toggle-btn">▼ 收起</span>
+  </div>
+
+  <div id="alerts-body" class="collapsible">
+    
+    <div class="alerts-section-header red-hdr">
+      红色预警
+      <span class="section-count">3 条</span>
+    </div>
+    <div class="alerts-body-inner">
+      
+
+<div class="alert-item level-red">
+  <div class="alert-top">
+    <div class="score-badge level-red">
+      <span class="score-num">91</span>
+      <span class="score-sub">分</span>
+    </div>
+    <div class="alert-main">
+      <div class="alert-title">
+        <span class="alert-topic-tag">地缘与能源</span>Treasury Sanctions Global Illicit Drug Supply Chain Supporting the Sinaloa Cartel
+      </div>
+      <div class="alert-badges">
+        
+        
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="zh-trans">美国财政部制裁支持锡那罗亚贩毒集团的全球非法毒品供应链</div>
+  
+
+  <div class="alert-meta">
+    <span class="alert-meta-item">US Treasury-财政部新闻</span>
+    <span class="alert-meta-item">2026-04-25 23:19</span>
+  </div>
+
+  
+  <div class="ai-box">
+    <div class="ai-box-label">AI 深度解读</div>
+    <div class="summary-text">美国财政部于2025年3月20日宣布制裁支持锡那罗亚卡特尔的全球非法毒品供应链，涉及多个实体和个人。此举旨在切断该卡特尔通过芬太尼等毒品获取的资金流，强化打击跨国犯罪组织的金融网络。制裁将冻结相关资产并禁止美国实体与其交易。</div>
+    <div class="en-text">On March 20, 2025, the U.S. Treasury sanctioned the global illicit drug supply chain supporting the Sinaloa Cartel, targeting multiple entities and individuals. The action aims to disrupt the cartel&#39;s funding from fentanyl and other drugs, strengthening efforts against transnational criminal organizations. Sanctions freeze assets and prohibit U.S. transactions with designated parties.</div>
+    
+    <div class="assets-row">
+      <span class="assets-lbl">相关标的</span>
+      <span class="asset-chip">美元指数/DXY</span><span class="asset-chip">比特币/BTC</span>
+    </div>
+    
+    
+    
+    <div class="dir-bar neutral">
+      <span class="dir-chip neutral">中性</span>
+      <span>对美元指数中性：制裁主要影响非法资金流动，不直接冲击美元汇率；对比特币利空：加强金融监管可能抑制加密货币用于非法交易的需求。</span>
+    </div>
+    
+  </div>
+  
+
+  <div class="alert-footer">
+    <a class="alert-link primary" href="https://home.treasury.gov/news/press-releases/sb0468" target="_blank">原文链接</a>
+    
+  </div>
+  
+  <div class="reason-tags">评分依据：<span class="reason-tag">source_weight:35</span><span class="reason-tag">topic:geopolitics_energy</span><span class="reason-tag">topic:bonds_treasury</span><span class="reason-tag">topic:macro_general</span><span class="reason-tag">topic_bonus[geopolitics_energy]:+22</span><span class="reason-tag">multi_topic[bonds_treasury]:+9</span><span class="reason-tag">shock_keyword:+25</span></div>
+  
+</div>
+
+
+<div class="alert-item level-red">
+  <div class="alert-top">
+    <div class="score-badge level-red">
+      <span class="score-num">86</span>
+      <span class="score-sub">分</span>
+    </div>
+    <div class="alert-main">
+      <div class="alert-title">
+        <span class="alert-topic-tag">地缘与能源</span>IEA’s Birol Says Iran War Will Permanently Cut Into Future Oil Demand
+      </div>
+      <div class="alert-badges">
+        
+        
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="zh-trans">国际能源署比罗尔称伊朗战争将永久削减未来石油需求</div>
+  
+
+  <div class="alert-meta">
+    <span class="alert-meta-item">OilPrice-能源市场</span>
+    <span class="alert-meta-item">2026-04-25 03:45</span>
+  </div>
+
+  
+  <div class="ai-box">
+    <div class="ai-box-label">AI 深度解读</div>
+    <div class="summary-text">国际能源署（IEA）署长比罗尔（Fatih Birol）表示，伊朗战争已永久改变化石燃料行业，将加速向可再生能源、核电和电气化转型，从而削减未来石油需求。此言论发表于布伦特原油价格高于105美元/桶、实物供应仍受限的危机时期。比罗尔称，对化石燃料安全的信心损害是永久性的，受霍尔木兹海峡中断影响的国家将重新评估地缘政治风险。</div>
+    <div class="en-text">IEA chief Fatih Birol says the Iran war has permanently changed the fossil fuel industry, accelerating a shift toward renewables, nuclear power and electrification at the expense of oil demand. This bold claim comes amid an oil crisis with Brent above $105/barrel and constrained supply. Birol told The Guardian that damage to confidence in fossil fuel security is permanent, and countries exposed to Strait of Hormuz disruption will rethink geopolitical risk.</div>
+    
+    <div class="assets-row">
+      <span class="assets-lbl">相关标的</span>
+      <span class="asset-chip">原油/Crude Oil</span><span class="asset-chip">可再生能源指数/Renewable Energy Index</span><span class="asset-chip">布伦特原油/Brent Crude Oil</span>
+    </div>
+    
+    
+    
+    <div class="dir-bar bearish">
+      <span class="dir-chip bearish">利空</span>
+      <span>对原油利空：长期需求预期下降，加速能源转型将抑制油价；对可再生能源利多：政策与投资转向利好清洁能源板块。</span>
+    </div>
+    
+  </div>
+  
+
+  <div class="alert-footer">
+    <a class="alert-link primary" href="https://oilprice.com/Latest-Energy-News/World-News/IEAs-Birol-Says-Iran-War-Will-Permanently-Cut-Into-Future-Oil-Demand.html" target="_blank">原文链接</a>
+    
+  </div>
+  
+  <div class="reason-tags">评分依据：<span class="reason-tag">source_weight:30</span><span class="reason-tag">topic:geopolitics_energy</span><span class="reason-tag">topic:commodities</span><span class="reason-tag">topic:macro_general</span><span class="reason-tag">topic_bonus[geopolitics_energy]:+22</span><span class="reason-tag">multi_topic[commodities]:+9</span><span class="reason-tag">global_shock:+25</span></div>
+  
+</div>
+
+
+<div class="alert-item level-red">
+  <div class="alert-top">
+    <div class="score-badge level-red">
+      <span class="score-num">84</span>
+      <span class="score-sub">分</span>
+    </div>
+    <div class="alert-main">
+      <div class="alert-title">
+        <span class="alert-topic-tag">风险偏好与波动</span>Will There Be a Stock Market Crash Under President Donald Trump? One Forecasting Tool With 155 Years of History in Its Sails Offers an Answer.
+      </div>
+      <div class="alert-badges">
+        
+        
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="zh-trans">特朗普总统任内股市会崩盘吗？一项拥有155年历史的预测工具给出答案</div>
+  
+
+  <div class="alert-meta">
+    <span class="alert-meta-item">Yahoo Finance - Top Stories</span>
+    <span class="alert-meta-item">2026-04-25 16:26</span>
+  </div>
+
+  
+  <div class="ai-box">
+    <div class="ai-box-label">AI 深度解读</div>
+    <div class="summary-text">雅虎财经报道称，一项拥有155年历史、预测股市重大走势记录完美的指标，正被用来评估美国总统特朗普任内是否会发生股市崩盘。该指标的历史表现显示其能精准预测市场大波动，但当前解读未明确指向崩盘。市场关注该工具对特朗普政策下股市前景的暗示。</div>
+    <div class="en-text">Yahoo Finance reports that a forecasting tool with a 155-year history and an immaculate track record of predicting big stock market moves is being used to assess whether a stock market crash will occur under President Donald Trump. The tool&#39;s historical performance shows precise predictions of major market swings, but current interpretation does not clearly indicate a crash. Markets are watching for implications on stock market outlook under Trump&#39;s policies.</div>
+    
+    <div class="assets-row">
+      <span class="assets-lbl">相关标的</span>
+      <span class="asset-chip">标普500/SPX</span><span class="asset-chip">美元指数/DXY</span>
+    </div>
+    
+    
+    
+    <div class="dir-bar neutral">
+      <span class="dir-chip neutral">中性</span>
+      <span>对美股中性：指标历史完美但未明确指向崩盘，需结合政策与市场情绪综合判断。</span>
+    </div>
+    
+  </div>
+  
+
+  <div class="alert-footer">
+    <a class="alert-link primary" href="https://www.fool.com/investing/2026/04/25/stock-market-crash-donald-trump-155-years-history/?.tsrc=rss" target="_blank">原文链接</a>
+    
+  </div>
+  
+  <div class="reason-tags">评分依据：<span class="reason-tag">source_weight:35</span><span class="reason-tag">topic:risk_sentiment</span><span class="reason-tag">topic:key_figures</span><span class="reason-tag">topic:macro_general</span><span class="reason-tag">topic_bonus[risk_sentiment]:+15</span><span class="reason-tag">multi_topic[key_figures]:+9</span><span class="reason-tag">shock_keyword:+25</span></div>
+  
+</div>
+
+    </div>
+    
+
+    
+    <div class="alerts-section-header yellow-hdr">
+      黄色预警
+      <span class="section-count">17 条</span>
+    </div>
+    <div class="alerts-body-inner">
+      
+
+<div class="alert-item level-yellow">
+  <div class="alert-top">
+    <div class="score-badge level-yellow">
+      <span class="score-num">74</span>
+      <span class="score-sub">分</span>
+    </div>
+    <div class="alert-main">
+      <div class="alert-title">
+        <span class="alert-topic-tag">FOMC/美联储</span>Wall Street and Main Street retreat to the fence after gold remains rangebound with central bank rate decisions on deck
+      </div>
+      <div class="alert-badges">
+        
+        
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="zh-trans">金价区间震荡叠加央行利率决议在即，华尔街与 Main Street 退居观望</div>
+  
+
+  <div class="alert-meta">
+    <span class="alert-meta-item">Kitco-贵金属</span>
+    <span class="alert-meta-item">2026-04-25 23:19</span>
+  </div>
+
+  
+  <div class="ai-box">
+    <div class="ai-box-label">AI 深度解读</div>
+    <div class="summary-text">华尔街与普通投资者在黄金价格区间震荡且主要央行利率决议即将公布之际，选择观望。市场关注美联储、欧洲央行等关键决策，金价缺乏明确方向，投资者情绪谨慎。Kitco贵金属报道指出，央行动向将决定黄金短期走势。</div>
+    <div class="en-text">Wall Street and Main Street retreat to the fence as gold remains rangebound with central bank rate decisions on deck. The market awaits key decisions from the Fed, ECB, and others, with gold lacking clear direction and investor sentiment cautious. Kitco precious metals report highlights that central bank moves will determine gold&#39;s short-term trajectory.</div>
+    
+    <div class="assets-row">
+      <span class="assets-lbl">相关标的</span>
+      <span class="asset-chip">黄金/Gold</span><span class="asset-chip">美元指数/DXY</span>
+    </div>
+    
+    
+    
+    <div class="dir-bar neutral">
+      <span class="dir-chip neutral">中性</span>
+      <span>对黄金中性：金价区间震荡，等待央行利率决议明确方向；对美元中性：市场观望，美元走势取决于央行政策信号。</span>
+    </div>
+    
+  </div>
+  
+
+  <div class="alert-footer">
+    <a class="alert-link primary" href="https://www.kitco.com/news/article/2026-04-24/wall-street-and-main-street-retreat-fence-after-gold-remains-rangebound" target="_blank">原文链接</a>
+    
+  </div>
+  
+  <div class="reason-tags">评分依据：<span class="reason-tag">source_weight:35</span><span class="reason-tag">topic:fed</span><span class="reason-tag">topic:precious_metals</span><span class="reason-tag">topic:macro_general</span><span class="reason-tag">topic_bonus[fed]:+30</span><span class="reason-tag">multi_topic[precious_metals]:+9</span></div>
+  
+</div>
+
+
+<div class="alert-item level-yellow">
+  <div class="alert-top">
+    <div class="score-badge level-yellow">
+      <span class="score-num">74</span>
+      <span class="score-sub">分</span>
+    </div>
+    <div class="alert-main">
+      <div class="alert-title">
+        <span class="alert-topic-tag">FOMC/美联储</span>Gold and silver press lower as FOMC countdown begins
+      </div>
+      <div class="alert-badges">
+        
+        
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="zh-trans">随着FOMC倒计时开始，黄金和白银承压下行</div>
+  
+
+  <div class="alert-meta">
+    <span class="alert-meta-item">Kitco-贵金属</span>
+    <span class="alert-meta-item">2026-04-25 23:19</span>
+  </div>
+
+  
+  <div class="ai-box">
+    <div class="ai-box-label">AI 深度解读</div>
+    <div class="summary-text">随着美联储联邦公开市场委员会（FOMC）会议倒计时开始，黄金和白银价格承压下跌。市场普遍预期本次会议将维持利率不变，但投资者关注点在于美联储主席鲍威尔的讲话，以寻找未来货币政策走向的线索。贵金属价格走低反映了市场对利率长期维持高位的担忧，这削弱了无收益资产黄金的吸引力。</div>
+    <div class="en-text">Gold and silver prices declined as the countdown to the Federal Open Market Committee (FOMC) meeting began. Markets widely expect the Fed to hold rates steady, but investors are focused on Chairman Powell&#39;s speech for clues on future policy. The drop in precious metals reflects concerns that interest rates may stay higher for longer, reducing the appeal of non-yielding assets like gold.</div>
+    
+    <div class="assets-row">
+      <span class="assets-lbl">相关标的</span>
+      <span class="asset-chip">黄金/Gold</span><span class="asset-chip">白银/Silver</span><span class="asset-chip">美元指数/DXY</span>
+    </div>
+    
+    
+    
+    <div class="dir-bar bearish">
+      <span class="dir-chip bearish">利空</span>
+      <span>对黄金利空：FOMC会议前市场对利率维持高位的预期压制金价；对美元利多：加息预期或鹰派言论可能推升美元需求。</span>
+    </div>
+    
+  </div>
+  
+
+  <div class="alert-footer">
+    <a class="alert-link primary" href="https://www.kitco.com/opinion/2026-04-23/gold-and-silver-press-lower-fomc-countdown-begins" target="_blank">原文链接</a>
+    
+  </div>
+  
+  <div class="reason-tags">评分依据：<span class="reason-tag">source_weight:35</span><span class="reason-tag">topic:fed</span><span class="reason-tag">topic:precious_metals</span><span class="reason-tag">topic_bonus[fed]:+30</span><span class="reason-tag">multi_topic[precious_metals]:+9</span></div>
+  
+</div>
+
+
+<div class="alert-item level-yellow">
+  <div class="alert-top">
+    <div class="score-badge level-yellow">
+      <span class="score-num">74</span>
+      <span class="score-sub">分</span>
+    </div>
+    <div class="alert-main">
+      <div class="alert-title">
+        <span class="alert-topic-tag">FOMC/美联储</span>The Federal Reserve&#39;s Interest Rate Dilemma Is About to Go From Bad to Warsh -- and the Stock Market May End Up Paying the Price
+      </div>
+      <div class="alert-badges">
+        
+        
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="zh-trans">美联储利率困境将从糟糕走向“沃什式”恶化——股市或最终买单</div>
+  
+
+  <div class="alert-meta">
+    <span class="alert-meta-item">Yahoo Finance - Top Stories</span>
+    <span class="alert-meta-item">2026-04-25 18:56</span>
+  </div>
+
+  
+  <div class="ai-box">
+    <div class="ai-box-label">AI 深度解读</div>
+    <div class="summary-text">美联储利率决策困境可能在三周内出现重大转变，市场叙事将随之改变。文章提及“Warsh”，暗示前美联储理事凯文·沃什（Kevin Warsh）可能成为下一任美联储主席，其鹰派立场或导致更激进的加息。若沃什上任，股市可能因紧缩政策承压，标普500等指数面临回调风险。</div>
+    <div class="en-text">The Federal Reserve&#39;s interest rate dilemma may see a significant shift within three weeks, altering Wall Street&#39;s narrative. The article references &#39;Warsh,&#39; hinting at former Fed Governor Kevin Warsh as a potential next Fed chair, whose hawkish stance could lead to more aggressive rate hikes. If appointed, the stock market may suffer from tighter policy, with indices like the S&amp;P 500 facing downside risks.</div>
+    
+    <div class="assets-row">
+      <span class="assets-lbl">相关标的</span>
+      <span class="asset-chip">标普500/SPX</span><span class="asset-chip">美元指数/DXY</span>
+    </div>
+    
+    
+    
+    <div class="dir-bar bearish">
+      <span class="dir-chip bearish">利空</span>
+      <span>对标普500利空：鹰派美联储主席预期引发紧缩担忧，压制股市估值；对美元利多：加息预期推升美元需求。</span>
+    </div>
+    
+  </div>
+  
+
+  <div class="alert-footer">
+    <a class="alert-link primary" href="https://www.fool.com/investing/2026/04/25/fed-interest-rate-dilemma-bad-to-warsh-wall-street/?.tsrc=rss" target="_blank">原文链接</a>
+    
+  </div>
+  
+  <div class="reason-tags">评分依据：<span class="reason-tag">source_weight:35</span><span class="reason-tag">topic:fed</span><span class="reason-tag">topic:risk_sentiment</span><span class="reason-tag">topic:macro_general</span><span class="reason-tag">topic_bonus[fed]:+30</span><span class="reason-tag">multi_topic[risk_sentiment]:+9</span></div>
+  
+</div>
+
+
+<div class="alert-item level-yellow">
+  <div class="alert-top">
+    <div class="score-badge level-yellow">
+      <span class="score-num">74</span>
+      <span class="score-sub">分</span>
+    </div>
+    <div class="alert-main">
+      <div class="alert-title">
+        <span class="alert-topic-tag">FOMC/美联储</span>Stock Market Week Ahead: Hyperscaler Blitz, Federal Reserve Transition
+      </div>
+      <div class="alert-badges">
+        
+        
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="zh-trans">股市周前瞻：超大规模企业密集行动、美联储过渡</div>
+  
+
+  <div class="alert-meta">
+    <span class="alert-meta-item">Yahoo Finance - Top Stories</span>
+    <span class="alert-meta-item">2026-04-25 18:30</span>
+  </div>
+
+  
+  <div class="ai-box">
+    <div class="ai-box-label">AI 深度解读</div>
+    <div class="summary-text">本周美股市场情绪乐观，主要受AI超大规模企业（如微软、谷歌、亚马逊等）即将密集发布财报的推动，同时美联储正处于历史性领导层过渡期。市场关注这些科技巨头的业绩能否支撑高估值，以及新美联储主席的政策方向。关键时间点为本周财报季，机构包括美联储及多家科技巨头。</div>
+    <div class="en-text">The stock market is optimistic this week ahead of a surge in AI hyperscaler earnings from companies like Microsoft, Google, and Amazon, amid a historic transition at the Federal Reserve. Markets focus on whether tech giants&#39; results can justify high valuations and the policy direction of the new Fed chair. Key events include this week&#39;s earnings season, involving the Fed and major tech firms.</div>
+    
+    <div class="assets-row">
+      <span class="assets-lbl">相关标的</span>
+      <span class="asset-chip">标普500/SPX</span><span class="asset-chip">纳斯达克100/NDX</span><span class="asset-chip">美元指数/DXY</span>
+    </div>
+    
+    
+    
+    <div class="dir-bar bullish">
+      <span class="dir-chip bullish">利多</span>
+      <span>对纳斯达克100利多：AI超大规模企业财报若超预期，将提振科技股估值和整体市场情绪，推动指数上行。</span>
+    </div>
+    
+  </div>
+  
+
+  <div class="alert-footer">
+    <a class="alert-link primary" href="https://finance.yahoo.com/m/15ef4c3b-df6b-3b46-9027-889261d80ae5/stock-market-week-ahead%3A.html?.tsrc=rss" target="_blank">原文链接</a>
+    
+  </div>
+  
+  <div class="reason-tags">评分依据：<span class="reason-tag">source_weight:35</span><span class="reason-tag">topic:fed</span><span class="reason-tag">topic:risk_sentiment</span><span class="reason-tag">topic:tech_giants_earnings</span><span class="reason-tag">topic:macro_general</span><span class="reason-tag">topic_bonus[fed]:+30</span><span class="reason-tag">multi_topic[risk_sentiment]:+9</span></div>
+  
+</div>
+
+
+<div class="alert-item level-yellow">
+  <div class="alert-top">
+    <div class="score-badge level-yellow">
+      <span class="score-num">74</span>
+      <span class="score-sub">分</span>
+    </div>
+    <div class="alert-main">
+      <div class="alert-title">
+        <span class="alert-topic-tag">FOMC/美联储</span>Will he stay or will he go? With criminal probe over, Fed Chair Powell faces big decision
+      </div>
+      <div class="alert-badges">
+        
+        
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="zh-trans">去还是留？刑事调查结束，美联储主席鲍威尔面临重大抉择</div>
+  
+
+  <div class="alert-meta">
+    <span class="alert-meta-item">CNBC - Markets News</span>
+    <span class="alert-meta-item">2026-04-25 03:19</span>
+  </div>
+
+  
+  <div class="ai-box">
+    <div class="ai-box-label">AI 深度解读</div>
+    <div class="summary-text">美联储主席鲍威尔面临重大决策：在刑事调查结束后，是留任还是离职。这一决定正值政策制定的微妙时期，可能对货币政策产生重要影响。CNBC报道指出，鲍威尔的去留将影响市场对美联储独立性和未来利率路径的预期，尤其是在通胀和经济增长平衡的关键节点。</div>
+    <div class="en-text">Federal Reserve Chair Jerome Powell faces a critical decision on whether to stay or leave after a criminal probe concludes. The choice, reported by CNBC, could have significant implications for policymaking during a delicate time, affecting market expectations on Fed independence and future interest rate paths amid inflation and growth balancing.</div>
+    
+    <div class="assets-row">
+      <span class="assets-lbl">相关标的</span>
+      <span class="asset-chip">美元指数/DXY</span><span class="asset-chip">标普500/SPX</span><span class="asset-chip">黄金/Gold</span>
+    </div>
+    
+    
+    
+    <div class="dir-bar neutral">
+      <span class="dir-chip neutral">中性</span>
+      <span>对美元指数和标普500中性：鲍威尔去留不确定性短期增加市场波动，但方向取决于最终决定；若留任则政策连续性利好，若离职则可能引发政策转向预期。</span>
+    </div>
+    
+  </div>
+  
+
+  <div class="alert-footer">
+    <a class="alert-link primary" href="https://www.cnbc.com/2026/04/24/will-he-stay-or-will-he-go-with-criminal-probe-over-fed-chair-powell-faces-big-decision.html" target="_blank">原文链接</a>
+    
+  </div>
+  
+  <div class="reason-tags">评分依据：<span class="reason-tag">source_weight:35</span><span class="reason-tag">topic:fed</span><span class="reason-tag">topic:key_figures</span><span class="reason-tag">topic:macro_general</span><span class="reason-tag">topic_bonus[fed]:+30</span><span class="reason-tag">multi_topic[key_figures]:+9</span></div>
+  
+</div>
+
+
+<div class="alert-item level-yellow">
+  <div class="alert-top">
+    <div class="score-badge level-yellow">
+      <span class="score-num">71</span>
+      <span class="score-sub">分</span>
+    </div>
+    <div class="alert-main">
+      <div class="alert-title">
+        <span class="alert-topic-tag">FOMC/美联储</span>Federal Reserve Board announces approval of application by OceanFirst Financial Corp.
+      </div>
+      <div class="alert-badges">
+        
+        
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="zh-trans">美联储理事会批准OceanFirst Financial Corp.的申请</div>
+  
+
+  <div class="alert-meta">
+    <span class="alert-meta-item">Federal Reserve - Press Releases</span>
+    <span class="alert-meta-item">2026-04-25 04:00</span>
+  </div>
+
+  
+  <div class="ai-box">
+    <div class="ai-box-label">AI 深度解读</div>
+    <div class="summary-text">美联储理事会宣布批准OceanFirst Financial Corp.的申请。该事件为一家金融机构的特定申请获批，不涉及货币政策调整或宏观经济数据，对市场整体影响有限。</div>
+    <div class="en-text">The Federal Reserve Board announced approval of an application by OceanFirst Financial Corp. This event pertains to a specific financial institution&#39;s application approval, with no implications for monetary policy changes or macroeconomic data, thus having limited overall market impact.</div>
+    
+    <div class="assets-row">
+      <span class="assets-lbl">相关标的</span>
+      <span class="asset-chip">美元指数/DXY</span><span class="asset-chip">标普500/SPX</span>
+    </div>
+    
+    
+    
+    <div class="dir-bar neutral">
+      <span class="dir-chip neutral">中性</span>
+      <span>对美元指数和标普500影响中性：该批准为个案，不反映美联储货币政策立场变化，市场反应平淡。</span>
+    </div>
+    
+  </div>
+  
+
+  <div class="alert-footer">
+    <a class="alert-link primary" href="https://www.federalreserve.gov/newsevents/pressreleases/orders20260424a.htm" target="_blank">原文链接</a>
+    
+  </div>
+  
+  <div class="reason-tags">评分依据：<span class="reason-tag">source_weight:40</span><span class="reason-tag">topic:fed</span><span class="reason-tag">topic:macro_general</span><span class="reason-tag">topic_bonus[fed]:+30</span><span class="reason-tag">multi_topic[macro_general]:+1</span></div>
+  
+</div>
+
+
+<div class="alert-item level-yellow">
+  <div class="alert-top">
+    <div class="score-badge level-yellow">
+      <span class="score-num">71</span>
+      <span class="score-sub">分</span>
+    </div>
+    <div class="alert-main">
+      <div class="alert-title">
+        <span class="alert-topic-tag">FOMC/美联储</span>Federal Reserve Board announces approval of application by Banco de Credito del Peru
+      </div>
+      <div class="alert-badges">
+        
+        
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="zh-trans">美联储理事会批准秘鲁信贷银行的申请</div>
+  
+
+  <div class="alert-meta">
+    <span class="alert-meta-item">Federal Reserve - Press Releases</span>
+    <span class="alert-meta-item">2026-04-25 04:00</span>
+  </div>
+
+  
+  <div class="ai-box">
+    <div class="ai-box-label">AI 深度解读</div>
+    <div class="summary-text">美联储理事会宣布批准秘鲁信贷银行（Banco de Credito del Peru）的申请。该事件为一项常规的银行监管审批，不涉及货币政策调整或宏观经济数据，对全球金融市场影响有限。</div>
+    <div class="en-text">The Federal Reserve Board announced approval of an application by Banco de Credito del Peru. This is a routine banking regulatory approval, not involving monetary policy changes or macroeconomic data, and has limited impact on global financial markets.</div>
+    
+    <div class="assets-row">
+      <span class="assets-lbl">相关标的</span>
+      <span class="asset-chip">美元指数/DXY</span><span class="asset-chip">标普500/SPX</span>
+    </div>
+    
+    
+    
+    <div class="dir-bar neutral">
+      <span class="dir-chip neutral">中性</span>
+      <span>对美元指数和标普500影响中性：该审批为个别银行事件，不改变市场流动性或利率预期，无显著利多或利空效应。</span>
+    </div>
+    
+  </div>
+  
+
+  <div class="alert-footer">
+    <a class="alert-link primary" href="https://www.federalreserve.gov/newsevents/pressreleases/orders20260424b.htm" target="_blank">原文链接</a>
+    
+  </div>
+  
+  <div class="reason-tags">评分依据：<span class="reason-tag">source_weight:40</span><span class="reason-tag">topic:fed</span><span class="reason-tag">topic:macro_general</span><span class="reason-tag">topic_bonus[fed]:+30</span><span class="reason-tag">multi_topic[macro_general]:+1</span></div>
+  
+</div>
+
+
+<div class="alert-item level-yellow">
+  <div class="alert-top">
+    <div class="score-badge level-yellow">
+      <span class="score-num">69</span>
+      <span class="score-sub">分</span>
+    </div>
+    <div class="alert-main">
+      <div class="alert-title">
+        <span class="alert-topic-tag">FOMC/美联储</span>Senate Confirmation of Warsh, who Wants to Reduce the Fed’s Balance Sheet, Gets Unstuck as DOJ Ends Powell Investigation
+      </div>
+      <div class="alert-badges">
+        
+        
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="zh-trans">司法部结束对鲍威尔调查，主张缩表的沃什获参议院确认进程解冻</div>
+  
+
+  <div class="alert-meta">
+    <span class="alert-meta-item">Wolf Street - 宏观/债务/房地产</span>
+    <span class="alert-meta-item">2026-04-25 01:09</span>
+  </div>
+
+  
+  <div class="ai-box">
+    <div class="ai-box-label">AI 深度解读</div>
+    <div class="summary-text">美国参议院确认凯文·沃什（Kevin Warsh）担任美联储要职的进程取得突破，因司法部结束对鲍威尔（Powell）的调查。沃什在听证会上坚持主张美联储应缩减资产负债表，这一鹰派立场可能加速货币政策收紧。此举对金融市场影响深远，尤其是美元和黄金。</div>
+    <div class="en-text">The Senate confirmation of Kevin Warsh, who advocates for reducing the Fed&#39;s balance sheet, has progressed as the DOJ ends its investigation into Powell. During hearings, Warsh maintained his stance for a smaller Fed balance sheet, signaling potential monetary tightening. This hawkish view could impact markets, particularly the dollar and gold.</div>
+    
+    <div class="assets-row">
+      <span class="assets-lbl">相关标的</span>
+      <span class="asset-chip">美元指数/DXY</span><span class="asset-chip">黄金/Gold</span><span class="asset-chip">标普500/SPX</span><span class="asset-chip">比特币/BTC</span>
+    </div>
+    
+    
+    
+    <div class="dir-bar bearish">
+      <span class="dir-chip bearish">利空</span>
+      <span>对黄金利空：缩表预期推升美元，压制金价；对美元利多：鹰派立场强化美元需求；对标普500利空：流动性收紧可能打压股市。</span>
+    </div>
+    
+  </div>
+  
+
+  <div class="alert-footer">
+    <a class="alert-link primary" href="https://wolfstreet.com/2026/04/24/senate-confirmation-of-warsh-who-wants-to-reduce-the-feds-balance-sheet-gets-unstuck-as-doj-ends-powell-investigation/" target="_blank">原文链接</a>
+    
+  </div>
+  
+  <div class="reason-tags">评分依据：<span class="reason-tag">source_weight:30</span><span class="reason-tag">topic:fed</span><span class="reason-tag">topic:key_figures</span><span class="reason-tag">topic:macro_general</span><span class="reason-tag">topic_bonus[fed]:+30</span><span class="reason-tag">multi_topic[key_figures]:+9</span></div>
+  
+</div>
+
+
+<div class="alert-item level-yellow">
+  <div class="alert-top">
+    <div class="score-badge level-yellow">
+      <span class="score-num">66</span>
+      <span class="score-sub">分</span>
+    </div>
+    <div class="alert-main">
+      <div class="alert-title">
+        <span class="alert-topic-tag">通胀/就业/GDP（CPI/PCE/NFP/PMI）</span>Spot gold at session highs after Consumer Sentiment ticks up to 49.8, one-year inflation expectations dip to 4.7%
+      </div>
+      <div class="alert-badges">
+        
+        
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="zh-trans">消费者信心指数升至49.8，一年期通胀预期降至4.7%，现货黄金触及盘中高点</div>
+  
+
+  <div class="alert-meta">
+    <span class="alert-meta-item">Kitco-贵金属</span>
+    <span class="alert-meta-item">2026-04-25 23:19</span>
+  </div>
+
+  
+  <div class="ai-box">
+    <div class="ai-box-label">AI 深度解读</div>
+    <div class="summary-text">根据Kitco贵金属报道，现货黄金在消费者信心指数升至49.8、一年期通胀预期降至4.7%后触及盘中高点。该数据由密歇根大学发布，显示消费者信心改善但通胀预期回落，可能削弱黄金的避险需求，同时降低美联储加息压力，对金价形成短期利多。</div>
+    <div class="en-text">Spot gold hit session highs after the Consumer Sentiment index rose to 49.8 and one-year inflation expectations dipped to 4.7%, according to Kitco. The University of Michigan data indicates improved consumer confidence and easing inflation expectations, which may reduce gold&#39;s safe-haven appeal but also lower pressure for Fed rate hikes, providing short-term support for gold.</div>
+    
+    <div class="assets-row">
+      <span class="assets-lbl">相关标的</span>
+      <span class="asset-chip">黄金/Gold</span><span class="asset-chip">美元指数/DXY</span>
+    </div>
+    
+    
+    
+    <div class="dir-bar bullish">
+      <span class="dir-chip bullish">利多</span>
+      <span>对黄金利多：通胀预期下降降低加息压力，消费者信心回升但未引发避险抛售，金价短期获支撑。</span>
+    </div>
+    
+  </div>
+  
+
+  <div class="alert-footer">
+    <a class="alert-link primary" href="https://www.kitco.com/news/article/2026-04-24/spot-gold-session-highs-after-consumer-sentiment-ticks-498-one-year-0" target="_blank">原文链接</a>
+    
+  </div>
+  
+  <div class="reason-tags">评分依据：<span class="reason-tag">source_weight:35</span><span class="reason-tag">topic:inflation_jobs</span><span class="reason-tag">topic:precious_metals</span><span class="reason-tag">topic:macro_general</span><span class="reason-tag">topic_bonus[inflation_jobs]:+22</span><span class="reason-tag">multi_topic[precious_metals]:+9</span></div>
+  
+</div>
+
+
+<div class="alert-item level-yellow">
+  <div class="alert-top">
+    <div class="score-badge level-yellow">
+      <span class="score-num">66</span>
+      <span class="score-sub">分</span>
+    </div>
+    <div class="alert-main">
+      <div class="alert-title">
+        <span class="alert-topic-tag">贵金属（黄金/白银/铂金）</span>Gold market analysis for April 24 - key intra-day price entry levels for active traders
+      </div>
+      <div class="alert-badges">
+        
+        
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="zh-trans">4月24日黄金市场分析——活跃交易者的关键日内入场价位</div>
+  
+
+  <div class="alert-meta">
+    <span class="alert-meta-item">Kitco-贵金属</span>
+    <span class="alert-meta-item">2026-04-25 23:19</span>
+  </div>
+
+  
+  <div class="ai-box">
+    <div class="ai-box-label">AI 深度解读</div>
+    <div class="summary-text">Kitco于4月24日发布黄金市场分析，为活跃交易者提供关键日内价格入场水平。该分析聚焦当日黄金价格的关键支撑位和阻力位，帮助交易者识别短线交易机会。Kitco作为知名贵金属分析机构，其日内交易策略通常基于技术指标和近期市场波动，未提及具体机构或事件，但强调当前黄金市场存在明确的技术交易区间。</div>
+    <div class="en-text">Kitco&#39;s gold market analysis for April 24 provides key intra-day price entry levels for active traders, focusing on critical support and resistance levels to identify short-term trading opportunities. As a prominent precious metals analysis firm, Kitco&#39;s intra-day strategy is based on technical indicators and recent market volatility, highlighting clear technical trading ranges in the current gold market.</div>
+    
+    <div class="assets-row">
+      <span class="assets-lbl">相关标的</span>
+      <span class="asset-chip">黄金/Gold</span>
+    </div>
+    
+    
+    
+    <div class="dir-bar neutral">
+      <span class="dir-chip neutral">中性</span>
+      <span>对黄金中性：该分析仅提供技术性交易参考，未给出明确方向性判断，日内价格波动取决于市场情绪和交易者执行策略。</span>
+    </div>
+    
+  </div>
+  
+
+  <div class="alert-footer">
+    <a class="alert-link primary" href="https://www.kitco.com/news/article/2026-04-24/gold-market-analysis-april-24-key-intra-day-price-entry-levels-active" target="_blank">原文链接</a>
+    
+  </div>
+  
+  <div class="reason-tags">评分依据：<span class="reason-tag">source_weight:35</span><span class="reason-tag">topic:precious_metals</span><span class="reason-tag">topic:macro_general</span><span class="reason-tag">topic_bonus[precious_metals]:+15</span><span class="reason-tag">multi_topic[macro_general]:+1</span><span class="reason-tag">heat_burst:+15(count=4)</span></div>
+  
+</div>
+
+
+<div class="alert-item level-yellow">
+  <div class="alert-top">
+    <div class="score-badge level-yellow">
+      <span class="score-num">65</span>
+      <span class="score-sub">分</span>
+    </div>
+    <div class="alert-main">
+      <div class="alert-title">
+        <span class="alert-topic-tag">贵金属（黄金/白银/铂金）</span>Gold price near steady as traders assess geopolitics
+      </div>
+      <div class="alert-badges">
+        
+        
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="zh-trans">金价近乎持平，交易员评估地缘政治因素</div>
+  
+
+  <div class="alert-meta">
+    <span class="alert-meta-item">Kitco-贵金属</span>
+    <span class="alert-meta-item">2026-04-25 23:19</span>
+  </div>
+
+  
+  <div class="ai-box">
+    <div class="ai-box-label">AI 深度解读</div>
+    <div class="summary-text">据Kitco贵金属报道，黄金价格在交易员评估地缘政治局势时保持稳定。市场关注中东紧张局势及美联储政策预期，金价在近期波动后趋于平稳。分析师指出，地缘风险与利率前景的博弈使黄金短期缺乏明确方向，投资者等待更多经济数据指引。</div>
+    <div class="en-text">Gold prices remained near steady as traders assessed geopolitical tensions, according to Kitco Precious Metals. The market focused on Middle East tensions and Federal Reserve policy expectations, with gold stabilizing after recent fluctuations. Analysts noted that the interplay between geopolitical risks and interest rate outlooks left gold without a clear short-term direction, as investors awaited more economic data for guidance.</div>
+    
+    <div class="assets-row">
+      <span class="assets-lbl">相关标的</span>
+      <span class="asset-chip">黄金/Gold</span><span class="asset-chip">美元指数/DXY</span>
+    </div>
+    
+    
+    
+    <div class="dir-bar neutral">
+      <span class="dir-chip neutral">中性</span>
+      <span>对黄金中性：地缘风险提供支撑，但美联储政策不确定性限制涨幅，金价短期缺乏明确方向。</span>
+    </div>
+    
+  </div>
+  
+
+  <div class="alert-footer">
+    <a class="alert-link primary" href="https://www.kitco.com/news/article/2026-04-24/gold-price-near-steady-traders-assess-geopolitics" target="_blank">原文链接</a>
+    
+  </div>
+  
+  <div class="reason-tags">评分依据：<span class="reason-tag">source_weight:35</span><span class="reason-tag">topic:precious_metals</span><span class="reason-tag">topic_bonus[precious_metals]:+15</span><span class="reason-tag">heat_burst:+15(count=3)</span></div>
+  
+</div>
+
+
+<div class="alert-item level-yellow">
+  <div class="alert-top">
+    <div class="score-badge level-yellow">
+      <span class="score-num">61</span>
+      <span class="score-sub">分</span>
+    </div>
+    <div class="alert-main">
+      <div class="alert-title">
+        <span class="alert-topic-tag">地缘与能源</span>Colombia’s Oil Industry Eyes Comeback as $100 Crude Revives Investment Case
+      </div>
+      <div class="alert-badges">
+        
+        
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="zh-trans">哥伦比亚石油业有望复苏，100美元原油重振投资前景</div>
+  
+
+  <div class="alert-meta">
+    <span class="alert-meta-item">OilPrice-能源市场</span>
+    <span class="alert-meta-item">2026-04-25 02:00</span>
+  </div>
+
+  
+  <div class="summary-plain">A shock oil price spike, after U.S. airstrikes on Iran, which sees Brent trading at over $100 per barrel, is giving hope of a recovery for Colombia’s beleaguered oil patch. Hydrocarbon production in the conflict-riven country is at multi-year lows, with adverse regulatory and tax reforms impacting investment in the economically critical sector. Nonetheless, higher oil prices and the prospect of a business-friendly candidate winning the 2026 presidential election offer a glimpse of hope for Colombia’s beaten-down oil industry. February…</div>
+  
+
+  <div class="alert-footer">
+    <a class="alert-link primary" href="https://oilprice.com/Energy/Energy-General/Colombias-Oil-Industry-Eyes-Comeback-as-100-Crude-Revives-Investment-Case.html" target="_blank">原文链接</a>
+    
+  </div>
+  
+  <div class="reason-tags">评分依据：<span class="reason-tag">source_weight:30</span><span class="reason-tag">topic:geopolitics_energy</span><span class="reason-tag">topic:commodities</span><span class="reason-tag">topic:macro_general</span><span class="reason-tag">topic_bonus[geopolitics_energy]:+22</span><span class="reason-tag">multi_topic[commodities]:+9</span></div>
+  
+</div>
+
+
+<div class="alert-item level-yellow">
+  <div class="alert-top">
+    <div class="score-badge level-yellow">
+      <span class="score-num">61</span>
+      <span class="score-sub">分</span>
+    </div>
+    <div class="alert-main">
+      <div class="alert-title">
+        <span class="alert-topic-tag">地缘与能源</span>Brent Holds at $105 as Iran Talks Temper Rally
+      </div>
+      <div class="alert-badges">
+        
+        
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="zh-trans">伊朗谈判缓和涨势，布伦特原油持稳于105美元</div>
+  
+
+  <div class="alert-meta">
+    <span class="alert-meta-item">OilPrice-能源市场</span>
+    <span class="alert-meta-item">2026-04-24 23:27</span>
+  </div>
+
+  
+  <div class="summary-plain">Oil prices are heading for a sharp weekly gain, with Brent steady at $105, but renewed hopes for U.S.-Iran diplomacy are capping further upside and keeping markets below the $110 threshold. Friday, April 24, 2026 As crude oil prices are set for a hefty $15 per barrel weekly gain, seeing ICE Brent back at $105 per barrel, oil markets are nevertheless closing the week on a hopeful note with Iran’s Foreign Minister believed to travel to Pakistan over the weekend. Even if through indirect talks, the fact that diplomacy is still an option between…</div>
+  
+
+  <div class="alert-footer">
+    <a class="alert-link primary" href="https://oilprice.com/Energy/Energy-General/Brent-Holds-at-105-as-Iran-Talks-Temper-Rally.html" target="_blank">原文链接</a>
+    
+  </div>
+  
+  <div class="reason-tags">评分依据：<span class="reason-tag">source_weight:30</span><span class="reason-tag">topic:geopolitics_energy</span><span class="reason-tag">topic:risk_sentiment</span><span class="reason-tag">topic:commodities</span><span class="reason-tag">topic:macro_general</span><span class="reason-tag">topic_bonus[geopolitics_energy]:+22</span><span class="reason-tag">multi_topic[risk_sentiment]:+9</span></div>
+  
+</div>
+
+
+<div class="alert-item level-yellow">
+  <div class="alert-top">
+    <div class="score-badge level-yellow">
+      <span class="score-num">59</span>
+      <span class="score-sub">分</span>
+    </div>
+    <div class="alert-main">
+      <div class="alert-title">
+        <span class="alert-topic-tag">贵金属（黄金/白银/铂金）</span>Azerbaijan’s state oil fund sells nearly 22 tonnes of gold in Q1
+      </div>
+      <div class="alert-badges">
+        
+        
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="zh-trans">阿塞拜疆国家石油基金一季度出售近22吨黄金</div>
+  
+
+  <div class="alert-meta">
+    <span class="alert-meta-item">Kitco-贵金属</span>
+    <span class="alert-meta-item">2026-04-25 23:19</span>
+  </div>
+
+  
+
+  <div class="alert-footer">
+    <a class="alert-link primary" href="https://www.kitco.com/news/article/2026-04-24/azerbaijans-state-oil-fund-sells-nearly-22-tonnes-gold-q1" target="_blank">原文链接</a>
+    
+  </div>
+  
+  <div class="reason-tags">评分依据：<span class="reason-tag">source_weight:35</span><span class="reason-tag">topic:precious_metals</span><span class="reason-tag">topic:commodities</span><span class="reason-tag">topic_bonus[precious_metals]:+15</span><span class="reason-tag">multi_topic[commodities]:+9</span></div>
+  
+</div>
+
+
+<div class="alert-item level-yellow">
+  <div class="alert-top">
+    <div class="score-badge level-yellow">
+      <span class="score-num">59</span>
+      <span class="score-sub">分</span>
+    </div>
+    <div class="alert-main">
+      <div class="alert-title">
+        <span class="alert-topic-tag">风险偏好与波动</span>Wall Street Says the Stock Market&#39;s Return in 2026 Will Beat the 30-Year Average
+      </div>
+      <div class="alert-badges">
+        
+        
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="zh-trans">华尔街称2026年股市回报率将超过30年均值</div>
+  
+
+  <div class="alert-meta">
+    <span class="alert-meta-item">Yahoo Finance - Top Stories</span>
+    <span class="alert-meta-item">2026-04-25 16:32</span>
+  </div>
+
+  
+  <div class="summary-plain">The S&amp;P 500 has returned 8.3% annually over the last 30 years. Wall Street expects a much higher return in 2026.</div>
+  
+
+  <div class="alert-footer">
+    <a class="alert-link primary" href="https://www.fool.com/investing/2026/04/25/stock-market-return-2026-will-beat-30-year-average/?.tsrc=rss" target="_blank">原文链接</a>
+    
+  </div>
+  
+  <div class="reason-tags">评分依据：<span class="reason-tag">source_weight:35</span><span class="reason-tag">topic:risk_sentiment</span><span class="reason-tag">topic:bonds_treasury</span><span class="reason-tag">topic:macro_general</span><span class="reason-tag">topic_bonus[risk_sentiment]:+15</span><span class="reason-tag">multi_topic[bonds_treasury]:+9</span></div>
+  
+</div>
+
+
+<div class="alert-item level-yellow">
+  <div class="alert-top">
+    <div class="score-badge level-yellow">
+      <span class="score-num">58</span>
+      <span class="score-sub">分</span>
+    </div>
+    <div class="alert-main">
+      <div class="alert-title">
+        <span class="alert-topic-tag">宏观经济综合</span>Central Asia’s Growth Plans Depend on a New Energy Strategy
+      </div>
+      <div class="alert-badges">
+        
+        
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="zh-trans">中亚增长计划依赖新能源战略</div>
+  
+
+  <div class="alert-meta">
+    <span class="alert-meta-item">OilPrice-能源市场</span>
+    <span class="alert-meta-item">2026-04-25 00:00</span>
+  </div>
+
+  
+  <div class="summary-plain">Less hydropower and more wind, solar, and nuclear energy are needed in Central Asia to erase an electricity deficit and enable the realization of the region’s economic growth and trade ambitions, according to a report published April 23 by the Washington, DC-based New Lines Institute for Strategy and Policy (NLI). The report, titled Powering Growth: Solving Central Asia’s Electricity Challenge and produced under NLI&#39;s Silk Seven Plus (S7+) initiative, highlights that Kazakhstan, Kyrgyzstan, Tajikistan, and Uzbekistan have all recently…</div>
+  
+
+  <div class="alert-footer">
+    <a class="alert-link primary" href="https://oilprice.com/Energy/Energy-General/Central-Asias-Growth-Plans-Depend-on-a-New-Energy-Strategy.html" target="_blank">原文链接</a>
+    
+  </div>
+  
+  <div class="reason-tags">评分依据：<span class="reason-tag">source_weight:30</span><span class="reason-tag">topic:macro_general</span><span class="reason-tag">topic_bonus[macro_general]:+3</span><span class="reason-tag">global_shock:+25</span></div>
+  
+</div>
+
+
+<div class="alert-item level-yellow">
+  <div class="alert-top">
+    <div class="score-badge level-yellow">
+      <span class="score-num">56</span>
+      <span class="score-sub">分</span>
+    </div>
+    <div class="alert-main">
+      <div class="alert-title">
+        <span class="alert-topic-tag">地缘与能源</span>Baker Hughes Q1 Revenue Beats Estimates by $260 Million as LNG Orders Surge
+      </div>
+      <div class="alert-badges">
+        
+        
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="zh-trans">贝克休斯一季度营收超预期2.6亿美元，LNG订单激增</div>
+  
+
+  <div class="alert-meta">
+    <span class="alert-meta-item">OilPrice-能源市场</span>
+    <span class="alert-meta-item">2026-04-25 01:30</span>
+  </div>
+
+  
+  <div class="summary-plain">Giant oilfield services company, Baker Hughes (NYSE:BKR), has reported robust first quarter results, with Q1 2026 revenue of $6.59B (+2.5% Y/Y) beating by $260 million; Q1 non-GAAP EPS of $0.58 beat by $0.09 while adjusted net income of $573 million was good for 12% Y/Y increase. The growth was mainly driven by the Industrial &amp; Energy Technology (IET) segment, where orders surged on demand for LNG and gas equipment offset weakness in Oilfield Services caused by Middle East disruptions.While earnings beat expectations, drilling activity was…</div>
+  
+
+  <div class="alert-footer">
+    <a class="alert-link primary" href="https://oilprice.com/Latest-Energy-News/World-News/Baker-Hughes-Q1-Revenue-Beats-Estimates-by-260-Million-as-LNG-Orders-Surge.html" target="_blank">原文链接</a>
+    
+  </div>
+  
+  <div class="reason-tags">评分依据：<span class="reason-tag">source_weight:30</span><span class="reason-tag">topic:geopolitics_energy</span><span class="reason-tag">topic:tech_giants_earnings</span><span class="reason-tag">topic:macro_general</span><span class="reason-tag">topic_bonus[geopolitics_energy]:+22</span><span class="reason-tag">multi_topic[tech_giants_earnings]:+4</span></div>
+  
+</div>
+
+    </div>
+    
+
+    
+  </div>
+</div>
+
+
+
+<div class="card" id="sec-topics" data-section="topics">
+  <div class="card-header teal" onclick="toggleCard('topics')">
+    <span>主题分类新闻
+      <span style="font-size:11px; font-weight:400; opacity:.75; margin-left:8px;">6 个主题</span>
+    </span>
+    <span class="toggle-btn" id="topics-btn">▼ 收起</span>
+  </div>
+  <div id="topics" class="collapsible">
+    <div class="topic-list">
+    
+    
+    
+    <div class="topic-group">
+      <div class="topic-group-header" onclick="toggleTopicGroup(1)">
+        <span class="topic-group-name">FOMC/美联储</span>
+        <span class="topic-count">8 条</span>
+        <span class="topic-group-chevron open" id="tg-chev-1">▼</span>
+      </div>
+      <div class="topic-items-wrap" id="tg-1">
+      
+      <div class="topic-item">
+        <div class="topic-item-title"><a href="https://www.kitco.com/news/article/2026-04-24/wall-street-and-main-street-retreat-fence-after-gold-remains-rangebound" target="_blank">Wall Street and Main Street retreat to the fence after gold remains rangebound with central bank rate decisions on deck</a></div>
+        <div class="topic-item-meta">Kitco-贵金属 · 2026-04-25 23:19 · 74分</div>
+      </div>
+      
+      <div class="topic-item">
+        <div class="topic-item-title"><a href="https://www.kitco.com/opinion/2026-04-23/gold-and-silver-press-lower-fomc-countdown-begins" target="_blank">Gold and silver press lower as FOMC countdown begins</a></div>
+        <div class="topic-item-meta">Kitco-贵金属 · 2026-04-25 23:19 · 74分</div>
+      </div>
+      
+      <div class="topic-item">
+        <div class="topic-item-title"><a href="https://www.fool.com/investing/2026/04/25/fed-interest-rate-dilemma-bad-to-warsh-wall-street/?.tsrc=rss" target="_blank">The Federal Reserve&#39;s Interest Rate Dilemma Is About to Go From Bad to Warsh -- and the Stock Market May End Up Paying the Price</a></div>
+        <div class="topic-item-meta">Yahoo Finance - Top Stories · 2026-04-25 18:56 · 74分</div>
+      </div>
+      
+      <div class="topic-item">
+        <div class="topic-item-title"><a href="https://finance.yahoo.com/m/15ef4c3b-df6b-3b46-9027-889261d80ae5/stock-market-week-ahead%3A.html?.tsrc=rss" target="_blank">Stock Market Week Ahead: Hyperscaler Blitz, Federal Reserve Transition</a></div>
+        <div class="topic-item-meta">Yahoo Finance - Top Stories · 2026-04-25 18:30 · 74分</div>
+      </div>
+      
+      <div class="topic-item">
+        <div class="topic-item-title"><a href="https://www.cnbc.com/2026/04/24/will-he-stay-or-will-he-go-with-criminal-probe-over-fed-chair-powell-faces-big-decision.html" target="_blank">Will he stay or will he go? With criminal probe over, Fed Chair Powell faces big decision</a></div>
+        <div class="topic-item-meta">CNBC - Markets News · 2026-04-25 03:19 · 74分</div>
+      </div>
+      
+      <div class="topic-item">
+        <div class="topic-item-title"><a href="https://www.federalreserve.gov/newsevents/pressreleases/orders20260424a.htm" target="_blank">Federal Reserve Board announces approval of application by OceanFirst Financial Corp.</a></div>
+        <div class="topic-item-meta">Federal Reserve - Press Releases · 2026-04-25 04:00 · 71分</div>
+      </div>
+      
+      <div class="topic-item">
+        <div class="topic-item-title"><a href="https://www.federalreserve.gov/newsevents/pressreleases/orders20260424b.htm" target="_blank">Federal Reserve Board announces approval of application by Banco de Credito del Peru</a></div>
+        <div class="topic-item-meta">Federal Reserve - Press Releases · 2026-04-25 04:00 · 71分</div>
+      </div>
+      
+      <div class="topic-item">
+        <div class="topic-item-title"><a href="https://wolfstreet.com/2026/04/24/senate-confirmation-of-warsh-who-wants-to-reduce-the-feds-balance-sheet-gets-unstuck-as-doj-ends-powell-investigation/" target="_blank">Senate Confirmation of Warsh, who Wants to Reduce the Fed’s Balance Sheet, Gets Unstuck as DOJ Ends Powell Investigation</a></div>
+        <div class="topic-item-meta">Wolf Street - 宏观/债务/房地产 · 2026-04-25 01:09 · 69分</div>
+      </div>
+      
+      </div>
+    </div>
+    
+    <div class="topic-group">
+      <div class="topic-group-header" onclick="toggleTopicGroup(2)">
+        <span class="topic-group-name">地缘与能源</span>
+        <span class="topic-count">5 条</span>
+        <span class="topic-group-chevron open" id="tg-chev-2">▼</span>
+      </div>
+      <div class="topic-items-wrap" id="tg-2">
+      
+      <div class="topic-item">
+        <div class="topic-item-title"><a href="https://home.treasury.gov/news/press-releases/sb0468" target="_blank">Treasury Sanctions Global Illicit Drug Supply Chain Supporting the Sinaloa Cartel</a></div>
+        <div class="topic-item-meta">US Treasury-财政部新闻 · 2026-04-25 23:19 · 91分</div>
+      </div>
+      
+      <div class="topic-item">
+        <div class="topic-item-title"><a href="https://oilprice.com/Latest-Energy-News/World-News/IEAs-Birol-Says-Iran-War-Will-Permanently-Cut-Into-Future-Oil-Demand.html" target="_blank">IEA’s Birol Says Iran War Will Permanently Cut Into Future Oil Demand</a></div>
+        <div class="topic-item-meta">OilPrice-能源市场 · 2026-04-25 03:45 · 86分</div>
+      </div>
+      
+      <div class="topic-item">
+        <div class="topic-item-title"><a href="https://oilprice.com/Energy/Energy-General/Colombias-Oil-Industry-Eyes-Comeback-as-100-Crude-Revives-Investment-Case.html" target="_blank">Colombia’s Oil Industry Eyes Comeback as $100 Crude Revives Investment Case</a></div>
+        <div class="topic-item-meta">OilPrice-能源市场 · 2026-04-25 02:00 · 61分</div>
+      </div>
+      
+      <div class="topic-item">
+        <div class="topic-item-title"><a href="https://oilprice.com/Energy/Energy-General/Brent-Holds-at-105-as-Iran-Talks-Temper-Rally.html" target="_blank">Brent Holds at $105 as Iran Talks Temper Rally</a></div>
+        <div class="topic-item-meta">OilPrice-能源市场 · 2026-04-24 23:27 · 61分</div>
+      </div>
+      
+      <div class="topic-item">
+        <div class="topic-item-title"><a href="https://oilprice.com/Latest-Energy-News/World-News/Baker-Hughes-Q1-Revenue-Beats-Estimates-by-260-Million-as-LNG-Orders-Surge.html" target="_blank">Baker Hughes Q1 Revenue Beats Estimates by $260 Million as LNG Orders Surge</a></div>
+        <div class="topic-item-meta">OilPrice-能源市场 · 2026-04-25 01:30 · 56分</div>
+      </div>
+      
+      </div>
+    </div>
+    
+    <div class="topic-group">
+      <div class="topic-group-header" onclick="toggleTopicGroup(3)">
+        <span class="topic-group-name">贵金属（黄金/白银/铂金）</span>
+        <span class="topic-count">3 条</span>
+        <span class="topic-group-chevron open" id="tg-chev-3">▼</span>
+      </div>
+      <div class="topic-items-wrap" id="tg-3">
+      
+      <div class="topic-item">
+        <div class="topic-item-title"><a href="https://www.kitco.com/news/article/2026-04-24/gold-market-analysis-april-24-key-intra-day-price-entry-levels-active" target="_blank">Gold market analysis for April 24 - key intra-day price entry levels for active traders</a></div>
+        <div class="topic-item-meta">Kitco-贵金属 · 2026-04-25 23:19 · 66分</div>
+      </div>
+      
+      <div class="topic-item">
+        <div class="topic-item-title"><a href="https://www.kitco.com/news/article/2026-04-24/gold-price-near-steady-traders-assess-geopolitics" target="_blank">Gold price near steady as traders assess geopolitics</a></div>
+        <div class="topic-item-meta">Kitco-贵金属 · 2026-04-25 23:19 · 65分</div>
+      </div>
+      
+      <div class="topic-item">
+        <div class="topic-item-title"><a href="https://www.kitco.com/news/article/2026-04-24/azerbaijans-state-oil-fund-sells-nearly-22-tonnes-gold-q1" target="_blank">Azerbaijan’s state oil fund sells nearly 22 tonnes of gold in Q1</a></div>
+        <div class="topic-item-meta">Kitco-贵金属 · 2026-04-25 23:19 · 59分</div>
+      </div>
+      
+      </div>
+    </div>
+    
+    <div class="topic-group">
+      <div class="topic-group-header" onclick="toggleTopicGroup(4)">
+        <span class="topic-group-name">风险偏好与波动</span>
+        <span class="topic-count">2 条</span>
+        <span class="topic-group-chevron open" id="tg-chev-4">▼</span>
+      </div>
+      <div class="topic-items-wrap" id="tg-4">
+      
+      <div class="topic-item">
+        <div class="topic-item-title"><a href="https://www.fool.com/investing/2026/04/25/stock-market-crash-donald-trump-155-years-history/?.tsrc=rss" target="_blank">Will There Be a Stock Market Crash Under President Donald Trump? One Forecasting Tool With 155 Years of History in Its Sails Offers an Answer.</a></div>
+        <div class="topic-item-meta">Yahoo Finance - Top Stories · 2026-04-25 16:26 · 84分</div>
+      </div>
+      
+      <div class="topic-item">
+        <div class="topic-item-title"><a href="https://www.fool.com/investing/2026/04/25/stock-market-return-2026-will-beat-30-year-average/?.tsrc=rss" target="_blank">Wall Street Says the Stock Market&#39;s Return in 2026 Will Beat the 30-Year Average</a></div>
+        <div class="topic-item-meta">Yahoo Finance - Top Stories · 2026-04-25 16:32 · 59分</div>
+      </div>
+      
+      </div>
+    </div>
+    
+    <div class="topic-group">
+      <div class="topic-group-header" onclick="toggleTopicGroup(5)">
+        <span class="topic-group-name">通胀/就业/GDP（CPI/PCE/NFP/PMI）</span>
+        <span class="topic-count">1 条</span>
+        <span class="topic-group-chevron open" id="tg-chev-5">▼</span>
+      </div>
+      <div class="topic-items-wrap" id="tg-5">
+      
+      <div class="topic-item">
+        <div class="topic-item-title"><a href="https://www.kitco.com/news/article/2026-04-24/spot-gold-session-highs-after-consumer-sentiment-ticks-498-one-year-0" target="_blank">Spot gold at session highs after Consumer Sentiment ticks up to 49.8, one-year inflation expectations dip to 4.7%</a></div>
+        <div class="topic-item-meta">Kitco-贵金属 · 2026-04-25 23:19 · 66分</div>
+      </div>
+      
+      </div>
+    </div>
+    
+    <div class="topic-group">
+      <div class="topic-group-header" onclick="toggleTopicGroup(6)">
+        <span class="topic-group-name">宏观经济综合</span>
+        <span class="topic-count">1 条</span>
+        <span class="topic-group-chevron open" id="tg-chev-6">▼</span>
+      </div>
+      <div class="topic-items-wrap" id="tg-6">
+      
+      <div class="topic-item">
+        <div class="topic-item-title"><a href="https://oilprice.com/Energy/Energy-General/Central-Asias-Growth-Plans-Depend-on-a-New-Energy-Strategy.html" target="_blank">Central Asia’s Growth Plans Depend on a New Energy Strategy</a></div>
+        <div class="topic-item-meta">OilPrice-能源市场 · 2026-04-25 00:00 · 58分</div>
+      </div>
+      
+      </div>
+    </div>
+    
+    </div>
+  </div>
+</div>
+
+
+
+<div class="page-footer">
+  市场资讯摘要 · 2026-04-25 23:24:40 · 本内容仅供新闻资讯分享，不构成任何投资建议。
+</div>
+
+<button id="back-to-top" title="返回顶部">↑</button>
+
+</body>
+</html>
